@@ -38,6 +38,11 @@ class Exchange extends CI_Controller {
 		$this->load->view('account/profile');
 	}
 
+	public function deliveryaddress()
+	{
+		$this->load->view('account/delivery-address');
+	}
+
 	public function process_login()
 	{
 		$this->load->model('process');

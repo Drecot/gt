@@ -2650,12 +2650,7 @@ ol.progtrckr li.progtrckr-todo:before {
         
         }
         
-        
-            
-        
-        
         .trade button.game-button.btn:hover:after{
-            
             content: 'Request Exchange';
             font-family: inherit;
             
@@ -2665,13 +2660,10 @@ ol.progtrckr li.progtrckr-todo:before {
             color: white;
            content: "\f2b5";
             font: normal normal normal 14px/1 FontAwesome;
-        
-        
         }
         
         
-        button.game-button.btn:hover:after{
-            
+        button.game-button.btn:hover:after{  
             content: 'Add To Cart';
             font-family: inherit;
             
@@ -2770,12 +2762,17 @@ ol.progtrckr li.progtrckr-todo:before {
             margin-top: 30px;
         }
 
-        .mb-30{
-            margin-bottom: 30px;
+        .mb-100{
+            margin-bottom: 100px;
         }
 
         .bb{
             border-bottom: .125rem solid #e8e8e8;
+        }
+
+        .active{
+            color:brown;
+            font-weight: bold;
         }
         
         .navbar-default {

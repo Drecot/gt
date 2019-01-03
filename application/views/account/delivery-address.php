@@ -258,8 +258,8 @@
                 
                 <div>
                   <h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
-                  <a href="profile" class="active f12px">Account Information</a><br>
-                  <a href="../deliveryaddress" class="f12px">Delivery Address</a>
+                  <a href="account/profile" class="f12px">Account Information</a><br>
+                  <a href="deliveryaddress" class="active f12px">Delivery Address</a>
                 </div>
 
                 <hr>
@@ -307,22 +307,6 @@
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Last Name</h6>
                         <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="Lastname" required>
-                     </div>
-                  </div>
-
-                  <div class="col-md-12">
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">Phone Number</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="09093814456" required>
-                     </div>
-
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">Gender</h6>
-                        <select id="gender" name="gender" value="" required>
-	  <option value="">Select </option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
                      </div>
                   </div>
 
