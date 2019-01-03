@@ -1,0 +1,195 @@
+fa.push-left {
+    float:  left !important;
+}
+
+
+.brand-logo {
+    width: 200px;
+    height: 55px;
+    display: none;
+    color: white !important;
+}
+
+.navbar-header .game-button, .navbar-header .game-button:hover {
+    background: transparent !important;
+    margin: 0;
+    width: 50px;
+    float: right;
+}
+
+.game-button .icon-bar {
+    background-color: white;
+}
+
+.game-box {
+    height:265px;
+    width: 100%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin: 15px 0px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 0.6s !important;
+}
+
+.game-picture, .game-name, .game-info {
+    position: absolute;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.game-picture {
+    height: 80%;
+}
+
+.game-name {
+    bottom: 20%;
+    min-height: 15%;
+    background-color: brown;
+    color: white !important;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.6s;
+    font-size: 15px;
+}
+
+.game-box:hover > .game-name {
+    opacity: 0.8;
+    bottom: 20%;
+}
+
+.game-info {
+    top: 80%;
+    height: 20%;
+    padding: 15px;
+    color: #404040;
+    background: white;
+}
+
+.game-button {
+    background-color: black;
+    color: #404040;
+    border: 2px solid black;
+  padding: 0px 0px; 
+    transition: 0.6s;
+    width: 40px;
+    opacity: 0.8;
+}
+
+.game-button:hover {
+    opacity: 1;
+    color: white;
+    width: 193%;
+    background: brown;
+    border: 2px solid brown;
+}
+
+.exchange .game-button:hover {
+    opacity: 1;
+    color: white;
+    width: 125%;
+    background: brown;
+    border: 2px solid brown;
+}
+
+@media (max-width: 996px) {
+    .brand-logo {
+        display: block;
+    }
+
+    .topnav-centered {
+        display: none;
+    }
+
+    .space {
+        margin: 0 !important;
+    }
+
+    .space .tablinks {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .col-xs-6 {
+        width: 100%;
+    }
+}
+
+button.game-button.btn:before{
+
+}
+
+
+    
+
+
+.exchange button.game-button.btn:hover:after{
+    
+    content: 'Request Exchange';
+    font-family: inherit;
+    
+}
+
+.exchange button.game-button.btn:after { 
+    color: white;
+   content: "\f2b5";
+    font: normal normal normal 14px/1 FontAwesome;
+
+
+}
+
+
+button.game-button.btn:hover:after{
+    
+    content: 'Add To Cart';
+    font-family: inherit;
+    
+}
+button.game-button.btn:after { 
+    color: white;
+    content:'\f217';
+    font: normal normal normal 14px/1 FontAwesome;
+
+
+}
+
+.add{
+  
+}
+
+button i{
+    color: white
+}
+
+   @keyframes zoom-in {
+  0% {
+   transform: scale(.1);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+   transform: none;
+  }
+  100% {
+    transform: scale(.1);
+  }
+}
+
+div h3{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#myFilter{
+    animation: fadeEffect 1s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
