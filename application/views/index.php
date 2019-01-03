@@ -37,7 +37,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      </button>
-                     <a href="index" class="navbar-brand brand-logo" style="height:70px; width:252px;">
+                     <a href="/" class="navbar-brand brand-logo" style="height:70px; width:252px;">
                      <img style="width:100%; height:100%;" src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
                         width="100%" height="100%">
                      </a>
@@ -148,17 +148,17 @@
                      </form>
                   </div>
                   <!-- <account Dropdown> -->    
-                  <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Login</a></li>
+                  <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></a></li>
                   <!-- <Form housing login and signup dropdown> -->    
                   <div class=" form-popup" id="myForm">
                      <!-- <login Dropdown> -->    
                      <div id="defaultOpen1" class="">
-                        <form action="/action_page.php" class="form-container">
+                        <form action="/exchange/process_login" method="post" class="form-container">
                            <h1 style="font-size: 14px; text-align: center">Login</h1>
                            <label for="email"><b>Email</b></label>
                            <input type="text" placeholder="Enter Email" name="email" required>
                            <label for="psw"><b>Password</b></label>
-                           <input type="password" placeholder="Enter Password" name="psw" required>
+                           <input type="password" placeholder="Enter Password" name="password" required>
                            <div style="padding-bottom:20px; margin-top: -20px; font-size: 12px;  ">
                               <input type="checkbox"  name="psw" style="float: left;"  >
                               <label for="checkbox"><b style="float: left;" >Remember me

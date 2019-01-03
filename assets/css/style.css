@@ -492,13 +492,6 @@ input[type=checkbox], input[type=radio] {
     line-height: normal;
 }
 
-select#gender, option {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0 10px 0;
-    border: 1px solid #ccc;
-}
-
 
 
 
@@ -1775,11 +1768,11 @@ ol.progtrckr li.progtrckr-todo:before {
 }
 
 /* Full-width input fields */
-.signup-form-container input[type=email], .signup-form-container input[type=text], .signup-form-container input[type=password] {
+.signup-form-container input[type=text], .signup-form-container input[type=password] {
   width: 100%;
   padding: 8px;
   margin: 5px 0 22px 0;
-  border: 1px solid #ccc;
+      border: 1px solid #ccc;
  
 }
 
@@ -2650,7 +2643,12 @@ ol.progtrckr li.progtrckr-todo:before {
         
         }
         
+        
+            
+        
+        
         .trade button.game-button.btn:hover:after{
+            
             content: 'Request Exchange';
             font-family: inherit;
             
@@ -2660,10 +2658,13 @@ ol.progtrckr li.progtrckr-todo:before {
             color: white;
            content: "\f2b5";
             font: normal normal normal 14px/1 FontAwesome;
+        
+        
         }
         
         
-        button.game-button.btn:hover:after{  
+        button.game-button.btn:hover:after{
+            
             content: 'Add To Cart';
             font-family: inherit;
             
@@ -2721,63 +2722,9 @@ ol.progtrckr li.progtrckr-todo:before {
             width: 1100px;
             float: none !important;
         }
-
-        .white{
-            background-color: white !important;
-        }
-
-        .float-left{
-            float: left;
-        }
-
-        .float-right{
-            float: right;
-        }
         
-        .f12px{
-            font-size:12px;
-        }
-
-        .f10px{
-            font-size:10px;
-        }
         
-        .rd-2{
-            border-radius: 2px;
-        }
-
-        .ml-15{
-            margin-left: 15px;
-        }
-
-        .mr-15{
-            margin-right: 15px;
-        }
-
-        .mt-20{
-            margin-top: 20px;
-        }
-
-        .mt-30{
-            margin-top: 30px;
-        }
-
-        .mb-100{
-            margin-bottom: 100px;
-        }
-
-        .bb{
-            border-bottom: .125rem solid #e8e8e8;
-        }
-
-        .active{
-            color:brown;
-            font-weight: bold;
-        }
         
-        .navbar-default {
-            -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,.12), 0 0.125rem 0.25rem 0 rgba(0,0,0,.08);
-            box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,.12), 0 0.125rem 0.25rem 0 rgba(0,0,0,.08);
         
         
         
