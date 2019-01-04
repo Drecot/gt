@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="keywords" content="" />
       <meta name="author" content="Dreacot">
-      <title>GameTrade.ng | Login</title>
+      <title>GameTrade.ng | Account</title>
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -252,13 +252,27 @@
          </div>
       </header>
       <main class="site-main">
-        <section class="container" style="background-color:lightgrey; padding-bottom: 100px; padding-top: 50px;">
+      <section class="hero_area2">
+            <div class="middle2 text-center" style=" padding: 10px;">
+               <div class="">
+                  <h4  > Delivery Address</h4>
+               </div>
+               <div>
+                  <ul class="breadcrumb">
+                     <li><a href="index.php">Home</a></li>
+                     <li>Register</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+        <section class="container-fluid" style="background-color:#f0f0f0; padding-bottom: 100px; padding-top: 50px;">
 
             <div class="col-md-2 rd-2 white float-left">
                 
                 <div>
                   <h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
-                  <a href="account/profile" class="f12px">Account Information</a><br>
+                  <a href="account" class="f12px">Account Information</a><br>
                   <a href="deliveryaddress" class="active f12px">Delivery Address</a>
                 </div>
 
@@ -292,47 +306,49 @@
                 
             </div>
 
-            <div class="container col-md-9 white float-right">
+            <div class="container col-md-9 rd-2 white float-right">
                   <div class="container col-md-12 bb">
-                  <h2>Account Information</h2>
+                  <h2>Delivery Address</h2>
                   </div>
 
                 <div >
                   <div class="col-md-12 mt-20">
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">First Name</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="First Name" required>
+                     <div class="col-md-6 address-box">
+
+                        <div class="bb mb-2">
+                           <label class="">Address 1</label>
+
+                           <a href="#xedit" class="pr-15 pl-5 pr-5 address-btn">Edit</a>
+                           <a href="#delete" class="pl-5 pr-5 address-btn">Delete</a>
+
+                        </div>
+                           
+                        <div>
+                           <div class="mb-2">
+                              <span><i class="fa fa-user-circle-o"></i> Kennedy Izuegbu</span>
+                           </div>
+
+                           <div class="mb-2">
+                              <i class="fa fa-home"></i><span> no. 4 inua mohammed street ajao estate
+                                 Isolo, Lagos, White House</span>
+
+                           </div class="mb-2">
+                              <span><i class="fa fa-phone"></i> 09093814456</span>
+                           <div>
+
+                           </div>
+                        </div>
                      </div>
 
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">Last Name</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="Lastname" required>
-                     </div>
+                     <button class="col-md-6 add-box text-center">
+                        <div>
+                           <span class="fa fa-plus-circle fa-2x"></span><br>
+                           <span>Add Address</span>
+                        </div>
+</button>
                   </div>
 
-                  <div class="col-md-12">
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">Email</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="user@email.com" required>
-                     </div>
-
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">Current Password</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="" required>
-                     </div>
-                  </div>
-
-                  <div class="col-md-12">
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">New Password</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="" required>
-                     </div>
-
-                     <div class="col-md-6 input-box">
-                        <h6 class="bold f10px">Confirm Password</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="" required>
-                     </div>
-                  </div>
+                
 
                   <div class="col-md-3 mr-15 mt-30 mb-100 float-right">
                      <button type="submit" title="Subscribe" class="button">

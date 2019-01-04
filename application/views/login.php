@@ -42,7 +42,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a href="index" class="navbar-brand brand-logo">
+                        <a href="index.php" class="navbar-brand brand-logo">
                         <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
                            width="100%" height="100%">
                         </a>
@@ -287,7 +287,7 @@
 			                  </p>
                   <div class="form-group">
                      <label for="email"><b>Email</b></label>
-                     <input type="email" placeholder="Enter Email" name="email" required>
+                     <input type="text" placeholder="Enter Email" name="email" required>
                      <span class="help-block"></span>
                   </div>
                   <div class="form-group ">
@@ -304,6 +304,7 @@
                      </div>
                      <div class="col-md-6 col-sm-6 col-xs-6" >
                         <p class="" style="float:right;">
+                           <input type="checkbox" placeholder="Confirm Password" name="psw">
                            <a class="brown" href="#xterms">Forgot Password?</a>
                         </p>
                      </div>
@@ -376,7 +377,7 @@
                                  </div>
                                  <div class="news-content-inner">
                                     <div class="input-box">
-                                       <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="Enter Email" required>
+                                       <input type="text" name="email" id=#x"newsletter" title="Sign up for our newsletter"placeholder="Enter Email" required>
                                     </div>
                                     <div class="actions">
                                        <button type="submit" title="Subscribe" class="button">

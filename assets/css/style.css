@@ -51,6 +51,15 @@ a.none:hover {text-decoration: none;}
 
 /* Hero */
 .hero_area1 {    background-image: url(../img/hero.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;height: 500px;    display: flex;padding: 0;}
+.hero_area2 {
+    background-image: url(../img/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    padding: 0;
+}
 .hero_content {padding: 120px 0;}
 .hero_content h1 {color:steelblue; font-weight: 100;font-size: 100px;}
 .hero_content h2 {color: orange;font-weight: 100;font-size: 20px;margin-top: 0;width: 45%;line-height: 38px;}
@@ -1480,9 +1489,19 @@ i.material-icons:hover {
 
 .middle{
    text-align: left;
-       margin-top: 9rem;
-       margin-left: 10rem;
+    margin-top: 9rem;
+    margin-left: 10rem;
     margin-right: 10rem;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.middle2 {
+    text-align: left;
+    margin-left: 10rem;
+    margin-right: 80rem;
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
@@ -2744,6 +2763,7 @@ ol.progtrckr li.progtrckr-todo:before {
         
         .rd-2{
             border-radius: 2px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .ml-15{
@@ -2766,6 +2786,10 @@ ol.progtrckr li.progtrckr-todo:before {
             margin-bottom: 100px;
         }
 
+        .mb-2{
+            margin-bottom: 5px;
+        }
+
         .bb{
             border-bottom: .125rem solid #e8e8e8;
         }
@@ -2774,7 +2798,43 @@ ol.progtrckr li.progtrckr-todo:before {
             color:brown;
             font-weight: bold;
         }
+
+        .address-box{
+            border: 1px solid hsla(0,0%,61%,.5);
+            padding: 10px;
+        }
+
+        .address-btn {
+            color: #9b9b9b;
+            cursor: pointer;
+            pointer-events: auto;
+        }
         
+        .add-box {
+            border: 1px solid hsla(0,0%,61%,.5);
+            background-color: white;
+            cursor: pointer;
+            pointer-events: auto;
+            min-height: 155.88px;
+        }
+
+        .add-box:hover {
+            border: 1px solid hsla(0,0%,61%,.5);
+            background-color: #f2f2f2;
+            cursor: pointer;
+            pointer-events: auto;
+            min-height: 133.48px;
+        }
+
+        .pl-5{
+            padding-left: 5px;
+        }
+
+        .pr-5{
+            padding-right: 5px;
+        }
+
+
         .navbar-default {
             -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,.12), 0 0.125rem 0.25rem 0 rgba(0,0,0,.08);
             box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,.12), 0 0.125rem 0.25rem 0 rgba(0,0,0,.08);

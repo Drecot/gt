@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="keywords" content="" />
       <meta name="author" content="Dreacot">
-      <title>GameTrade.ng | Login</title>
+      <title>GameTrade.ng | Account</title>
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -252,14 +252,14 @@
          </div>
       </header>
       <main class="site-main">
-        <section class="container" style="background-color:lightgrey; padding-bottom: 100px; padding-top: 50px;">
+        <section class="container-fluid" style="background-color:lightgrey; padding-bottom: 100px; padding-top: 50px;">
 
             <div class="col-md-2 rd-2 white float-left">
                 
                 <div>
                   <h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
-                  <a href="profile" class="active f12px">Account Information</a><br>
-                  <a href="../deliveryaddress" class="f12px">Delivery Address</a>
+                  <a href="account" class="active f12px">Account Information</a><br>
+                  <a href="deliveryaddress" class="f12px">Delivery Address</a>
                 </div>
 
                 <hr>

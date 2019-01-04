@@ -7,18 +7,26 @@
       <meta name="description" content="">
       <meta name="keywords" content="" />
       <meta name="author" content="Dreacot">
+      <!-- <<<<<<< HEAD -->
       <title>GameTrade.ng | Signup</title>
-
+      <!-- ======= -->
+      <title>Game Exchange</title>
+      <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
       <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
       <link href="/assets/css/infinite-slider.css" rel="stylesheet">
       <link href='/assets/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+      <!-- <<<<<<< HEAD -->
       <link href="/assets/css/style.css" rel="stylesheet">
       <link href="/assets/css/animate.css" rel="stylesheet">
+      <!-- ======= -->
+      <link href="style.css" rel="stylesheet">
+      <link href="style1.css" rel="stylesheet">
       <link href="/assets/css/animate.css" rel="stylesheet">
       <link rel="stylesheet" href="/assets/css/faith's.css">
+      <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
       <link href="/assets/css/w3.css" rel="stylesheet">
       <link href="/assets/css/hover-min.css" rel="stylesheet">
    </head>
@@ -32,6 +40,11 @@
       <header class="site-header" >
       <!-- <main class="site-main"> -->
       <div >
+         <!-- ======= -->
+         <header class="site-header" >
+            <!-- <main class="site-main"> -->
+            <div >
+               <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                <nav class="navbar navbar-default" id="title" >
                   <div class="container">
                      <div class="navbar-header">
@@ -184,7 +197,7 @@
                      </ul>
                   </div>
                   <!-- /.navbar-collapse -->  
-                  <a href="index" class="topnav-centered navbar-brand ">
+                  <a href="index.php" class="topnav-centered navbar-brand ">
                   <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"   alt="Post">
                   </a>
                   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -436,9 +449,9 @@
                      <input id="lastname" type="text" placeholder="Enter Last Name" name="lastname" required>
                      <span class="help-block"></span>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group ">
                      <label for="email"><b>Email</b></label>
-                     <input id="email" type="email" placeholder="Enter Email" name="email" required>
+                     <input id="email" type="email" placeholder="Enter Email" name="email"  required>
                      <span class="help-block"></span>
                   </div>
                   <div class="form-group ">
@@ -468,7 +481,7 @@
                   <!-- <<<<<<< HEAD -->
                   <!-- ======= -->
                   <div class="text-center">
-                     <p>Have an account? <a href="/exchange/login" class="brown" >Login in here</a></p>
+                     <p>Have an account? <a href="login.php" class="brown" >Login in here</a></p>
                   </div>
                   <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                </form>

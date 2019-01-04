@@ -35,12 +35,12 @@ class Exchange extends CI_Controller {
 
 	public function account()
 	{
-		$this->load->view('account/profile');
+		$this->load->view('profile');
 	}
 
 	public function deliveryaddress()
 	{
-		$this->load->view('account/delivery-address');
+		$this->load->view('delivery-address');
 	}
 
 	public function process_login()
@@ -54,7 +54,11 @@ class Exchange extends CI_Controller {
 		}
 		else
 		{
-			var_dump($query);
+			//Set session data
+			$this->session->set_userdata('user', 'True');
+			//var_dump($query->result()[0]->first_name);
+			$this->session->set_userdata('firstname', $query->result()[0]->first_name);
+			header("Location: index");
 		}
 		//$this->load->view('index', array('dataset' =>  $query->result()));
 		//$this->load->view('login');
@@ -75,7 +79,8 @@ class Exchange extends CI_Controller {
 		}
 		else
 		{
-			var_dump($query);
+			$this->session->set_userdata('user', 'True');
+			header("Location: index");
 		}
 
 	}
