@@ -42,7 +42,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a href="index.php" class="navbar-brand brand-logo">
+                        <a href="index" class="navbar-brand brand-logo">
                         <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
                            width="100%" height="100%">
                         </a>
@@ -95,7 +95,7 @@
                   </div>
                   <!-- /.navbar-collapse -->  
                   <a href="index.php" class="topnav-centered navbar-brand ">
-                  <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"   alt="Post">
+                   <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"   alt="Post">
                   </a>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-navbar-collapse">
@@ -157,12 +157,12 @@
                      <!-- ======= -->
                      <!-- <account Dropdown> -->    
                      <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
-                     <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Login</a></li>
+                     <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></a></li>
                      <!-- <Form housing login and signup dropdown> -->    
                      <div class=" form-popup" id="myForm">
                         <!-- <login Dropdown> -->    
                         <div id="defaultOpen1" class="">
-                           <form action="/action_page.php" class="form-container">
+                           <form action="/exchange/process_login" class="form-container">
                               <h1 style="font-size: 14px; text-align: center">Login</h1>
 
                               <label for="email"><b>Email</b></label>
@@ -192,7 +192,7 @@
                                  <h4 class="modal-title text-center">Sign Up</h4>
                               </div>
                               <div class="modal-body ">
-                                 <form action="/action_page.php" class="signup-form-container">
+                                 <form action="/exchange/process_register" class="signup-form-container">
                                     <div class="form-group ">
                                        <label for="firstname"><b>First Name</b></label>
                                        <input type="text" placeholder="Enter First Name" name="firstname"  required>
@@ -304,8 +304,7 @@
                      </div>
                      <div class="col-md-6 col-sm-6 col-xs-6" >
                         <p class="" style="float:right;">
-                           <input type="checkbox" placeholder="Confirm Password" name="psw">
-                           <a class="brown" href="#xterms">Forgot Password?</a>
+                           <a class="brown" href="resetpassword">Forgot Password?</a>
                         </p>
                      </div>
                   </div>

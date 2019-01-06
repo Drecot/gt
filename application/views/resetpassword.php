@@ -7,30 +7,19 @@
       <meta name="description" content="">
       <meta name="keywords" content="" />
       <meta name="author" content="Dreacot">
-      <!-- <<<<<<< HEAD -->
-      <title>GameTrade.ng | Signup</title>
-      <!-- ======= -->
-      <title>Game Exchange</title>
-      <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
+      <title>GameTrade.ng | Login</title>
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
       <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
       <link href="/assets/css/infinite-slider.css" rel="stylesheet">
       <link href='/assets/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-      <!-- <<<<<<< HEAD -->
       <link href="/assets/css/style.css" rel="stylesheet">
       <link href="/assets/css/animate.css" rel="stylesheet">
-      <!-- ======= -->
-      <link href="style.css" rel="stylesheet">
-      <link href="style1.css" rel="stylesheet">
-      <link href="/assets/css/animate.css" rel="stylesheet">
-      <link rel="stylesheet" href="/assets/css/faith's.css">
-      <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
       <link href="/assets/css/w3.css" rel="stylesheet">
       <link href="/assets/css/hover-min.css" rel="stylesheet">
    </head>
-   <body >
+   <body>
       <!-- <preloader> --> 
       <div id="preloader">
          <div class="spinner spinner-round"></div>
@@ -38,30 +27,27 @@
       <!-- <<<<<<< HEAD -->
       <!-- site header--> 
       <header class="site-header" >
-      <!-- <main class="site-main"> -->
-      <div >
-         <!-- ======= -->
-         <header class="site-header" >
-            <!-- <main class="site-main"> -->
-            <div >
-               <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
-               <nav class="navbar navbar-default" id="title" >
-                  <div class="container">
-                     <div class="navbar-header">
-                        <div class="container">
-                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse, #bs-navbar-collapse1">
-                           <span class="icon-bar"></span>
-                           <span class="icon-bar"></span>
-                           <span class="icon-bar"></span>
-                           </button>
-                           <a href="index.php" class="navbar-brand brand-logo">
-                           <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
-                              width="100%" height="100%">
-                           </a>
-                        </div>
-                        <!-- <<<<<<< HEAD -->
+      <!-- ======= -->
+      <!-- site header--> 
+      <header class="site-header" >
+         <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
+         <!-- <main class="site-main"> -->
+         <div >
+            <nav class="navbar navbar-default" id="title" >
+               <div class="container">
+                  <div class="navbar-header">
+                     <div class="container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse, #bs-navbar-collapse1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a href="index" class="navbar-brand brand-logo">
+                        <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
+                           width="100%" height="100%">
+                        </a>
                      </div>
-                     <!-- ======= -->
+                  </div>
                   <div class="collapse navbar-collapse" id="bs-navbar-collapse1" style="float: left">
                      <ul class="nav navbar-nav main-navbar-nav">
                         <li><a href="#xwhishlist" class="fa fa-heart-o" onclick="toggle_visibility('myWishlist');"> Wishlist</a></li>
@@ -70,11 +56,7 @@
                               <ul class="header-cart-wrapitem">
                                  <li class="header-cart-item">
                                     <div class="header-cart-item-img">
-                                       <!-- <<<<<<< HEAD -->
                                        <img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-                                       <!-- ======= -->
-                                       <img src="images/item-cart-01.jpg" alt="IMG">
-                                       <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                                     </div>
                                     <div class="header-cart-item-txt">
                                        <a href="#" class="header-cart-item-name">
@@ -88,11 +70,7 @@
                                  <hr>
                                  <li class="header-cart-item">
                                     <div class="header-cart-item-img">
-                                       <!-- <<<<<<< HEAD -->
                                        <img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-                                       <!-- ======= -->
-                                       <img src="images/item-cart-01.jpg" alt="IMG">
-                                       <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                                     </div>
                                     <div class="header-cart-item-txt">
                                        <a href="#" class="header-cart-item-name">
@@ -103,85 +81,9 @@
                                        </span>
                                     </div>
                                  </li>
-                                 <!-- <<<<<<< HEAD -->
-                                 <!-- ======= -->
-                                 <hr>
-                                 <li class="header-cart-item">
-                                    <div class="header-cart-item-img">
-                                       <img src="images/item-cart-02.jpg" alt="IMG">
-                                    </div>
-                                    <div class="header-cart-item-txt">
-                                       <a href="#" class="header-cart-item-name">
-                                       Fifa 18
-                                       </a>
-                                       <span class="header-cart-item-info">
-                                       ₦15,600.00
-                                       </span>
-                                    </div>
-                                 </li>
-                                 <hr>
-                                 <li class="header-cart-item">
-                                    <div class="header-cart-item-img">
-                                       <img src="images/item-cart-01.jpg" alt="IMG">
-                                    </div>
-                                    <div class="header-cart-item-txt">
-                                       <a href="#" class="header-cart-item-name">
-                                       Mortal Konbat X
-                                       </a>
-                                       <span class="header-cart-item-info">
-                                       ₦5,600.00
-                                       </span>
-                                    </div>
-                                 </li>
-                                 <hr>
-                                 <li class="header-cart-item">
-                                    <div class="header-cart-item-img">
-                                       <img src="images/item-cart-01.jpg" alt="IMG">
-                                    </div>
-                                    <div class="header-cart-item-txt">
-                                       <a href="#" class="header-cart-item-name">
-                                       Army Of Two
-                                       </a>
-                                       <span class="header-cart-item-info">
-                                       ₦5,600.00
-                                       </span>
-                                    </div>
-                                 </li>
-                                 <hr>
-                                 <li class="header-cart-item">
-                                    <div class="header-cart-item-img">
-                                       <img src="images/item-cart-01.jpg" alt="IMG">
-                                    </div>
-                                    <div class="header-cart-item-txt">
-                                       <a href="#" class="header-cart-item-name">
-                                       Beyond Two Souls
-                                       </a>
-                                       <span class="header-cart-item-info">
-                                       ₦5,600.00
-                                       </span>
-                                    </div>
-                                 </li>
-                                 <hr>
-                                 <li class="header-cart-item">
-                                    <div class="header-cart-item-img">
-                                       <img src="images/item-cart-03.jpg" alt="IMG">
-                                    </div>
-                                    <div class="header-cart-item-txt">
-                                       <a href="#" class="header-cart-item-name">
-                                       Call of Duty : World War II
-                                       </a>
-                                       <span class="header-cart-item-info">
-                                       ₦6,600.00
-                                       </span>
-                                    </div>
-                                 </li>
-                                 <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                               </ul>
                            </form>
                         </div>
-                        <!-- <<<<<<< HEAD -->
-                        <!-- ======= -->
-                        <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                         <li><a href="#xsearch" class="fa fa-search" onclick="toggle_visibility('mySearch');"> Search</a></li>
                         <div class="search-popup" id="mySearch">
                            <form action="/action_page.php" class="search-container">
@@ -189,13 +91,10 @@
                               <div class="close-icon fa fa-times-thin" onclick="toggle_visibility('mySearch');"></div>
                            </form>
                         </div>
-                        <!-- <<<<<<< HEAD -->
-                        <!-- ======= -->
-                        <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                      </ul>
                   </div>
                   <!-- /.navbar-collapse -->  
-                  <a href="index" class="topnav-centered navbar-brand ">
+                  <a href="index.php" class="topnav-centered navbar-brand ">
                    <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"   alt="Post">
                   </a>
                   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -208,11 +107,7 @@
                            <ul class="header-cart-wrapitem">
                               <li class="header-cart-item">
                                  <div class="header-cart-item-img">
-                                    <!-- <<<<<<< HEAD -->
                                     <img src="/assets/img/cart/item-01.jpg" alt="IMG">
-                                    <!-- ======= -->
-                                    <img src="images/item-cart-01.jpg" alt="IMG">
-                                    <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                                  </div>
                                  <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -226,11 +121,7 @@
                               <hr>
                               <li class="header-cart-item">
                                  <div class="header-cart-item-img">
-                                    <!-- <<<<<<< HEAD -->
                                     <img src="/assets/img/cart/item-01.jpg" alt="IMG">
-                                    <!-- ======= -->
-                                    <img src="images/item-cart-02.jpg" alt="IMG">
-                                    <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                                  </div>
                                  <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -241,51 +132,6 @@
                                     </span>
                                  </div>
                               </li>
-                              <!-- <<<<<<< HEAD -->
-                              <!-- ======= -->
-                              <hr>
-                              <li class="header-cart-item">
-                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-02.jpg" alt="IMG">
-                                 </div>
-                                 <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                    Metal Gear Solid
-                                    </a>
-                                    <span class="header-cart-item-info">
-                                    1 x ₦15,600.00
-                                    </span>
-                                 </div>
-                              </li>
-                              <hr>
-                              <li class="header-cart-item">
-                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-02.jpg" alt="IMG">
-                                 </div>
-                                 <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                    Metal Gear Solid
-                                    </a>
-                                    <span class="header-cart-item-info">
-                                    1 x ₦15,600.00
-                                    </span>
-                                 </div>
-                              </li>
-                              <hr>
-                              <li class="header-cart-item">
-                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-03.jpg" alt="IMG">
-                                 </div>
-                                 <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                    The Last of Us
-                                    </a>
-                                    <span class="header-cart-item-info">
-                                    1 x ₦6,600.00
-                                    </span>
-                                 </div>
-                              </li>
-                              <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                            </ul>
                            <div class="header-cart-total">
                               Total: ₦34,400.00
@@ -318,6 +164,7 @@
                         <div id="defaultOpen1" class="">
                            <form action="/exchange/process_login" class="form-container">
                               <h1 style="font-size: 14px; text-align: center">Login</h1>
+
                               <label for="email"><b>Email</b></label>
                               <input type="text" placeholder="Enter Email" name="email" required>
                               <label for="psw"><b>Password</b></label>
@@ -380,7 +227,6 @@
                                        <input type="checkbox" placeholder="Confirm Password" name="psw" required>
                                        I have read and accepted the <a class="brown" href="#xterms">terms and conditions</a>
                                     </p>
-
                                     <button type="submit" class="btn">Sign Up</button>
                                  </form>
                               </div>
@@ -407,29 +253,31 @@
                   <!-- /.navbar-collapse -->                
                   <!-- END MAIN NAVIGATION -->
                </div>
-            </nav>      
+            </nav>
          </div>
       </header>
       <main class="site-main">
          <section class="hero_area1">
             <div class="middle text-center" style=" padding: 10px;">
                <div class="">
-                  <h1 style="    margin-bottom: 1.5rem;" > Create an Account</h1>
-                  <h2> Partner with us by becoming a merchant, selling to our gigantous userbase</h2>
+                  <h1 style="    margin-bottom: 1.5rem;" > Reset your password</h1>
+                  <h2> If you have lost your password, or if you feel it has been compromised</h2>
                </div>
                <div>
                   <ul class="breadcrumb">
                      <li><a href="index.php">Home</a></li>
-                     <li>Register</li>
+                     <li>Reset Password</li>
+                     
                   </ul>
+                  
                </div>
             </div>
          </section>
          <section style=" background: white; padding-bottom: 100px; padding-top: 50px;" >
             <div>
-               <form action="/exchange/process_register" method="post" class="signup-form-container">
-                  <h1 style="font-size: 14px; text-align: center">Sign Up</h1>
-                  <p style="text-align: center; color: brown"><?php if ($this->session->has_userdata('error'))
+               <form class="signup-form-container" action="#x" method="post" >
+                  <h1 style="font-size: 14px; text-align: center">Reset Password</h1>
+                              <p style="text-align: center; color: brown"><?php if ($this->session->has_userdata('error'))
 			                     { 
 			                     	echo $this->session->userdata('error');
 			                     	$this->session->unset_userdata('error');
@@ -437,51 +285,15 @@
 			                     ?>
 			                     
 			                  </p>
-                  <div class="form-group ">
-                     <label for="firstname"><b>First Name</b></label>
-                     <input id="firstname" type="text" placeholder="Enter First Name" name="firstname"  required>
-                     <span class="help-block"></span>
-                  </div>
-                  <div class="form-group ">
-                     <label for="lastname"><b>Last Name</b></label>
-                     <input id="lastname" type="text" placeholder="Enter Last Name" name="lastname" required>
-                     <span class="help-block"></span>
-                  </div>
-                  <div class="form-group ">
+                  <div class="form-group">
                      <label for="email"><b>Email</b></label>
-                     <input id="email" type="email" placeholder="Enter Email" name="email"  required>
+                     <input type="text" placeholder="Enter Email" name="email" required>
                      <span class="help-block"></span>
                   </div>
-                  <div class="form-group ">
-                     <label for="phonenumber"><b>Phone Number</b></label>
-                     <input id="number" type="tel" placeholder="Enter Phone Number" name="phonenumber" minlength="11" maxlength="11"  required>
-                     <span class="help-block"></span>
-                  </div>
-
-                  <div class="form-group ">
-                     <label for="password"><b>Password</b></label>
-                     <input class="pass" id="password" type="password" placeholder="Enter Password" name="password" minlength="8"  required>
-                     <span class="help-block"></span>
-                  </div>
-                  <div class="form-group ">
-                  	 <p id="no_match" style="color: brown; text-align: center; display: none;">Passwords do not match</p>
-                     <label for="confirm_password"><b>Confirm Password</b></label>
-                     <input class="pass" id="cpassword" type="password" placeholder="Confirm Password" name="confirm_password" minlength="8" required>
-                     <span class="help-block"></span>
-                  </div>
-                  <div style="    padding-bottom: 20px;margin-top: -20px;">
-                     <p class="" >
-                        <input type="checkbox" placeholder="Confirm Password" name="psw" required>
-                        I have read and accepted the <a class="brown" href="#xterms">terms and conditions</a>
-                     </p>
-                  </div>
-                  <button disabled="true" id="execute" type="submit" class="btn">Sign Up</button>
-                  <!-- <<<<<<< HEAD -->
-                  <!-- ======= -->
+                  <button type="submit" class="btn">Reset Password</button>
                   <div class="text-center">
-                     <p>Have an account? <a href="login" class="brown" >Login here</a></p>
+                     <p>I remember my password! <a href="/exchange/login" class="brown" >Login here</a></p>
                   </div>
-                  <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                </form>
             </div>
          </section>
@@ -493,7 +305,7 @@
             <div class="col-sm-12">
                <div class="hvr-grow col-sm-4  whbx">
                   <span class="fa fa-motorcycle" > </span>
-                  <h4 > SAME DAY DELIVERY</h4>
+                  <h4  > SAME DAY DELIVERY</h4>
                </div>
                <div class="hvr-grow col-sm-4  whbx" >
                   <span class="fa fa-rotate-left" > </span>
@@ -501,7 +313,7 @@
                </div>
                <div class="hvr-grow col-sm-4  whbx" >
                   <span class="fa fa-money" > </span>
-                  <h4 > CASH ON DELIVERY</h4>
+                  <h4  > CASH ON DELIVERY</h4>
                </div>
             </div>
          </div>
@@ -518,17 +330,13 @@
                      <a href="#x" class="pad fa fa-instagram"></a>
                      <a href="#x" class="pad fa fa-twitter"></a>
                   </p>
-              </div>
+               </div>
                <div class="col-md-3 col-sm-6 col-xs-12 fbox" >
                   <h4>COMPANY</h4>
                   <p><a href="aboutus.php"> About Us</a></p>
                   <p><a href="#x">How it Works</a></p>
                   <p><a href="#x">Our Services</a></p>
-                  <!-- <<<<<<< HEAD -->
-                  <p><a href="#x"> Contact Us</a></p>
-                  <!-- ======= -->
                   <p><a href="contact.php"> Contact Us</a></p>
-                  <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                </div>
                <div class="col-md-3 col-sm-6 col-xs-12 fbox" >
                   <h4>HELP</h4>
@@ -550,7 +358,7 @@
                                  </div>
                                  <div class="news-content-inner">
                                     <div class="input-box">
-                                       <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="Enter Email" required>
+                                       <input type="text" name="email" id=#x"newsletter" title="Sign up for our newsletter"placeholder="Enter Email" required>
                                     </div>
                                     <div class="actions">
                                        <button type="submit" title="Subscribe" class="button">
@@ -596,37 +404,6 @@
       <script>
          $(document).ready(function()
          	{
-         		if ($("#execute").attr('disabled') == "disabled") {
-         			$("#execute").css('background-color', '#8c8b8b');
-         		}
-         		$('input').keyup(function(){
-         			if ($("#execute").attr('disabled') == "disabled") {
-	         			$("#execute").css('background-color', '#8c8b8b');
-	         		}
-	         		else {
-	         			$("#execute").css('background-color', 'black');
-	         		}
-         			if($.trim($("#firstname").val()) && $.trim($("#lastname").val()) && $.trim($("#email").val()) && $.trim($("#number").val()) && ($('#password').val() == $('#cpassword').val()))
-         			{
-         				$("#execute").removeAttr('disabled')
-         				$("#execute").css('background-color', 'black');
-         				console.log("clean")
-         			}
-         			else {
-         				$("#execute").attr('disabled', 'disabled');
-         				$("#execute").css('background-color', '#8c8b8b');
-         			}
-         		})
-
-         		$('.pass').keyup(function() {
-         			if ($('#password').val() != $('#cpassword').val())
-         			{
-         				$('#no_match').css("display", "block");
-         			}
-         			else {
-         				$('#no_match').css("display", "none");
-         			}
-         		})
          		$("body").mouseup(function(e)
          		{
          			var subject = $("#myReset"); 
@@ -638,6 +415,8 @@
          
          		});
          	});
+         
+         
       </script>
    </body>
 </html>

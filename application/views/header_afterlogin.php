@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="keywords" content="" />
       <meta name="author" content="Dreacot">
-      <title>GameTrade.ng | Account</title>
+      <title>GameTrade.ng | Login</title>
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +24,11 @@
       <div id="preloader">
          <div class="spinner spinner-round"></div>
       </div>
-      <!-- <<<<<<< HEAD -->
       <!-- site header--> 
       <header class="site-header" >
-      <!-- ======= -->
+         <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
+         <!-- <main class="site-main"> -->
+         <div >
             <nav class="navbar navbar-default" id="title" >
                <div class="container">
                   <div class="navbar-header">
@@ -37,7 +38,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a href="exchange/index" class="navbar-brand brand-logo">
+                        <a href="index" class="navbar-brand brand-logo">
                         <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
                            width="100%" height="100%">
                         </a>
@@ -76,6 +77,8 @@
                                        </span>
                                     </div>
                                  </li>
+
+                                 
                               </ul>
                            </form>
                         </div>
@@ -88,9 +91,8 @@
                         </div>
                      </ul>
                   </div>
-                  <!-- /.navbar-collapse -->  
-                  <a href="index" class="topnav-centered navbar-brand ">
-                  <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"   alt="Post">
+                  <a href="index.php" class="topnav-centered navbar-brand ">
+                   <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"   alt="Post">
                   </a>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-navbar-collapse">
@@ -147,34 +149,36 @@
                            </div>
                         </form>
                      </div>
-                     <!-- <<<<<<< HEAD -->
-                     <!-- <account Dropdown> -->    
-                     <!-- ======= -->
-                     <!-- <account Dropdown> -->    
-                     <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
-                     <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></a></li>
+
+                     <li><a href="#xcart" class=" fa fa-bell" onclick="toggle_visibility('myNotification');"></a></li>                <!-- /.navbar-collapse -->  
+                     <span class="header-icons-noti-noti">1</span>
+                     <div class="notification-popup" id="myNotification">
+                        <div class="form-container">
+                           <div class="w-300 text-center">
+                              <span class="fa fa-bell fa-5x"></span><br>
+                              <span>No notification</span>
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+
+                     <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');">  Hi, <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?> <i class="fa fa-caret-down"></i></a></li>
                      <!-- <Form housing login and signup dropdown> -->    
                      <div class=" form-popup" id="myForm">
                         <!-- <login Dropdown> -->    
                         <div id="defaultOpen1" class="">
-                           <form action="/exchange/process_login" class="form-container">
-                              <h1 style="font-size: 14px; text-align: center">Login</h1>
+                           <div class="form-container border">
+                              <div>
+                               <p class="header-dropdown"><a href="account"><i class="fa fa-user"></i> My Profile</a></p>
+                               <p class="header-dropdown"><a href="orders"><i class="fa fa-shopping-bag"></i> My Orders</a></p>
+                               <p class="header-dropdown"><a href="wishlist"><i class="fa fa-heart"></i> My Wishlist</a></p>
+                               <p class="header-dropdown"><a href="wallet"><i class="fa fa-credit-card"></i> My Wallet</a></p>
+                               <p class="header-dropdown"><a href="#x"><i class="fa fa-map-marker"></i> Track My Order</a></p>
+                               <p class="header-dropdown logout"><a href="#x"><i class="fa fa-sign-out"></i> Logout</a></p>
+                              </div>
 
-                              <label for="email"><b>Email</b></label>
-                              <input type="text" placeholder="Enter Email" name="email" required>
-                              <label for="psw"><b>Password</b></label>
-                              <input type="password" placeholder="Enter Password" name="psw" required>
-                              <div style="padding-bottom:20px; margin-top: -20px; font-size: 12px;  ">
-                                 <input type="checkbox"  name="psw" style="float: left;"  >
-                                 <label for="checkbox"><b style="float: left;" >Remember me
-                                 </b></label>
-                                 <a class="brown" href="#xforgot" style="float: right" onclick="toggle_visibility('myReset');toggle_visibility('myForm');" >Forgot Password?</a>
-                              </div>
-                              <button type="submit" class="btn">Login</button>
-                              <div class="text-center">
-                                 <p>Need an account? <a href="#x" class="brown" data-toggle="modal" data-target="#myModal">Sign up here</a></p>
-                              </div>
-                           </form>
+                           </div>
                         </div>
                      </div>
                      <!-- Modal -->
@@ -251,234 +255,8 @@
             </nav>
          </div>
       </header>
-      <main class="site-main">
-      <section class="hero_area2">
-            <div class="middle2 text-center" style=" padding: 10px;">
-               <div class="">
-                  <h4  > Delivery Address</h4>
-               </div>
-               <div>
-                  <ul class="breadcrumb">
-                     <li><a href="index">Home</a></li>
-                     <li>Account</li>
-                     <li>Delivery Address</li>
-                  </ul>
-               </div>
-            </div>
-         </section>
 
-        <section class="container-fluid" style="background-color:#f0f0f0; padding-bottom: 100px; padding-top: 50px;">
-
-        <div class="container-fluid">
-            <div class="col-md-2 rd-2 white float-left">
-                
-                <div>
-                  <h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
-                  <a href="account" class="f12px">Account Information</a><br>
-                  <a href="deliveryaddress" class="active f12px">Delivery Address</a>
-                </div>
-
-                <hr>
-                
-                <div>
-                <h3><i class="fa fa-shopping-bag fa-2x"></i> My Orders</h3>
-                  <div>
-                  <a href="orders" class="f12px">Orders</a><br>
-                  <a href="#x" class="f12px">Reviews & Ratings</a><br>
-                  <a href="wishlist" class="f12px">Wishlist</a>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div>
-                <h3><i class="fa fa-credit-card fa-2x"></i> My Wallet</h3>
-                  <a href="#x" class="f12px">Wallet</a>
-                </div>
-
-                <hr>
-
-                <div>
-                <h3><i class="fa fa-gift fa-2x"></i> Promotions</h3>
-                  <a href="#x" class="f12px">Newsletter</a><br>
-                  <a href="#x" class="f12px">Vouchers</a><br>
-                  <a href="#x" class="f12px">Coupons</a>
-                </div>
-
-                
-            </div>
-
-            <div class="container col-md-9 rd-2 white float-right">
-                  <div class="container col-md-12 bb">
-                  <h2 class="brown bold">Delivery Address</h2>
-                  </div>
-
-                <div >
-                  <div class="col-md-12 mt-20 mb-150">
-                     <div class="col-md-6 address-box">
-
-                        <div class="bb mb-2">
-                           <label class="">Address 1</label>
-
-                           <a href="#xedit" class="pr-15 pl-5 pr-5 address-btn">Edit</a>
-                           <a href="#delete" class="pl-5 pr-5 address-btn">Delete</a>
-
-                        </div>
-                           
-                        <div>
-                           <div class="mb-2">
-                              <span><i class="fa fa-user-circle-o"></i> Kennedy Izuegbu</span>
-                           </div>
-
-                           <div class="mb-2">
-                              <i class="fa fa-home"></i><span> no. 4 inua mohammed street ajao estate
-                                 Isolo, Lagos, White House</span>
-                           </div>
-
-                           <div class="mb-2">
-                              <span><i class="fa fa-phone"></i> 09093814456</span>
-                           </div>
-
-                           </div>
-                        </div>
-
-
-                       <div class="col-md-6 address-box">
-
-                        <div class="bb mb-2">
-                           <label class="">Address 2</label>
-
-                           <a href="#xedit" class="pr-15 pl-5 pr-5 address-btn">Edit</a>
-                           <a href="#delete" class="pl-5 pr-5 address-btn">Delete</a>
-
-                        </div>
-                           
-                        <div>
-                           <div class="mb-2">
-                              <span><i class="fa fa-user-circle-o"></i> John Doe</span>
-                           </div>
-
-                           <div class="mb-2">
-                              <i class="fa fa-home"></i><span> n0 12, western cresent, falomo, Ikoyi, Lagos</span>
-                           </div>
-
-                           <div class="mb-2">
-                              <span><i class="fa fa-phone"></i> 07000000000</span>
-                           </div>
-                        </div>
-                     </div>
-
-                     <button class="col-md-6 add-box text-center">
-                        <div>
-                           <span class="fa fa-plus-circle fa-2x"></span><br>
-                           <span>Add Address</span>
-                        </div>
-                     </button>
-                  </div>
-                           
-                </div>
-            </div>
-         </div>   
-        </section>
-       
-      </main>
-      <!-- <site footer> -->    
-      <footer class="site-footer">
-         <div class="container text-center smtx">
-            <!-- Allow the contact us be at the foremost left hand side-->
-            <div class="col-sm-12">
-               <div class="hvr-grow col-sm-4  whbx">
-                  <span class="fa fa-motorcycle" > </span>
-                  <h4  > SAME DAY DELIVERY</h4>
-               </div>
-               <div class="hvr-grow col-sm-4  whbx" >
-                  <span class="fa fa-rotate-left" > </span>
-                  <h4 > 7 DAYS RETURN</h4>
-               </div>
-               <div class="hvr-grow col-sm-4  whbx" >
-                  <span class="fa fa-money" > </span>
-                  <h4  > CASH ON DELIVERY</h4>
-               </div>
-            </div>
-         </div>
-         <div class="container " style=" background-color: #555">
-            <div class="row second">
-               <!-- Allow the contact us be at the foremost left hand side-->
-               <div class="col-md-3 col-sm-6 col-xs-12 fbox" >
-                  <h4>GET IN TOUCH</h4>
-                  <p><a href="#x"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> KM 10, Idiroko Road</a></p>
-                  <p><a href="tel:+2348159827634"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +234 815 9827 634</a></p>
-                  <p><a href="mailto:info@gameexchange.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> support@gameexchange.com</a></p>
-                  <p>
-                     <a href="#x" class="pad fa fa-facebook"></a>
-                     <a href="#x" class="pad fa fa-instagram"></a>
-                     <a href="#x" class="pad fa fa-twitter"></a>
-                  </p>
-               </div>
-               <div class="col-md-3 col-sm-6 col-xs-12 fbox" >
-                  <h4>COMPANY</h4>
-                  <p><a href="aboutus.php"> About Us</a></p>
-                  <p><a href="#x">How it Works</a></p>
-                  <p><a href="#x">Our Services</a></p>
-                  <p><a href="contact.php"> Contact Us</a></p>
-               </div>
-               <div class="col-md-3 col-sm-6 col-xs-12 fbox" >
-                  <h4>HELP</h4>
-                  <p><a href="faq.php"> FAQs</a></p>
-                  <p><a href="track-order.php"> Track Order</a></p>
-                  <p><a href="#xreturn"> Returns</a></p>
-                  <p><a href="#xdelivery"> Tickets</a></p>
-                  <p><a href="#xpartner"> Become a Merchant</a></p>
-               </div>
-               <div class="col-md-3 col-sm-6 col-xs-12 fbox" >
-                  <h4>JOIN OUR NEWSLETTER</h4>
-                  <div class="block-footer block-5">
-                     <div class=" block-subscribe">
-                        <div class="block-content">
-                           <form action="https://www.gameexchange.com/index.php/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
-                              <div class="newsletter-content">
-                                 <div class="form-subscribe-header">
-                                    <p>Receive coupons, exclusive offers, discounts and more from us.</p>
-                                 </div>
-                                 <div class="news-content-inner">
-                                    <div class="input-box">
-                                       <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="Enter Email" required>
-                                    </div>
-                                    <div class="actions">
-                                       <button type="submit" title="Subscribe" class="button">
-                                       <span><span>Subscribe</span></span></button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                        <script type="text/javascript">
-                           //<![CDATA[
-                           var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
-                           //]]>
-                        </script>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div id="copyright">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6">
-                     <span>
-                        <p class="pull-left">&copy; <?php echo date("Y") ?> GAME EXCHANGE ALL RIGHTS RESERVED |</p>
-                        <a href="#x">
-                           <p>&nbsp Privacy Policy |
-                           <p>
-                        </a>
-                        <a href="#x"><p>&nbsp Terms of Service <p></a>
-                     </span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
+   
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="/assets/js/custom.js"></script>

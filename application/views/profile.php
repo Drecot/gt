@@ -152,12 +152,12 @@
                      <!-- ======= -->
                      <!-- <account Dropdown> -->    
                      <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
-                     <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Login</a></li>
+                     <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></a></li>
                      <!-- <Form housing login and signup dropdown> -->    
                      <div class=" form-popup" id="myForm">
                         <!-- <login Dropdown> -->    
                         <div id="defaultOpen1" class="">
-                           <form action="/action_page.php" class="form-container">
+                           <form action="/exchange/process_login" class="form-container">
                               <h1 style="font-size: 14px; text-align: center">Login</h1>
 
                               <label for="email"><b>Email</b></label>
@@ -187,7 +187,7 @@
                                  <h4 class="modal-title text-center">Sign Up</h4>
                               </div>
                               <div class="modal-body ">
-                                 <form action="/action_page.php" class="signup-form-container">
+                                 <form action="/exchange/process_register" class="signup-form-container">
                                     <div class="form-group ">
                                        <label for="firstname"><b>First Name</b></label>
                                        <input type="text" placeholder="Enter First Name" name="firstname"  required>
@@ -254,6 +254,7 @@
       <main class="site-main">
         <section class="container-fluid" style="background-color:lightgrey; padding-bottom: 100px; padding-top: 50px;">
 
+        <div class="container-fluid">
             <div class="col-md-2 rd-2 white float-left">
                 
                 <div>
@@ -267,9 +268,9 @@
                 <div>
                 <h3><i class="fa fa-shopping-bag fa-2x"></i> My Orders</h3>
                   <div>
-                  <a href="#xorders" class="f12px">Orders</a><br>
+                  <a href="orders" class="f12px">Orders</a><br>
                   <a href="#x" class="f12px">Reviews & Ratings</a><br>
-                  <a href="#x" class="f12px">Wishlist</a>
+                  <a href="wishlist" class="f12px">Wishlist</a>
                   </div>
                 </div>
 
@@ -292,61 +293,61 @@
                 
             </div>
 
-            <div class="container col-md-9 white float-right">
+            <div class="container col-md-9 rd-2 white float-right">
                   <div class="container col-md-12 bb">
-                  <h2>Account Information</h2>
+                  <h2  class="brown bold">Account Information</h2>
                   </div>
 
                 <div >
                   <div class="col-md-12 mt-20">
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">First Name</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="First Name" required>
+                        <input type="text" name="email" id="newsletter" value="<?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; }?>" required>
                      </div>
 
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Last Name</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="Lastname" required>
+                        <input type="text" name="email" id="newsletter" value="<?php if (isset($_SESSION['user'])){ echo $_SESSION['lastname']; }?>" required>
                      </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Phone Number</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="09093814456" required>
+                        <input type="tel" name="email" id="newsletter" minlength="11" maxlength="11" value="<?php if (isset($_SESSION['user'])){ echo $_SESSION['phonenumber']; }?>" required>
                      </div>
 
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Gender</h6>
-                        <select id="gender" name="gender" value="" required>
-	  <option value="">Select </option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
+                        <select id="gender" name="gender" value="">
+	                        <option value="">Select </option>
+                           <option value="male">Male</option>
+                           <option value="female">Female</option>
+                        </select>
                      </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Email</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="user@email.com" required>
+                        <input type="text" name="email" id="newsletter" value="<?php if (isset($_SESSION['user'])){ echo $_SESSION['email']; }?>" readonly>
                      </div>
 
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Current Password</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="" required>
+                        <input type="password" name="email" id="newsletter" minlength="8" placeholder="" required>
                      </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">New Password</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="" required>
+                        <input type="password" name="email" id="newsletter" minlength="8" placeholder="" required>
                      </div>
 
                      <div class="col-md-6 input-box">
                         <h6 class="bold f10px">Confirm Password</h6>
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter"placeholder="" required>
+                        <input type="password" name="email" id="newsletter" minlength="8" placeholder="" required>
                      </div>
                   </div>
 
@@ -357,6 +358,7 @@
                            
                 </div>
             </div>
+         </div>
         </section>
        
       </main>

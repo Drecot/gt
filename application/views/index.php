@@ -37,7 +37,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      </button>
-                     <a href="/" class="navbar-brand brand-logo" style="height:70px; width:252px;">
+                     <a href="index" class="navbar-brand brand-logo" style="height:70px; width:252px;">
                      <img style="width:100%; height:100%;" src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post"
                         width="100%" height="100%">
                      </a>
@@ -182,7 +182,7 @@
                               <h4 class="modal-title text-center">Sign Up</h4>
                            </div>
                            <div class="modal-body ">
-                              <form action="/action_page.php" class="signup-form-container">
+                              <form action="/exchange/process_register" class="signup-form-container">
                                  <div class="form-group ">
                                     <label for="firstname"><b>First Name</b></label>
                                     <input type="text" placeholder="Enter First Name" name="firstname"  required>

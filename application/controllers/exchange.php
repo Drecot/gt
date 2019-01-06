@@ -43,6 +43,26 @@ class Exchange extends CI_Controller {
 		$this->load->view('delivery-address');
 	}
 
+	public function orders()
+	{
+		$this->load->view('orders');
+	}
+
+	public function wishlist()
+	{
+		$this->load->view('wishlist');
+	}
+
+	public function resetpassword()
+	{
+		$this->load->view('resetpassword');
+	}
+
+	public function headerafterlogin()
+	{
+		$this->load->view('header_afterlogin');
+	}
+	
 	public function process_login()
 	{
 		$this->load->model('process');
@@ -58,6 +78,9 @@ class Exchange extends CI_Controller {
 			$this->session->set_userdata('user', 'True');
 			//var_dump($query->result()[0]->first_name);
 			$this->session->set_userdata('firstname', $query->result()[0]->first_name);
+			$this->session->set_userdata('lastname', $query->result()[0]->last_name);
+			$this->session->set_userdata('phonenumber', $query->result()[0]->phone_number);
+			$this->session->set_userdata('email', $query->result()[0]->email);
 			header("Location: index");
 		}
 		//$this->load->view('index', array('dataset' =>  $query->result()));
