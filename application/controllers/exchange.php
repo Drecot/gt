@@ -62,6 +62,13 @@ class Exchange extends CI_Controller {
 	{
 		$this->load->view('header_afterlogin');
 	}
+
+	public function coupons()
+	{
+		$this->load->view('coupons');
+	}
+
+	
 	
 	public function process_login()
 	{

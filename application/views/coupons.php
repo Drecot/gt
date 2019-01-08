@@ -260,13 +260,13 @@
 		<section class="hero_area2">
 			<div class="middle2 text-center" style=" padding: 10px;">
 				<div class="">
-					<h1> Orders</h1>
+					<h4> Coupons</h4>
 				</div>
 				<div>
 					<ul class="breadcrumb">
 						<li><a href="index">Home</a></li>
 						<li>Account</li>
-						<li>Orders</li>
+						<li>Coupons</li>
 					</ul>
 				</div>
 			</div>
@@ -288,7 +288,7 @@
 					<div>
 						<h3><i class="fa fa-shopping-bag fa-2x"></i> My Orders</h3>
 						<div>
-							<a href="orders" class="active f12px">Orders</a><br>
+							<a href="orders" class="f12px">Orders</a><br>
 							<a href="#x" class="f12px">Reviews & Ratings</a><br>
 							<a href="wishlist" class="f12px">Wishlist</a>
 						</div>
@@ -306,7 +306,7 @@
 					<div class="pb-20">
 						<h3><i class="fa fa-gift fa-2x"></i> Promotions</h3>
 						<a href="#x" class="f12px">Newsletter</a><br>
-						<a href="coupons" class="f12px">Coupons</a>
+						<a href="coupons" class="active f12px">Coupons</a>
 					</div>
 
 
@@ -314,145 +314,67 @@
 
 				<div class="container col-md-9 rd-2 white float-right">
 					<div class="container col-md-12 bb">
-						<h2 class="brown bold">Orders</h2>
+						<h2 class="brown bold">Coupons</h2>
 					</div>
 
 					<div>
-						<div class="col-md-12 mt-20">
-							<div class="col-md-6 ex1">
-								<div class="col-md-12 orders-box">
-
-									<div class="bb mb-2">
-										<label class="black">Order Date : 5 Jan 2019</label>
-									</div>
-
-									<div class="col-md-6" style="float:left;">
-
-										<div>
-											<span class="bold">Product: </span>God Of War [PS4]
-										</div>
-
-										<div>
-											<span class="bold">Total: </span><span style="font-family: sans-serif; margin-right: 1px;">₦</span>15,360
-										</div>
-
-										<div>
-											<span class="bold">Order No: </span>R201901964
-										</div>
-
-										<div class="aeb19_1ea6D"><span class="bold">Payment Method: </span>Pay Now
-										</div>
-									</div>
-
-									<div class="col-md-6" style="float:right;">
-										<span class="bold">Delivery Address:</span>
-										<div>no 4 inua mohammed street ajao estate </div>
-									</div>
-
+						<div class="col-md-4 mt-20 ">
+							<div class="coupon br-15">
+								<div class="coupon-container-header text-center">
+									<h2><b>10% OFF YOUR FIRST PURCHASE</b></h2>
 								</div>
 
-								<div class="col-md-12 orders-box">
+								<div class="coupon-container text-center pd-50" style="background-color:white">
+									
 
-									<div class="bb mb-2">
-										<label class="black">Order Date : 3 Jan 2019</label>
-									</div>
+									<p>Use Promo Code:</p>
 
-									<div class="col-md-6" style="float:left;">
-
-										<div>
-											<span class="bold">Product: </span>Beyond Two Souls [PS3]
-										</div>
-										<div>
-											<span class="bold">Total: </span><span style="font-family: sans-serif; margin-right: 1px;">₦</span>3,490
-										</div>
-
-										<div>
-											<span class="bold">Order No: </span>R201901964
-										</div>
-
-										<div class="aeb19_1ea6D"><span class="bold">Payment Method: </span>Pay Now
-										</div>
-									</div>
-
-									<div class="col-md-6" style="float:right;">
-										<span class="bold">Delivery Address:</span>
-										<div>no 4 inua mohammed street ajao estate </div>
-									</div>
-
+									<p><h1 class="brown bold">FIRST10GT</h1></p>
 								</div>
-
-								<div class="col-md-12 orders-box">
-
-									<div class="bb mb-2">
-										<label class="black">Order Date : 25 Dec 2018</label>
-									</div>
-
-									<div class="col-md-6" style="float:left;">
-
-										<div>
-											<span class="bold">Product: </span>Uncharted [PS4]
-										</div>
-
-										<div>
-											<span class="bold">Total: </span><span style="font-family: sans-serif; margin-right: 1px;">₦</span>9,060
-										</div>
-
-										<div>
-											<span class="bold">Order No: </span>R201901964
-										</div>
-
-										<div class="aeb19_1ea6D"><span class="bold">Payment Method: </span>Pay On Delivery
-										</div>
-									</div>
-
-									<div class="col-md-6" style="float:right;">
-										<span class="bold">Delivery Address:</span>
-										<div>24, Montgomery Road, Yaba </div>
-									</div>
-
-								</div>
-
-								<div class="col-md-12 orders-box">
-
-									<div class="bb mb-2">
-										<label class="black">Order Date : 17 Nov 2018</label>
-									</div>
-
-									<div class="col-md-6" style="float:left;">
-										<div>
-											<span class="bold">Product: </span>Product: Fifa 18 [XBOX360]
-										</div>
-
-										<div>
-											<span class="bold">Total: </span><span style="font-family: sans-serif; margin-right: 1px;">₦</span>11,490
-										</div>
-
-										<div>
-											<span class="bold">Order No: </span>R201901964
-										</div>
-
-										<div class="aeb19_1ea6D"><span class="bold">Payment Method: </span>Pay Now
-										</div>
-									</div>
-
-									<div class="col-md-6" style="float:right;">
-										<span class="bold">Delivery Address:</span>
-										<div>no 4 inua mohammed street ajao estate </div>
-									</div>
-
-								</div>
-
-							</div>
-
-
-							<div class="col-md-6 history-box text-center ex1">
-								<div>
-									<span class="fa fa-history fa-5x"></span><br>
-									<span>No transaction history</span>
-									<p>Select an order</p>
+								<div class="coupon-container">
+									<p class="expire">Expires: After First Use</p>
 								</div>
 							</div>
 						</div>
+
+						<div class="col-md-4 mt-20 mb-100">
+							<div class="coupon">
+								<div class="coupon-container-header text-center">
+									<h2><b>20% OFF YOUR PURCHASE</b></h2>
+								</div>
+
+								<div class="coupon-container text-center pd-50" style="background-color:white">
+									
+
+									<p>Use Promo Code:</p>
+
+									<p><h1 class="brown bold">JAN20GT</h1></p>
+								</div>
+								<div class="coupon-container">
+									<p class="expire">Expires: Jan 31, 2019</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 mt-20 mb-100">
+							<div class="coupon">
+								<div class="coupon-container-header text-center">
+									<h2><b>₦500 OFF ANY PURCHASE IN FEBUARY</b></h2>
+								</div>
+
+								<div class="coupon-container text-center pd-50" style="background-color:white">
+									
+
+									<p>Use Promo Code:</p>
+
+									<p><h1 class="brown bold">FEB500GT</h1></p>
+								</div>
+								<div class="coupon-container">
+									<p class="expire">Expires: Feb 28, 2019</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
