@@ -569,7 +569,7 @@
 						<div class="col-md-4 mt-20 mb-100">
 							<div class="coupon">
 								<div class="coupon-container-header text-center">
-									<h2><b>20% OFF YOUR PURCHASE</b></h2>
+									<h2><b>20% OFF YOUR PURCHASE THIS JANUARY</b></h2>
 								</div>
 
 								<div class="coupon-container text-center pd-50" style="background-color:white">

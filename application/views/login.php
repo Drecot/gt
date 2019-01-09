@@ -384,7 +384,7 @@
 											</div>
 											<div class="news-content-inner">
 												<div class="input-box">
-													<input type="text" name="email" id=#x"newsletter" title="Sign up for our newsletter" placeholder="Enter Email"
+													<input type="text" name="email" id="newsletter" title="Sign up for our newsletter" placeholder="Enter Email"
 													 required>
 												</div>
 												<div class="actions">

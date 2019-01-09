@@ -494,9 +494,9 @@
 
 						<div class="col-md-8 ">
 							<div class="m-l-25 m-r--38 m-lr-0-xl ">
-								<div class="wrap-table-shopping-cart">
+								<div class="wrap-table-shopping-cart bor10">
 									<div class="container col-md-12 bb">
-										<h2 class="brown bold">Delivery Address</h2>
+										<h4 class="brown bold"><i class="fa fa-truck"></i> Delivery Address</h4>
 									</div>
 
 									<div>
@@ -504,10 +504,9 @@
 											<div class="col-md-6 address-box">
 
 												<div class="bb mb-2">
-													<label class="">Address 1</label>
+												<input id="addressId1283778" name="address" type="radio" value="1283778"><label class="">Select this address</label>
 
-													<a href="#xedit" class="pr-15 pl-5 pr-5 address-btn">Edit</a>
-													<a href="#delete" class="pl-5 pr-5 address-btn">Delete</a>
+													<a href="#xedit" class="pr-15 pl-5 pr-5 address-btn fr">Edit</a>
 
 												</div>
 
@@ -532,10 +531,9 @@
 											<div class="col-md-6 address-box">
 
 												<div class="bb mb-2">
-													<label class="">Address 2</label>
+												<input id="addressId1283778" name="address" type="radio" value="1283778"><label class="">Select this address</label>
 
-													<a href="#xedit" class="pr-15 pl-5 pr-5 address-btn">Edit</a>
-													<a href="#delete" class="pl-5 pr-5 address-btn">Delete</a>
+													<a href="#xedit" class="pr-15 pl-5 pr-5 address-btn fr">Edit</a>
 
 												</div>
 
@@ -567,16 +565,15 @@
 
 								</div>
 
-								<div class="container col-md-12 bb">
-										<h2 class="brown bold">Payment Options</h2>
+								<div class="container col-md-12 bb bor10 mt-20">
+									<h4 class="brown bold"><i class="fa fa-credit-card"></i> Payment Options</h4>
 								</div>
-
-								<hr>
-
-								<div class="container col-md-12 bb">
-										<h2 class="brown bold">Review Order</h2>
-								</div>
-								<div class="wrap-table-shopping-cart">
+								
+									<div class="container col-md-12 bb mt-20 bor10">
+										<h4 class="brown bold"><i class="fa fa-file-text-o"></i> Review Order</h4>
+									</div>
+								<div class="wrap-table-shopping-cart bor10 mt-20">
+									
 									<table class="table-shopping-cart">
 										<tbody>
 											<tr class="table_head">
@@ -601,7 +598,8 @@
 															<i class="fs-16 zmdi zmdi-minus"></i>
 														</div>
 
-														<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity" name="num-product1" value="1" min="1" max="100">
+														<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity" name="num-product1" value="1"
+														 min="1" max="100">
 
 														<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
 															<i class="fs-16 zmdi zmdi-plus"></i>
@@ -625,7 +623,8 @@
 															<i class="fs-16 zmdi zmdi-minus"></i>
 														</div>
 
-														<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity2" name="num-product2" value="1" min="1" max="100">
+														<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity2" name="num-product2"
+														 value="1" min="1" max="100">
 
 														<div class="btn-num-product-up2 cl8 hov-btn3 trans-04 flex-c-m">
 															<i class="fs-16 zmdi zmdi-plus"></i>
@@ -637,7 +636,7 @@
 										</tbody>
 									</table>
 								</div>
-								
+
 
 							</div>
 						</div>
@@ -685,8 +684,8 @@
 
 									<div class="">
 										<input class=" black333 cl2 bb" placeholder="Enter Coupon Code">
-										<button type="submit" class="button mt-20">
-													<span><span>Apply</span></span></button>
+										<button type="submit" class="button mt-20" style="width:40%">
+											<span><span>Apply</span></span></button>
 
 									</div>
 								</div>
@@ -694,12 +693,12 @@
 								<div class="flex-w flex-t bor12 p-t-15 p-b-30">
 									<div class=" w-full-ssm">
 										<span class="cart-right-text-left cl2">
-											Round up for charity: <i class="fa fa-info-circle" title="Make the total amount to be paid a round number and we would give the balance to charity"></i>
+											Round up for charity: <i class="fa fa-info-circle pointer" title="Make the total amount to be paid a round number and we would give the balance to charity"></i>
 										</span>
 									</div>
 
 									<div class="">
-										<input class=" black333 cl2 bb" placeholder="Input an amount">₦ <i class="fa fa-refresh pointer" title="Click here to auto round up"></i>
+										₦ <input class=" black333 cl2 bb" placeholder="Input an amount"> <i class="fa fa-refresh pointer" title="Click here to auto round up"></i>
 
 									</div>
 								</div>
@@ -793,7 +792,7 @@
 										</div>
 										<div class="news-content-inner">
 											<div class="input-box">
-												<input type="text" name="email" id=#x"newsletter" title="Sign up for our newsletter" placeholder="Enter Email"
+												<input type="text" name="email" id="newsletter" title="Sign up for our newsletter" placeholder="Enter Email"
 												 required>
 											</div>
 											<div class="actions">
@@ -853,79 +852,79 @@
 			});
 		});
 
-		$(document).ready(function(){
+		$(document).ready(function () {
 
-var quantity=0;
-   $('.btn-num-product-up').click(function(e){
+			var quantity = 0;
+			$('.btn-num-product-up').click(function (e) {
 
-// Stop acting like a button
-e.preventDefault();
-// Get the field name
-var quantity = parseInt($('#quantity').val());
+				// Stop acting like a button
+				e.preventDefault();
+				// Get the field name
+				var quantity = parseInt($('#quantity').val());
 
-// If is not undefined
-	
-	$('#quantity').val(quantity + 1);
+				// If is not undefined
 
-  
-	// Increment
-
-});
-
-$('.btn-num-product-down').click(function(e){
-// Stop acting like a button
-e.preventDefault();
-// Get the field name
-var quantity = parseInt($('#quantity').val());
-
-// If is not undefined
-
-	// Increment
-	if(quantity>0){
-	$('#quantity').val(quantity - 1);
-	}
-});
+				$('#quantity').val(quantity + 1);
 
 
+				// Increment
 
-});
+			});
 
-$(document).ready(function(){
+			$('.btn-num-product-down').click(function (e) {
+				// Stop acting like a button
+				e.preventDefault();
+				// Get the field name
+				var quantity = parseInt($('#quantity').val());
 
-var quantity=0;
-$('.btn-num-product-up2').click(function(e){
+				// If is not undefined
 
-// Stop acting like a button
-e.preventDefault();
-// Get the field name
-var quantity2 = parseInt($('#quantity2').val());
-
-// If is not undefined
-
-$('#quantity2').val(quantity2 + 1);
-
-
-// Increment
-
-});
-
-$('.btn-num-product-down2').click(function(e){
-// Stop acting like a button
-e.preventDefault();
-// Get the field name
-var quantity2 = parseInt($('#quantity2').val());
-
-// If is not undefined
-
-// Increment
-if(quantity2>0){
-$('#quantity2').val(quantity2 - 1);
-}
-});
+				// Increment
+				if (quantity > 0) {
+					$('#quantity').val(quantity - 1);
+				}
+			});
 
 
 
-});
+		});
+
+		$(document).ready(function () {
+
+			var quantity = 0;
+			$('.btn-num-product-up2').click(function (e) {
+
+				// Stop acting like a button
+				e.preventDefault();
+				// Get the field name
+				var quantity2 = parseInt($('#quantity2').val());
+
+				// If is not undefined
+
+				$('#quantity2').val(quantity2 + 1);
+
+
+				// Increment
+
+			});
+
+			$('.btn-num-product-down2').click(function (e) {
+				// Stop acting like a button
+				e.preventDefault();
+				// Get the field name
+				var quantity2 = parseInt($('#quantity2').val());
+
+				// If is not undefined
+
+				// Increment
+				if (quantity2 > 0) {
+					$('#quantity2').val(quantity2 - 1);
+				}
+			});
+
+
+
+		});
 
 	</script>
 </body>
