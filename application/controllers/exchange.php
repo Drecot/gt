@@ -68,7 +68,15 @@ class Exchange extends CI_Controller {
 		$this->load->view('coupons');
 	}
 
-	
+	public function cart()
+	{
+		$this->load->view('cart');
+	}
+
+	public function checkout()
+	{
+		$this->load->view('checkout');
+	}
 	
 	public function process_login()
 	{

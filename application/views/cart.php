@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="" />
 	<meta name="author" content="Dreacot">
-	<title>GameTrade.ng | Account</title>
+	<title>GameTrade.ng | Cart</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -388,12 +388,13 @@
 
 
 							<li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Hi,
-									<b><?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></b> <i class="fa fa-caret-down"></i></a></li>
+									<b>
+										<?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></b> <i class="fa fa-caret-down"></i></a></li>
 							<div class=" form-popup" id="myForm">
 								<div id="defaultOpen1" class="">
 									<div class="form-container border">
 										<div>
-										<a href="account">
+											<a href="account">
 												<p class="header-dropdown"><i class="fa fa-user"></i> My Profile</p>
 											</a>
 											<a href="orders">
@@ -486,129 +487,146 @@
 
 	<?php } ?>
 	<main class="site-main">
-		<section class="hero_area2">
-			<div class="middle2 text-center" style=" padding: 10px;">
-				<div class="">
-					<h4> Coupons</h4>
-				</div>
-				<div>
-					<ul class="breadcrumb">
-						<li><a href="index">Home</a></li>
-						<li>Account</li>
-						<li>Coupons</li>
-					</ul>
-				</div>
+		<section>
+			<div class="container-fluid mt-50 mb-100">
+				<form action="/exchange/checkout">
+					<div class="container-fluid">
+
+						<div class="col-md-8 ">
+							<div class="m-l-25 m-r--38 m-lr-0-xl ">
+								<div class="wrap-table-shopping-cart">
+									<table class="table-shopping-cart">
+										<tbody>
+											<tr class="table_head">
+												<th class="column-1">Product</th>
+												<th class="column-2"></th>
+												<th class="column-3">Price</th>
+												<th class="column-4">Quantity</th>
+												<th class="column-5">Total</th>
+											</tr>
+
+											<tr class="table_row">
+												<td class="column-1">
+													<div class="how-itemcart1">
+														<img src="/assets/img/cart/item-01.jpg" alt="IMG">
+													</div>
+												</td>
+												<td class="column-2 black">Ghost Recon: Advanced Warfighter [PS4]</td>
+												<td class="column-3">₦ 11,499</td>
+												<td class="column-4">
+													<div class="wrap-num-product flex-w m-l-auto m-r-0">
+														<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+															<i class="fs-16 zmdi zmdi-minus"></i>
+														</div>
+
+														<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity" name="num-product1" value="1" min="1" max="100">
+
+														<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+															<i class="fs-16 zmdi zmdi-plus"></i>
+														</div>
+													</div>
+												</td>
+												<td class="column-5">₦ 11,499</td>
+											</tr>
+
+											<tr class="table_row">
+												<td class="column-1">
+													<div class="how-itemcart1">
+														<img src="/assets/img/cart/item-02.jpg" alt="IMG">
+													</div>
+												</td>
+												<td class="column-2">Grand Theft Auto V [PS4]</td>
+												<td class="column-3">₦ 8,999</td>
+												<td class="column-4">
+													<div class="wrap-num-product flex-w m-l-auto m-r-0">
+														<div class="btn-num-product-down2 cl8 hov-btn3 trans-04 flex-c-m">
+															<i class="fs-16 zmdi zmdi-minus"></i>
+														</div>
+
+														<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity2" name="num-product2" value="1" min="1" max="100">
+
+														<div class="btn-num-product-up2 cl8 hov-btn3 trans-04 flex-c-m">
+															<i class="fs-16 zmdi zmdi-plus"></i>
+														</div>
+													</div>
+												</td>
+												<td class="column-5">₦ 8,999</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
+									<div class="container">
+										<div class="flex-c-m stext-101 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10 fr">
+											<div>Update Cart</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 ">
+							<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+								<h4 class="cart-right-header-text black333 bold pb-30">
+									Order Summary
+								</h4>
+
+								<div class="flex-w flex-t bor12 pb-13">
+									<div class="wdt-345">
+										<span class="cart-right-text-left cl2">
+											Subtotal:
+										</span>
+									</div>
+
+									<div class="wdt-655">
+										<span class="cart-right-text-right black333 cl2">
+											₦20,498
+										</span>
+									</div>
+								</div>
+
+								<div class="flex-w flex-t bor12 p-t-15 p-b-13">
+									<div class="wdt-345 w-full-ssm">
+										<span class="cart-right-text-left cl2">
+											Shipping:
+										</span>
+									</div>
+
+									<div class="wdt-655 p-r-18 p-r-0-sm w-full-ssm">
+										<p class="stext-111 cl6 p-t-2">
+											Shipping fees not included yet
+										</p>
+
+									</div>
+								</div>
+
+								<div class="flex-w flex-t p-t-27 p-b-33">
+									<div class="size-208">
+										<span class="mtext-101 bold cl2">
+											Total:
+										</span>
+									</div>
+
+									<div class="size-209 p-t-1">
+										<span class="cart-right-text-right black333 cl2">
+											₦20,498
+										</span>
+									</div>
+								</div>
+
+								<div class="text-center pb-30">
+									<button type="submit" class="button" style="width:80%;">
+										<span><span>PROCEED TO CHECKOUT</span></span></button>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</form>
 			</div>
 		</section>
-
-		<section class="container-fluid" style="background-color:#f0f0f0; padding-bottom: 100px; padding-top: 50px;">
-
-			<div class="container-fluid">
-				<div class="col-md-2 rd-2 white float-left">
-
-					<div>
-						<h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
-						<a href="account" class="f12px">Account Information</a><br>
-						<a href="deliveryaddress" class="f12px">Delivery Address</a>
-					</div>
-
-					<hr>
-
-					<div>
-						<h3><i class="fa fa-shopping-bag fa-2x"></i> My Orders</h3>
-						<div>
-							<a href="orders" class="f12px">Orders</a><br>
-							<a href="#x" class="f12px">Reviews & Ratings</a><br>
-							<a href="wishlist" class="f12px">Wishlist</a>
-						</div>
-					</div>
-
-					<hr>
-
-					<div>
-						<h3><i class="fa fa-credit-card fa-2x"></i> My Wallet</h3>
-						<a href="#x" class="f12px">Wallet</a>
-					</div>
-
-					<hr>
-
-					<div class="pb-20">
-						<h3><i class="fa fa-gift fa-2x"></i> Promotions</h3>
-						<a href="#x" class="f12px">Newsletter</a><br>
-						<a href="coupons" class="active f12px">Coupons</a>
-					</div>
-
-
-				</div>
-
-				<div class="container col-md-9 rd-2 white float-right">
-					<div class="container col-md-12 bb">
-						<h2 class="brown bold">Coupons</h2>
-					</div>
-
-					<div>
-						<div class="col-md-4 mt-20 ">
-							<div class="coupon br-15">
-								<div class="coupon-container-header text-center">
-									<h2><b>10% OFF YOUR FIRST PURCHASE</b></h2>
-								</div>
-
-								<div class="coupon-container text-center pd-50" style="background-color:white">
-									
-
-									<p>Use Promo Code:</p>
-
-									<p><h1 class="brown bold">FIRST10GT</h1></p>
-								</div>
-								<div class="coupon-container">
-									<p class="expire">Expires: After First Use</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 mt-20 mb-100">
-							<div class="coupon">
-								<div class="coupon-container-header text-center">
-									<h2><b>20% OFF YOUR PURCHASE</b></h2>
-								</div>
-
-								<div class="coupon-container text-center pd-50" style="background-color:white">
-									
-
-									<p>Use Promo Code:</p>
-
-									<p><h1 class="brown bold">JAN20GT</h1></p>
-								</div>
-								<div class="coupon-container">
-									<p class="expire">Expires: Jan 31, 2019</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 mt-20 mb-100">
-							<div class="coupon">
-								<div class="coupon-container-header text-center">
-									<h2><b>₦500 OFF ANY PURCHASE IN FEBUARY</b></h2>
-								</div>
-
-								<div class="coupon-container text-center pd-50" style="background-color:white">
-									
-
-									<p>Use Promo Code:</p>
-
-									<p><h1 class="brown bold">FEB500GT</h1></p>
-								</div>
-								<div class="coupon-container">
-									<p class="expire">Expires: Feb 28, 2019</p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
 	</main>
 	<!-- <site footer> -->
 	<footer class="site-footer">
@@ -672,7 +690,7 @@
 										</div>
 										<div class="news-content-inner">
 											<div class="input-box">
-												<input type="text" name="email" id="newsletter" title="Sign up for our newsletter" placeholder="Enter Email"
+												<input type="text" name="email" id=#x"newsletter" title="Sign up for our newsletter" placeholder="Enter Email"
 												 required>
 											</div>
 											<div class="actions">
@@ -731,6 +749,80 @@
 
 			});
 		});
+
+		$(document).ready(function(){
+
+		var quantity=0;
+  		 $('.btn-num-product-up').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            
+            $('#quantity').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.btn-num-product-down').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+    
+
+	
+});
+
+$(document).ready(function(){
+
+var quantity=0;
+   $('.btn-num-product-up2').click(function(e){
+
+// Stop acting like a button
+e.preventDefault();
+// Get the field name
+var quantity2 = parseInt($('#quantity2').val());
+
+// If is not undefined
+	
+	$('#quantity2').val(quantity2 + 1);
+
+  
+	// Increment
+
+});
+
+$('.btn-num-product-down2').click(function(e){
+// Stop acting like a button
+e.preventDefault();
+// Get the field name
+var quantity2 = parseInt($('#quantity2').val());
+
+// If is not undefined
+
+	// Increment
+	if(quantity2>0){
+	$('#quantity2').val(quantity2 - 1);
+	}
+});
+
+
+
+});
 
 	</script>
 </body>
