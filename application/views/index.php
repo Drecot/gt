@@ -538,18 +538,36 @@
 
 	<!-- <main body of the site> -->
 	<section style=" background: #fbfbfb;">
-		<div>
+		<div class="col-md-12 text-center bold" style="background-color:#333; color:white; padding:35px">
+			<h1 class="">₦ 1,086,592 </h1><span>RAISED FOR CHARITY</span>
+		</div>
+	
+	<div>
 			<div class="col-md-12 test-outer">
 
 
-				<div class="col-md-4 test-box pointer"><img src=/assets/img/ps3.jpg> </div> <div class="col-md-4 test-box pointer"><img
-					 src=/assets/img/ps4.jpg> </div> <div class="col-md-4 test-box pointer"><img src=/assets/img/xboxone.jpg> </div> </div>
-					 </div> <div class="col-md-12 test-outer">
+				<div class="col-md-4 test-box pointer">
+					<img src=/assets/img/ps3.jpg> 
+				</div> 
+				<div class="col-md-4 test-box pointer">
+					<img
+					 src=/assets/img/ps4.jpg> 
+				</div> 
+				<div class="col-md-4 test-box pointer">
+					<img src=/assets/img/xboxone.jpg>
+				 </div> 
+				</div>
+					 </div> 
+					 <div class="col-md-12 test-outer">
 
 
 					<div class="col-md-4 test-box pointer"><img src=/assets/img/xbox360.jpg> </div> <div class="col-md-4 test-box pointer"><img
 						 src=/assets/img/switch.jpg> </div> <div class="col-md-4 test-box pointer"><img src=/assets/img/wii.jpg> </div> </div>
-						 </div> </div> <div class="p-relative pointer text-center">
+						 </div> </div>
+						 
+						 
+						 
+						 <div class="p-relative pointer text-center">
 						<img src="/assets/img/deals.jpg" alt="Los Angeles" width="100%" height="100%">
 						<div class="centered">
 							<h1>DEALS</h1>
@@ -677,7 +695,7 @@
 																<img src="/assets/img/nintendo/mariotennis.jpg" alt="Mario Tennis" width="100%" height="100%">
 															</div>
 															<div class="game-name">
-																<i class="fa fa-heart-o pointer btn-addwish-b2 dis-block pos-relative js-addwish-b2" title="Add to wishlist"></i>
+																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
 																<p>MARIO TENNIS</p>
 
 															</div>
@@ -816,7 +834,7 @@
 	<script src="/assets/js/carousel.js"></script>
 	<script src="/assets/js/preloader.js"></script>
 	<script src="/assets/js/jquery.easing.min.js"></script>
-	
+
 </body>
 
 </html>
