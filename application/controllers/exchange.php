@@ -23,6 +23,11 @@ class Exchange extends CI_Controller {
 		$this->load->view('index');
 	}
 
+	public function index1()
+	{
+		$this->load->view('index1');
+	}
+
 	public function login()
 	{
 		$this->load->view('login');

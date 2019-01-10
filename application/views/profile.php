@@ -93,7 +93,7 @@
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
-					<a href="index.php" class="topnav-centered navbar-brand ">
+					<a href="index" class="topnav-centered navbar-brand ">
 						<img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
 					</a>
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -315,7 +315,7 @@
 							</div>
 						</ul>
 					</div>
-					<a href="index.php" class="topnav-centered navbar-brand ">
+					<a href="index" class="topnav-centered navbar-brand ">
 						<img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
 					</a>
 					<div class="collapse navbar-collapse" id="bs-navbar-collapse">
@@ -359,14 +359,14 @@
 									<div class="header-cart-buttons">
 										<div class="header-cart-wrapbtn">
 											<!-- Button -->
-											<a href="#xcart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											<a href="cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 												View Cart
 											</a>
 										</div>
 										<div class="header-cart-wrapbtn">
 											<!-- Button -->
-											<a href="#xcheckout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-												Check Out
+											<a href="checkout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+												Checkout
 											</a>
 										</div>
 									</div>
