@@ -8,38 +8,29 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="" />
 	<meta name="author" content="Dreacot">
-	<!-- <<<<<<< HEAD -->
 	<title>GameTrade.ng | Signup</title>
-	<!-- ======= -->
-	<title>Game Exchange</title>
-	<!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/assets/css/infinite-slider.css" rel="stylesheet">
 	<link href='/assets/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-	<!-- <<<<<<< HEAD -->
 	<link href="/assets/css/style.css" rel="stylesheet">
 	<link href="/assets/css/animate.css" rel="stylesheet">
-	<!-- ======= -->
-	<link href="style.css" rel="stylesheet">
-	<link href="style1.css" rel="stylesheet">
-	<link href="/assets/css/animate.css" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/css/faith's.css">
-	<!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
 	<link href="/assets/css/w3.css" rel="stylesheet">
 	<link href="/assets/css/hover-min.css" rel="stylesheet">
+   
 </head>
 
-<body>
-	<!-- <preloader> -->
-	<div id="preloader">
+<body >
+    
+        <!-- <preloader> --> 
+    <div id="preloader">
 		<div class="spinner spinner-round"></div>
-	</div>
-	<!-- <<<<<<< HEAD -->
-	<!-- site header-->
-	<?php if (!isset($_SESSION['user'])){ ?>
+    </div>
+<!-- site header-->
+<?php if (!isset($_SESSION['user'])){ ?>
 	<header class="site-header">
 		<!-- <main class="site-main"> -->
 		<div>
@@ -104,7 +95,7 @@
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
-					<a href="index.php" class="topnav-centered navbar-brand ">
+					<a href="index" class="topnav-centered navbar-brand ">
 						<img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
 					</a>
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -156,7 +147,7 @@
 										<div class="header-cart-wrapbtn">
 											<!-- Button -->
 											<a href="#xcheckout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-												Check Out
+												CheckOut
 											</a>
 										</div>
 									</div>
@@ -256,36 +247,8 @@
 							<!-- END MAIN NAVIGATION -->
 					</div>
 			</nav>
-			<!-- <Carousel> -->
-			<div class="">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="/assets/img/hero.jpg" alt="Los Angeles" style="width:100%; ">
-						</div>
-						<div class="item">
-							<img src="/assets/img/hero.jpg" alt="Chicago" style="width:100%;">
-						</div>
-						<div class="item">
-							<img src="/assets/img/hero.jpg" alt="New york" style="width:100%;">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</header>
 	<?php } else { ?>
-
-
-	<!----------------------------------------------->
-
 
 	<header class="site-header">
 		<div>
@@ -304,60 +267,22 @@
 							</a>
 						</div>
 					</div>
-					<div class="collapse navbar-collapse" id="bs-navbar-collapse1" style="float: left">
-						<ul class="nav navbar-nav main-navbar-nav">
-							<li><a href="#xwhishlist" class="fa fa-heart-o" onclick="toggle_visibility('myWishlist');"> Wishlist</a></li>
-							<div class="wishlist-popup" id="myWishlist">
-								<form action="/action_page.php" class="wishlist-container">
-									<ul class="header-cart-wrapitem">
-										<li class="header-cart-item">
-											<div class="header-cart-item-img">
-												<img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-											</div>
-											<div class="header-cart-item-txt">
-												<a href="#" class="header-cart-item-name">
-													Grand Theft Auto V
-												</a>
-												<span class="header-cart-item-info">
-													₦5,600.00
-												</span>
-											</div>
-										</li>
-										<hr>
-										<li class="header-cart-item">
-											<div class="header-cart-item-img">
-												<img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-											</div>
-											<div class="header-cart-item-txt">
-												<a href="#" class="header-cart-item-name">
-													The Last of Us
-												</a>
-												<span class="header-cart-item-info">
-													₦5,600.00
-												</span>
-											</div>
-										</li>
-
-
-									</ul>
-								</form>
-							</div>
-							<li><a href="#xsearch" class="fa fa-search" onclick="toggle_visibility('mySearch');"> Search</a></li>
-							<div class="search-popup" id="mySearch">
-								<form action="/action_page.php" class="search-container">
-									<input type="search" placeholder="Search..." name="search">
-									<div class="close-icon fa fa-times-thin" onclick="toggle_visibility('mySearch');"></div>
-								</form>
-							</div>
-						</ul>
-					</div>
-					<a href="index.php" class="topnav-centered navbar-brand ">
+					<a href="index" class=" navbar-brand ">
 						<img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
 					</a>
+
+					<!-- the search container -->
+					<div class="search-container col-md-6">
+						<form class="search" action="/action_page.php">
+							<input class="" type="text" placeholder="SEARCH ANY GAME..." name="search">
+							<button type="submit" class="bold"><i class=""></i>SEARCH</button>
+						</form>
+					</div>
 					<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
 						<ul class="nav navbar-nav main-navbar-nav">
 							<li><a href="#xcart" class=" fa fa-cart-plus" onclick="toggle_visibility('myCart');"> Cart</a></li>
-							<span class="header-icons-noti-top">5</span>
+							<span class="header-icons-noti-top-aft">5</span>
 							<div class="form-popup" id="myCart">
 								<form action="/action_page.php" class="form-container">
 									<ul class="header-cart-wrapitem">
@@ -395,14 +320,14 @@
 									<div class="header-cart-buttons">
 										<div class="header-cart-wrapbtn">
 											<!-- Button -->
-											<a href="#xcart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											<a href="cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 												View Cart
 											</a>
 										</div>
 										<div class="header-cart-wrapbtn">
 											<!-- Button -->
-											<a href="#xcheckout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-												Check Out
+											<a href="checkout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+												Checkout
 											</a>
 										</div>
 									</div>
@@ -424,17 +349,37 @@
 
 
 							<li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Hi,
-									<?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?> <i class="fa fa-caret-down"></i></a></li>
+									<b>
+										<?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></b> <i class="fa fa-caret-down"></i></a></li>
 							<div class=" form-popup" id="myForm">
 								<div id="defaultOpen1" class="">
 									<div class="form-container border">
 										<div>
-											<p class="header-dropdown"><a href="account"><i class="fa fa-user"></i> My Profile</a></p>
-											<p class="header-dropdown"><a href="orders"><i class="fa fa-shopping-bag"></i> My Orders</a></p>
-											<p class="header-dropdown"><a href="wishlist"><i class="fa fa-heart"></i> My Wishlist</a></p>
-											<p class="header-dropdown"><a href="wallet"><i class="fa fa-credit-card"></i> My Wallet</a></p>
-											<p class="header-dropdown"><a href="#x"><i class="fa fa-map-marker"></i> Track My Order</a></p>
-											<p class="header-dropdown logout"><a href="#x"><i class="fa fa-sign-out"></i> Logout</a></p>
+											<a href="account">
+												<p class="header-dropdown"><i class="fa fa-user"></i> My Profile</p>
+											</a>
+											<a href="orders">
+												<p class="header-dropdown"><i class="fa fa-shopping-bag"></i> My Orders</p>
+											</a>
+											<a href="wishlist">
+												<p class="header-dropdown"><i class="fa fa-heart"></i> My Wishlist</p>
+											</a>
+											<a href="#xwallet">
+												<p class="header-dropdown"><i class="fa fa-credit-card"></i> My Wallet</p>
+											</a>
+											<a href="#x">
+												<p class="header-dropdown"><i class="fa fa-map-marker"></i> Track My Order</p>
+											</a>
+											<p class=header-dropdown><i class="fa fa-moon-o"></i>
+												Night Mode <label class="switch">
+													<input type="checkbox">
+													<span class="slider round"></span>
+												</label>
+											</p>
+
+											<a href="#xlogout">
+												<p class="header-dropdown logout"><i class="fa fa-sign-out"></i> Logout</p>
+											</a>
 										</div>
 
 									</div>
@@ -505,16 +450,9 @@
 					</div>
 				</div>
 			</nav>
-		</div>
 	</header>
 
-	<?php } ?>
-
-
-
-
-
-
+   <?php } ?>
 	<!------------------------------>
 	<main class="site-main">
 		<section class="hero_area1">

@@ -9,7 +9,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Dreacot">
     
-    <title>Game Exchange - Exchange</title>
+    <title>GameTrade.ng - Trade</title>
     
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />

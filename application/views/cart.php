@@ -26,9 +26,9 @@
 	<div id="preloader">
 		<div class="spinner spinner-round"></div>
 	</div>
-	<!-- <<<<<<< HEAD -->
+
 	<!-- site header-->
-	<?php if (!isset($_SESSION['user'])){ ?>
+<?php if (!isset($_SESSION['user'])){ ?>
 	<header class="site-header">
 		<!-- <main class="site-main"> -->
 		<div>
@@ -245,12 +245,9 @@
 							<!-- END MAIN NAVIGATION -->
 					</div>
 			</nav>
-		</div>
 	</header>
 	<?php } else { ?>
 
-
-	<!----------------------------------------------->
 	<header class="site-header">
 		<div>
 			<nav class="navbar navbar-default" id="title">
@@ -268,57 +265,19 @@
 							</a>
 						</div>
 					</div>
-					<div class="collapse navbar-collapse" id="bs-navbar-collapse1" style="float: left">
-						<ul class="nav navbar-nav main-navbar-nav">
-							<li><a href="#xwhishlist" class="fa fa-heart-o" onclick="toggle_visibility('myWishlist');"> Wishlist</a></li>
-							<div class="wishlist-popup" id="myWishlist">
-								<form action="/action_page.php" class="wishlist-container">
-									<ul class="header-cart-wrapitem">
-										<li class="header-cart-item">
-											<div class="header-cart-item-img">
-												<img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-											</div>
-											<div class="header-cart-item-txt">
-												<a href="#" class="header-cart-item-name">
-													Grand Theft Auto V
-												</a>
-												<span class="header-cart-item-info">
-													₦5,600.00
-												</span>
-											</div>
-										</li>
-										<hr>
-										<li class="header-cart-item">
-											<div class="header-cart-item-img">
-												<img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-											</div>
-											<div class="header-cart-item-txt">
-												<a href="#" class="header-cart-item-name">
-													The Last of Us
-												</a>
-												<span class="header-cart-item-info">
-													₦5,600.00
-												</span>
-											</div>
-										</li>
-
-
-									</ul>
-								</form>
-							</div>
-							<li><a href="#xsearch" class="fa fa-search" onclick="toggle_visibility('mySearch');"> Search</a></li>
-							<div class="search-popup" id="mySearch">
-								<form action="/action_page.php" class="search-container">
-									<input type="search" placeholder="Search..." name="search">
-									<div class="close-icon fa fa-times-thin" onclick="toggle_visibility('mySearch');"></div>
-								</form>
-							</div>
-						</ul>
-					</div>
-					<a href="index" class="topnav-centered navbar-brand ">
+					<a href="index" class=" navbar-brand ">
 						<img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
 					</a>
+
+					<!-- the search container -->
+					<div class="search-container col-md-6">
+						<form class="search" action="/action_page.php">
+							<input class="" type="text" placeholder="SEARCH ANY GAME..." name="search">
+							<button type="submit" class="bold"><i class=""></i>SEARCH</button>
+						</form>
+					</div>
 					<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
 						<ul class="nav navbar-nav main-navbar-nav">
 							<li><a href="#xcart" class=" fa fa-cart-plus" onclick="toggle_visibility('myCart');"> Cart</a></li>
 							<span class="header-icons-noti-top-aft">5</span>
@@ -409,6 +368,13 @@
 											<a href="#x">
 												<p class="header-dropdown"><i class="fa fa-map-marker"></i> Track My Order</p>
 											</a>
+											<p class=header-dropdown><i class="fa fa-moon-o"></i>
+												Night Mode <label class="switch">
+													<input type="checkbox">
+													<span class="slider round"></span>
+												</label>
+											</p>
+
 											<a href="#xlogout">
 												<p class="header-dropdown logout"><i class="fa fa-sign-out"></i> Logout</p>
 											</a>
@@ -482,10 +448,10 @@
 					</div>
 				</div>
 			</nav>
-		</div>
 	</header>
 
-	<?php } ?>
+   <?php } ?>
+
 	<main class="site-main">
 		<section>
 			<div class="container-fluid mt-50 mb-100">
@@ -778,7 +744,7 @@
         // If is not undefined
       
             // Increment
-            if(quantity>0){
+            if(quantity>1){
             $('#quantity').val(quantity - 1);
             }
     });
@@ -815,7 +781,7 @@ var quantity2 = parseInt($('#quantity2').val());
 // If is not undefined
 
 	// Increment
-	if(quantity2>0){
+	if(quantity2>1){
 	$('#quantity2').val(quantity2 - 1);
 	}
 });

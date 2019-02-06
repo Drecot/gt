@@ -291,57 +291,19 @@
 							</a>
 						</div>
 					</div>
-					<div class="collapse navbar-collapse" id="bs-navbar-collapse1" style="float: left">
-						<ul class="nav navbar-nav main-navbar-nav">
-							<li><a href="#xwhishlist" class="fa fa-heart-o" onclick="toggle_visibility('myWishlist');"> Wishlist</a></li>
-							<div class="wishlist-popup" id="myWishlist">
-								<form action="/action_page.php" class="wishlist-container">
-									<ul class="header-cart-wrapitem">
-										<li class="header-cart-item">
-											<div class="header-cart-item-img">
-												<img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-											</div>
-											<div class="header-cart-item-txt">
-												<a href="#" class="header-cart-item-name">
-													Grand Theft Auto V
-												</a>
-												<span class="header-cart-item-info">
-													₦5,600.00
-												</span>
-											</div>
-										</li>
-										<hr>
-										<li class="header-cart-item">
-											<div class="header-cart-item-img">
-												<img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-											</div>
-											<div class="header-cart-item-txt">
-												<a href="#" class="header-cart-item-name">
-													The Last of Us
-												</a>
-												<span class="header-cart-item-info">
-													₦5,600.00
-												</span>
-											</div>
-										</li>
-
-
-									</ul>
-								</form>
-							</div>
-							<li><a href="#xsearch" class="fa fa-search" onclick="toggle_visibility('mySearch');"> Search</a></li>
-							<div class="search-popup" id="mySearch">
-								<form action="/action_page.php" class="search-container">
-									<input type="search" placeholder="Search..." name="search">
-									<div class="close-icon fa fa-times-thin" onclick="toggle_visibility('mySearch');"></div>
-								</form>
-							</div>
-						</ul>
-					</div>
-					<a href="index" class="topnav-centered navbar-brand ">
+					<a href="index" class=" navbar-brand ">
 						<img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
 					</a>
+
+					<!-- the search container -->
+					<div class="search-container col-md-6">
+						<form class="search" action="/action_page.php">
+							<input class="" type="text" placeholder="SEARCH ANY GAME..." name="search">
+							<button type="submit" class="bold"><i class=""></i>SEARCH</button>
+						</form>
+					</div>
 					<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
 						<ul class="nav navbar-nav main-navbar-nav">
 							<li><a href="#xcart" class=" fa fa-cart-plus" onclick="toggle_visibility('myCart');"> Cart</a></li>
 							<span class="header-icons-noti-top-aft">5</span>
@@ -432,6 +394,13 @@
 											<a href="#x">
 												<p class="header-dropdown"><i class="fa fa-map-marker"></i> Track My Order</p>
 											</a>
+											<p class=header-dropdown><i class="fa fa-moon-o"></i>
+												Night Mode <label class="switch">
+													<input type="checkbox">
+													<span class="slider round"></span>
+												</label>
+											</p>
+
 											<a href="#xlogout">
 												<p class="header-dropdown logout"><i class="fa fa-sign-out"></i> Logout</p>
 											</a>
@@ -536,193 +505,207 @@
 
 	<?php } ?>
 
+
 	<!-- <main body of the site> -->
 	<section style=" background: #fbfbfb;">
 		<div class="col-md-12 text-center bold" style="background-color:#333; color:white; padding:35px">
-			<h1 class="">₦ 1,086,592 </h1><span>RAISED FOR CHARITY</span>
+			<h1 class="" style=>₦ 1,086,592 </h1><span>RAISED FOR CHARITY</span>
 		</div>
-	
-	<div>
-			<div class="col-md-12 test-outer">
+	</section>
+
+	<section>
+		<div class="col-md-12 test-outer">
+			<div class="col-md-4 test-box pointer">
+				<img src=/assets/img/ps3.jpg /> </div>
+			<div class="col-md-4 test-box pointer">
+				<img src=/assets/img/ps4.jpg /> </div>
+			<div class="col-md-4 test-box pointer">
+				<img src=/assets/img/xboxone.jpg /> </div>
+			<div class="col-md-4 test-box pointer">
+				<img src=/assets/img/xbox360.jpg /> </div>
+			<div class="col-md-4 test-box pointer">
+				<img src=/assets/img/switch.jpg /> </div>
+			<div class="col-md-4 test-box pointer">
+				<img src=/assets/img/wii.jpg /> </div>
+		</div>
+	</section>
+
+	<!-- <section>
+		<div class="h-500 col-md-12 test-outer">
+     		<div class="col-sm-6 red test-outer">
+        		<img src=/assets/img/ps3.jpg />
+        	</div>
+        	<div class="col-sm-6 test-outer">
+            	<div class="block blue">
+            		<img src=/assets/img/ps4.jpg width="100%" height="100%" />
+            	</div>
+            	<div class="block blue">
+            		<img src=/assets/img/switch.jpg width="100%" height="100%" />
+            	</div>
+        	</div>
+    	</div>
+	</section> -->
+
+	<section>
+		<div class="col-md-12 test-outer">
+			<div class="p-relative pointer text-center">
+				<img src="/assets/img/deals.jpg" alt="Los Angeles" width="100%" height="100%" />
 
 
-				<div class="col-md-4 test-box pointer">
-					<img src=/assets/img/ps3.jpg> 
-				</div> 
-				<div class="col-md-4 test-box pointer">
-					<img
-					 src=/assets/img/ps4.jpg> 
-				</div> 
-				<div class="col-md-4 test-box pointer">
-					<img src=/assets/img/xboxone.jpg>
-				 </div> 
+				<div class="centered">
+					<h1>DEALS</h1>
+					<p>"Checkout our all new deals and exclusive offers"</p>
 				</div>
-					 </div> 
-					 <div class="col-md-12 test-outer">
+			</div>
+		</div>
+	</section>
 
+	<section>
 
-					<div class="col-md-4 test-box pointer"><img src=/assets/img/xbox360.jpg> </div> <div class="col-md-4 test-box pointer"><img
-						 src=/assets/img/switch.jpg> </div> <div class="col-md-4 test-box pointer"><img src=/assets/img/wii.jpg> </div> </div>
-						 </div> </div>
-						 
-						 
-						 
-						 <div class="p-relative pointer text-center">
-						<img src="/assets/img/deals.jpg" alt="Los Angeles" width="100%" height="100%">
-						<div class="centered">
-							<h1>DEALS</h1>
-							<p>"Checkout our all new deals and exclusive offers"</p>
-						</div>
+		<div class="col-md-12 container-fluid mt-30 pb-30">
 
-					</div>
-
-					<div class="container-fluid mt-30 pb-30">
-
-						<h1 class="black text-center pb-30 bold">NEWLY ADDED</h1>
+			<h1 class="black text-center pb-30 bold">NEWLY ADDED</h1>
+			<div class="container-fluid">
+				<div class="container-fluid">
+					<div class="container-fluid">
 						<div class="container-fluid">
 							<div class="container-fluid">
 								<div class="container-fluid">
 									<div class="container-fluid">
-										<div class="container-fluid">
-											<div class="container-fluid">
-												<div class="container-fluid">
 
 
-													<div class="col-md-2 new sports nba2k19 recent">
-														<div class="game-box">
-															<div class="game-picture">
-																<img src="/assets/img/ps4/2K19.jpg" alt="Fifa 19" width="100%" height="100%">
-															</div>
-															<div class="game-name">
-																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-																<p>NBA 2K19</p>
-															</div>
-															<div class=" game-info" style="width: 100%;">
-																<div class="" style=" float: right">
-																	<p class=" notice">₦17,999</p>
-																</div>
-																<div class="add" style=" float: left">
-																	<button class="game-button btn"><i></i></button>
-																</div>
-															</div>
-														</div>
+										<div class="col-md-2 new sports nba2k19 recent">
+											<div class="game-box">
+												<div class="game-picture">
+													<img src="/assets/img/ps4/2K19.jpg" alt="Fifa 19" width="100%" height="100%">
+												</div>
+												<div class="game-name">
+													<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+													<p>NBA 2K19</p>
+												</div>
+												<div class=" game-info" style="width: 100%;">
+													<div class="" style=" float: right">
+														<p class=" notice">₦17,999</p>
 													</div>
-
-													<div class="col-md-2 new sports racing need-for-speed-payback recent">
-														<div class=" game-box">
-															<div class="game-picture">
-																<img src="/assets/img/xbox1/nfsplayback.jpg" alt="Need For Speed" width="100%" height="100%">
-															</div>
-															<div class="game-name">
-																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-																<p>NEED FOR SPEED: PAYBACK</p>
-															</div>
-															<div class=" game-info" style="width: 100%;">
-																<div class="" style=" float: right">
-																	<p class=" notice">₦21,499</p>
-																</div>
-																<div class="add" style=" float: left">
-																	<button class="game-button btn"><i class=""></i></button>
-																</div>
-															</div>
-														</div>
+													<div class="add" style=" float: left">
+														<button class="game-button btn"><i></i></button>
 													</div>
-
-													<div class="col-md-2 used action ghost-recon old">
-														<div class="  game-box">
-															<div class="game-picture">
-																<img src="/assets/img/ps4/ghst.jpg" alt="Fifa 19" width="100%" height="100%">
-															</div>
-															<div class="game-name">
-																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-																<p>GHOST RECON: WILDLANDS</p>
-															</div>
-															<div class=" game-info" style="width: 100%;">
-																<div class="" style=" float: right">
-																	<p class=" notice">₦7,499</p>
-																</div>
-																<div class="add" style=" float: left">
-																	<button class="game-button btn"><i></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-
-													<div class=" col-md-2 used action transformers old">
-														<div class=" game-box">
-															<div class="game-picture">
-																<img src="/assets/img/xbox360/transformers.jpg" alt="Transformers" width="100%" height="100%">
-															</div>
-															<div class="game-name">
-																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-																<p>TRANSFORMERS: REVENGE OF THE FALLEN</p>
-															</div>
-															<div class=" game-info" style="width: 100%;">
-																<div class="" style=" float: right">
-																	<p class=" notice">₦7,499</p>
-																</div>
-																<div class="add" style=" float: left">
-																	<button class="game-button btn"><i></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-md-2 used adventure interactive-motion beyond-two-souls old">
-														<div class=" game-box">
-															<div class="game-picture">
-																<img src="/assets/img/ps3/beyond.jpg" alt="Fifa 19" width="100%" height="100%">
-															</div>
-															<div class="game-name ">
-																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-																<p>BEYOND TWO SOULS </p>
-
-															</div>
-															<div class=" game-info" style="width: 100%;">
-																<div class="" style=" float: right">
-																	<p class=" notice">₦4,499</p>
-																</div>
-																<div class="add" style=" float: left">
-																	<button class="game-button btn"><i class=""></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-md-2 new sport mariotennis recent">
-														<div class=" game-box">
-															<div class="game-picture">
-																<img src="/assets/img/nintendo/mariotennis.jpg" alt="Mario Tennis" width="100%" height="100%">
-															</div>
-															<div class="game-name">
-																<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-																<p>MARIO TENNIS</p>
-
-															</div>
-															<div class=" game-info" style="width: 100%;">
-																<div class="" style=" float: right">
-																	<p class=" notice">₦18,499</p>
-
-																</div>
-																<div class="add" style=" float: left">
-																	<button class="game-button btn"><i class=""></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-
-
 												</div>
 											</div>
 										</div>
+
+										<div class="col-md-2 new sports racing need-for-speed-payback recent">
+											<div class=" game-box">
+												<div class="game-picture">
+													<img src="/assets/img/xbox1/nfsplayback.jpg" alt="Need For Speed" width="100%" height="100%">
+												</div>
+												<div class="game-name">
+													<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+													<p>NEED FOR SPEED: PAYBACK</p>
+												</div>
+												<div class=" game-info" style="width: 100%;">
+													<div class="" style=" float: right">
+														<p class=" notice">₦21,499</p>
+													</div>
+													<div class="add" style=" float: left">
+														<button class="game-button btn"><i class=""></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class=" col-md-2 trade action adventure days-gone recent">
+											<div class=" game-box">
+												<div class="game-picture">
+													<img src="/assets/img/ps4/daysgone.jpg" alt="Fifa 19" width="100%" height="100%">
+												</div>
+												<div class="game-name">
+													<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+													<p>DAYS GONE</p>
+												</div>
+												<div class=" game-info" style="width: 100%;">
+													<div class="" style=" float: right">
+														<p class=" notice">EX</p>
+													</div>
+													<div class="add" style=" float: left">
+														<a href="trade#ex" target="blank"><button class="game-button btn"><i></i></button></a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class=" col-md-2 used action transformers old">
+											<div class=" game-box">
+												<div class="game-picture">
+													<img src="/assets/img/xbox360/transformers.jpg" alt="Transformers" width="100%" height="100%">
+												</div>
+												<div class="game-name">
+													<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+													<p>TRANSFORMERS: REVENGE OF THE FALLEN</p>
+												</div>
+												<div class=" game-info" style="width: 100%;">
+													<div class="" style=" float: right">
+														<p class=" notice">₦7,499</p>
+													</div>
+													<div class="add" style=" float: left">
+														<button class="game-button btn"><i></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-2 used adventure interactive-motion beyond-two-souls old">
+											<div class=" game-box">
+												<div class="game-picture">
+													<img src="/assets/img/ps3/beyond.jpg" alt="Fifa 19" width="100%" height="100%">
+												</div>
+												<div class="game-name ">
+													<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+													<p>BEYOND TWO SOULS </p>
+
+												</div>
+												<div class=" game-info" style="width: 100%;">
+													<div class="" style=" float: right">
+														<p class=" notice">₦4,499</p>
+													</div>
+													<div class="add" style=" float: left">
+														<button class="game-button btn"><i class=""></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-2 new sport mariotennis recent">
+											<div class=" game-box">
+												<div class="game-picture">
+													<img src="/assets/img/nintendo/mariotennis.jpg" alt="Mario Tennis" width="100%" height="100%">
+												</div>
+												<div class="game-name">
+													<i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+													<p>MARIO TENNIS</p>
+
+												</div>
+												<div class=" game-info" style="width: 100%;">
+													<div class="" style=" float: right">
+														<p class=" notice">₦18,499</p>
+
+													</div>
+													<div class="add" style=" float: left">
+														<button class="game-button btn"><i class=""></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-
-
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- <site footer> -->
 	<footer class="site-footer">
