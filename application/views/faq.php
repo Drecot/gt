@@ -760,7 +760,7 @@ How much do I pay for delivery service?
                     <div class="col-md-6">
 					
 					<span>
-                        <p class="pull-left">&copy; 2019 GAME EXCHANGE ALL RIGHTS RESERVED |</p>
+                        <p class="pull-left">&copy; <script>document.write(new Date().getFullYear());</script> GAMETRADE ALL RIGHTS RESERVED |</p>
 						
 						<a href="#x"><p>&nbsp Privacy Policy |<p></a>
 						<a href="#x"><p>&nbsp Terms of Service <p></a>

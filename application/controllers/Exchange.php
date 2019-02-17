@@ -51,10 +51,19 @@ class Exchange extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function loginmerchant()
+	{
+		$this->load->view('login-merchant');
+	}
 
 	public function signup()
 	{
 		$this->load->view('signup');
+	}
+
+	public function signupmerchant()
+	{
+		$this->load->view('signup-merchant');
 	}
 
 	public function account()

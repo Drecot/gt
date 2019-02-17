@@ -585,7 +585,7 @@
 					<div class="col-md-6">
 						<span>
 							<p class="pull-left">&copy;
-								<?php echo date("Y") ?> GAME EXCHANGE ALL RIGHTS RESERVED |</p>
+								<?php echo date("Y") ?> GAMETRADE ALL RIGHTS RESERVED |</p>
 							<a href="#x">
 								<p>&nbsp Privacy Policy |
 									<p>

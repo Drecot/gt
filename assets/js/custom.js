@@ -274,3 +274,5 @@ for (var i = 0; i < btns.length; i++) {
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+
+    
