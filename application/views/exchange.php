@@ -728,7 +728,7 @@
                      <p><a href="track-order.php"> Track Order</a></p>
                      <p><a href="#xreturn"> Returns</a></p>
                      <p><a href="#xdelivery"> Tickets</a></p>
-                     <p><a href="#xpartner"> Become a Merchant</a></p>
+                     <p><a href="exchange/signupmerchant" target="_blank" class="merchant"> Become a Merchant <i class="fa fa-external-link"></i></a></p>
                   
                     
                 </div>
