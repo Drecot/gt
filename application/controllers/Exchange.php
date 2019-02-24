@@ -110,6 +110,11 @@ class Exchange extends CI_Controller {
 	{
 		$this->load->view('checkout');
 	}
+
+	public function products()
+	{
+		$this->load->view('products');
+	}
 	
 	public function process_login()
 	{

@@ -30,9 +30,9 @@
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
 
                     <ul class="nav navbar-nav main-navbar-nav">
-                        <li><a href="#xcart" class=" fa fa-cart-plus" onclick="toggle_visibility('myCart');"> Cart<span
-                                    class="header-icons-noti-top-aft">2</span></a>
-                        </li>
+
+                        <li><a href="#xcart" class="fa fa-cart-plus" onclick="toggle_visibility('myCart');">
+                                Cart<span class="header-icons-noti-top-aft">2</span></a></li>
 
                         <div class="form-popup" id="myCart">
                             <form action="/action_page.php" class="form-container">
@@ -85,59 +85,34 @@
                             </form>
                         </div>
 
-                        <li><a href="#xcart" class="dis fa fa-bell" onclick="toggle_visibility('myNotification');"><span
-                                    class="header-icons-noti-noti">1</span></a>
-                        </li>
-                        <!-- /.navbar-collapse -->
-
-                        <div class="notification-popup" id="myNotification">
-                            <div class="form-container">
-                                <div class="w-300 text-center">
-                                    <span class="fa fa-bell fa-5x"></span><br>
-                                    <span>No notification</span>
-                                </div>
-
-                            </div>
-                        </div>
 
 
-                        <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Hi,
-                                <b>
-                                    <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></b>
-                                <i class="fa fa-caret-down"></i></a></li>
+                        <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');">
+                                Login</a></li>
+                        <!-- <Form housing login and signup dropdown> -->
                         <div class=" form-popup" id="myForm">
+                            <!-- <login Dropdown> -->
                             <div id="defaultOpen1" class="">
-                                <div class="form-container border">
-                                    <div>
-                                        <a href="account">
-                                            <p class="header-dropdown"><i class="fa fa-user"></i> My Profile</p>
-                                        </a>
-                                        <a href="orders">
-                                            <p class="header-dropdown"><i class="fa fa-shopping-bag"></i> My Orders</p>
-                                        </a>
-                                        <a href="wishlist">
-                                            <p class="header-dropdown"><i class="fa fa-heart"></i> My Wishlist</p>
-                                        </a>
-                                        <a href="#xwallet">
-                                            <p class="header-dropdown"><i class="fa fa-credit-card"></i> My Wallet</p>
-                                        </a>
-                                        <a href="#x">
-                                            <p class="header-dropdown"><i class="fa fa-map-marker"></i> Track My Order
-                                            </p>
-                                        </a>
-                                        <p class=header-dropdown><i class="fa fa-moon-o"></i>
-                                            Night Mode <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider round"></span>
-                                            </label>
-                                        </p>
-
-                                        <a href="#xlogout">
-                                            <p class="header-dropdown logout"><i class="fa fa-sign-out"></i> Logout</p>
-                                        </a>
+                                <form action="/exchange/process_login" method="post" class="form-container">
+                                    <h1 style="font-size: 14px; text-align: center">Login</h1>
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                    <div style="padding-bottom:20px; margin-top: -20px; font-size: 12px;  ">
+                                        <input type="checkbox" name="psw" style="float: left;">
+                                        <label for="checkbox"><b style="float: left;">Remember me
+                                            </b></label>
+                                        <a class="brown" href="#xforgot" style="float: right"
+                                            onclick="toggle_visibility('myReset');toggle_visibility('myForm');">Forgot
+                                            Password?</a>
                                     </div>
-
-                                </div>
+                                    <button type="submit" class="btn">Login</button>
+                                    <div class="text-center">
+                                        <p>Need an account? <a href="#x" class="brown" data-toggle="modal"
+                                                data-target="#myModal">Sign up here</a></p>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="modal fade" id="myModal" role="dialog">
@@ -187,8 +162,8 @@
                                             <p class="">
                                                 <input type="checkbox" placeholder="Confirm Password" name="psw"
                                                     required>
-                                                I have read and accepted the <a class="brown" href="#xterms">terms and
-                                                    conditions</a>
+                                                I have read and accepted the <a class="brown" href="#xterms">terms
+                                                    and conditions</a>
                                             </p>
                                             <button type="submit" class="btn">Sign Up</button>
                                         </form>
@@ -212,4 +187,69 @@
                 </div>
             </div>
         </nav>
-</header>
+        <!-- <Carousel> -->
+        <div class="">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/assets/img/hero1.jpg" alt="Los Angeles" style="width:100%; ">
+                        <div class="centered1">BATTLEFIELD
+                            <h6>Bring the battle home in this intriguing first person shooter game
+                                <a class="bold"">Buy Now - ₦15,499</a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="
+                                    item">
+                                    <img src="/assets/img/hero2.jpg" alt="Chicago" style="width:100%;">
+                                    <div class="centered1">FIFA 19<h6>The all new Fifa 19 just an order away<br><a
+                                                class="bold"">Buy Now - ₦21,999</a></h6>
+                                            
+                                        </div>
+
+                            </div>
+                            <div class="
+                                                item">
+                                                <img src="/assets/img/hero3.jpg" alt="New york" style="width:100%;">
+                                                <div class="centered1">NEED FOR SPEED<h6>Race through the streets
+                                                        with
+                                                        your only speed
+                                                        limit being your speedometer<a
+                                                            class="bold"">Buy Now - ₦19,499</a>
+                                                        </h6>
+                                                    </div>
+                                        </div>
+                                        <div class="
+                                                            item">
+                                                            <img src="/assets/img/hero4.jpg" alt="Chicago"
+                                                                style="width:100%;">
+                                                            <div class="centered1">ASSASSINS CREED: ODYSSEY MEDUSA
+                                                                <h6>The Medusa fight is the hardest battle in all of
+                                                                    Assassin's Creed Odyssey. Are you capable?<br><a
+                                                                        class="bold"">Buy Now - ₦20,999</a></h6>
+                                                                </div>
+                                                    </div>
+                                                    <div class="
+                                                                        item">
+                                                                        <img src="/assets/img/hero5.jpg" alt="New york"
+                                                                            style="width:100%;">
+                                                                        <div class="centered1">MORTAL KOMBAT 11<h6>
+                                                                                Take down your opponent with swift
+                                                                                combo moves
+                                                                                <a class="bold"">Pre-Order Now - ₦16,999</a></h6>
+                                                                            </div>
+                                                                </div>
+                                                    </div>
+                                        </div>
+                            </div>
+                        </div>
+    </header>

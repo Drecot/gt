@@ -1772,7 +1772,7 @@ a.brown {
 	font-size: 12px;
 	position: absolute;
 	top: 23px;
-	right: 100px;
+	right: 0;
 }
 
 .header-icons-noti-top-aft {
@@ -1792,7 +1792,7 @@ a.brown {
 	font-size: 12px;
 	position: absolute;
 	top: 23px;
-	right: 180px;
+	right: 0;
 }
 
 .header-icons-noti-noti {
@@ -1805,6 +1805,7 @@ a.brown {
 	align-items: center;
 	width: 16px;
 	height: 16px;
+	padding: 0 5px;
 	border-radius: 50%;
 	background-color: #111111;
 	color: white;
@@ -1812,11 +1813,25 @@ a.brown {
 	font-size: 12px;
 	position: absolute;
 	top: 23px;
-	right: 137px;
+	right: 6px;
 }
 
 
+[data-notifications] {
+	position: relative;
+}
 
+[data-notifications]:after {
+	content: attr(data-notifications);
+	position: absolute;
+	background: red;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 0.3em;
+	color: #f2f2f2;
+	right: -15px;
+	top: -15px;
+}
 
 footer .second h4 {
 	font-size: 17px;
