@@ -204,8 +204,9 @@
                                                 <p class=" notice">₦25,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -223,8 +224,9 @@
                                                 <p class=" notice">₦22,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -363,8 +365,9 @@
                                                 <p class=" notice">₦4,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -382,8 +385,9 @@
                                                 <p class=" notice">₦3,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -521,8 +525,9 @@
                                                 <p class=" notice">₦21,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -540,8 +545,9 @@
                                                 <p class=" notice">₦16,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -679,8 +685,9 @@
                                                 <p class=" notice">₦17,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -698,8 +705,9 @@
                                                 <p class=" notice">₦12,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -837,8 +845,9 @@
                                                 <p class=" notice">₦18,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -856,8 +865,9 @@
                                                 <p class=" notice">₦12,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i class=""></i></button>
-                                            </div>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
+                                                        </div>
                                         </div>
                                     </div>
                                 </div>

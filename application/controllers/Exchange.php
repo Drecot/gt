@@ -101,6 +101,11 @@ class Exchange extends CI_Controller {
 		$this->load->view('coupons');
 	}
 
+	public function inventory()
+	{
+		$this->load->view('inventory');
+	}
+
 	public function cart()
 	{
 		$this->load->view('cart');

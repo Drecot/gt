@@ -131,46 +131,7 @@
     <script src="/assets/js/carousel.js"></script>
     <script src="/assets/js/preloader.js"></script>
     <script src="/assets/js/jquery.easing.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        if ($("#execute").attr('disabled') == "disabled") {
-            $("#execute").css('background-color', '#8c8b8b');
-        }
-        $('input').keyup(function() {
-            if ($("#execute").attr('disabled') == "disabled") {
-                $("#execute").css('background-color', '#8c8b8b');
-            } else {
-                $("#execute").css('background-color', 'black');
-            }
-            if ($.trim($("#firstname").val()) && $.trim($("#lastname").val()) && $.trim($("#email")
-                    .val()) && $.trim($(
-                    "#number").val()) && ($('#password').val() == $('#cpassword').val())) {
-                $("#execute").removeAttr('disabled')
-                $("#execute").css('background-color', 'black');
-                console.log("clean")
-            } else {
-                $("#execute").attr('disabled', 'disabled');
-                $("#execute").css('background-color', '#8c8b8b');
-            }
-        })
 
-        $('.pass').keyup(function() {
-            if ($('#password').val() != $('#cpassword').val()) {
-                $('#no_match').css("display", "block");
-            } else {
-                $('#no_match').css("display", "none");
-            }
-        })
-        $("body").mouseup(function(e) {
-            var subject = $("#myReset");
-
-            if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-                subject.fadeOut();
-            }
-
-        });
-    });
-    </script>
 </body>
 
 </html>

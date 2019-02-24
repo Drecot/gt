@@ -109,18 +109,7 @@
     <script src="/assets/js/carousel.js"></script>
     <script src="/assets/js/preloader.js"></script>
     <script src="/assets/js/jquery.easing.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $("body").mouseup(function(e) {
-            var subject = $("#myReset");
 
-            if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-                subject.fadeOut();
-            }
-
-        });
-    });
-    </script>
 </body>
 
 </html>

@@ -39,6 +39,21 @@
 
     <!-- <main body of the site> -->
     <main class="site-main">
+        <section class="hero_area2">
+            <div class="middle2 text-center" style=" padding: 10px;">
+                <div class="">
+                    <h1 style="    margin-bottom: 1.5rem;"> All Products</h1>
+                </div>
+                <div>
+                    <ul class="breadcrumb">
+                        <li><a href="index">Home</a></li>
+                        <li>Products</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
         <section style=" background: #fbfbfb;">
             <!-- Console Navigation -->
             <div class="category " id="title">
@@ -939,6 +954,80 @@
 <script src="/assets/js/carousel.js"></script>
 <script src="/assets/js/preloader.js"></script>
 <script src="/assets/js/jquery.easing.min.js"></script>
+
+
+<!--Wishlist Modal -->
+<div class="modal fade" id="wishlistModal" role="dialog">
+    <div class="modal-dialog modal-sm modal-wishlist">
+        <div class="modal-content">
+            <div class="wishlist-icon wishlist-icon--success">
+                <span class="wishlist-icon--success__line wishlist-icon--success__line--long"></span>
+                <span class="wishlist-icon--success__line wishlist-icon--success__line--tip"></span>
+
+                <div class="wishlist-icon--success__ring"></div>
+                <div class="wishlist-icon--success__hide-corners"></div>
+            </div>
+
+            <div class="wishlist-title" style="">
+
+                <span id="myText"></span>
+            </div>
+
+            <div class="wishlist-text text-center" style="">is added to wishlist !</div>
+
+            <div class="wishlist-footer">
+                <div class="wishlist-button-container">
+
+                    <button class="wishlist-button wishlist-button--confirm " data-dismiss="modal">OK</button>
+
+                    <div class="wishlist-button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" role="dialog">
+    <div class="modal-dialog modal-sm modal-cart">
+        <div class="modal-content">
+            <div class="cart-icon cart-icon--success">
+                <span class="cart-icon--success__line cart-icon--success__line--long"></span>
+                <span class="cart-icon--success__line cart-icon--success__line--tip"></span>
+
+                <div class="cart-icon--success__ring"></div>
+                <div class="cart-icon--success__hide-corners"></div>
+            </div>
+
+            <div class="cart-title" style="">
+
+                <span id="myText"></span>
+            </div>
+
+            <div class="cart-text text-center" style="">is added to cart !</div>
+
+            <div class="cart-footer">
+                <div class="cart-button-container">
+
+                    <button class="cart-button cart-button--confirm " data-dismiss="modal">OK</button>
+
+                    <div class="cart-button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>

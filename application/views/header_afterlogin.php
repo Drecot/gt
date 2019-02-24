@@ -119,7 +119,7 @@
                                     <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></b>
                                 <i class="fa fa-caret-down"></i></a>
                         </li>
-                        <div class=" form-popup" id="myForm">
+                        <div class="form-popup" id="myForm">
                             <div id="defaultOpen1" class="">
                                 <div class="form-container border">
                                     <div>

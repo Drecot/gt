@@ -162,61 +162,6 @@
     <script src="/assets/js/preloader.js"></script>
     <script src="/assets/js/jquery.easing.min.js"></script>
 
-    <script>
-    $(document).ready(function() {
-        $("body").mouseup(function(e) {
-            var subject = $("#myForm");
-
-            if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-                subject.fadeOut();
-            }
-
-        });
-    });
-    </script>
-
-    <script>
-    $(document).ready(function() {
-        $("body").mouseup(function(e) {
-            var subject = $("#myCart");
-
-            if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-                subject.fadeOut();
-            }
-
-        });
-    });
-    </script>
-
-
-
-    <script>
-    $(document).ready(function() {
-        $("body").mouseup(function(e) {
-            var subject = $("#myWishlist");
-
-            if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-                subject.fadeOut();
-            }
-
-        });
-    });
-    </script>
-
-
-    <script>
-    $(document).ready(function() {
-        $("body").mouseup(function(e) {
-            var subject = $("#myReset");
-
-            if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-                subject.fadeOut();
-            }
-
-        });
-    });
-    </script>
-
 </body>
 
 </html>

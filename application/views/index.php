@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +19,17 @@
     <link href="/assets/css/animate.css" rel="stylesheet">
     <link href="/assets/css/w3.css" rel="stylesheet">
     <link href="/assets/css/hover-min.css" rel="stylesheet">
+    <script type="text/javascript">
+    function myFunction() {
+        var nameProduct = $('.game-name').find('.block2-name').html();
+        document.getElementById("wishlistText").innerHTML = nameProduct;
+        var nameProduct = $('.game-name').find('.block2-name').html();
+        document.getElementById("cartText").innerHTML = nameProduct;
+    }
+    </script>
 </head>
 
-<body>
+<body onload="myFunction()">
     <!-- <preloader> -->
     <div id="preloader">
         <div class="spinner spinner-round"></div>
@@ -37,7 +44,6 @@
     <?php include 'header_afterlogin_home.php';?>
 
     <?php } ?>
-
 
     <!-- <main body of the site> -->
     <main class="site-main">
@@ -58,22 +64,22 @@
         <section>
             <div class="col-md-12 test-outer">
                 <div class="col-md-4 test-box pointer">
-                    <img src=/assets/img/ps3.jpg />
+                    <a href="products"><img src=/assets/img/ps3.jpg /></a>
                 </div>
                 <div class="col-md-4 test-box pointer">
-                    <img src=/assets/img/ps4.jpg />
+                    <a href="products"><img src=/assets/img/ps4.jpg /></a>
                 </div>
                 <div class="col-md-4 test-box pointer">
-                    <img src=/assets/img/xboxone.jpg />
+                    <a href="products"><img src=/assets/img/xboxone.jpg /></a>
                 </div>
                 <div class="col-md-4 test-box pointer">
-                    <img src=/assets/img/xbox360.jpg />
+                    <a href="products"><img src=/assets/img/xbox360.jpg /></a>
                 </div>
                 <div class="col-md-4 test-box pointer">
-                    <img src=/assets/img/switch.jpg />
+                    <a href="products"><img src=/assets/img/switch.jpg /></a>
                 </div>
                 <div class="col-md-4 test-box pointer">
-                    <img src=/assets/img/wii.jpg />
+                    <a href="products"><img src=/assets/img/wii.jpg /></a>
                 </div>
             </div>
         </section>
@@ -109,8 +115,6 @@
             <div class="col-md-12 test-outer">
                 <div class="p-relative pointer text-center">
                     <img src="/assets/img/deals.jpg" alt="Los Angeles" width="100%" height="100%" />
-
-
                     <div class="centered">
                         <h1>DEALS
                         </h1>
@@ -152,8 +156,9 @@
                                                             height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-                                                        <p>NBA
+                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>
+                                                        <p class="block2-name">NBA
                                                             2K19
                                                         </p>
                                                     </div>
@@ -164,7 +169,8 @@
                                                             </p>
                                                         </div>
                                                         <div class="add" style=" float: left">
-                                                            <button class="game-button btn"><i></i></button>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -177,8 +183,9 @@
                                                             alt="Need For Speed" width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-                                                        <p>NEED
+                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>
+                                                        <p class="block2-name">NEED
                                                             FOR
                                                             SPEED:
                                                             PAYBACK
@@ -191,7 +198,8 @@
                                                             </p>
                                                         </div>
                                                         <div class="add" style=" float: left">
-                                                            <button class="game-button btn"><i class=""></i></button>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -204,7 +212,8 @@
                                                             width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>DAYS
                                                             GONE
                                                         </p>
@@ -230,7 +239,8 @@
                                                             alt="Transformers" width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>TRANSFORMERS:
                                                             REVENGE
                                                             OF
@@ -245,7 +255,8 @@
                                                             </p>
                                                         </div>
                                                         <div class="add" style=" float: left">
-                                                            <button class="game-button btn"><i></i></button>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -259,7 +270,8 @@
                                                             height="100%">
                                                     </div>
                                                     <div class="game-name ">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>BEYOND
                                                             TWO
                                                             SOULS
@@ -273,7 +285,8 @@
                                                             </p>
                                                         </div>
                                                         <div class="add" style=" float: left">
-                                                            <button class="game-button btn"><i class=""></i></button>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -286,7 +299,8 @@
                                                             alt="Mario Tennis" width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
+                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>MARIO
                                                             TENNIS
                                                         </p>
@@ -300,7 +314,8 @@
 
                                                         </div>
                                                         <div class="add" style=" float: left">
-                                                            <button class="game-button btn"><i class=""></i></button>
+                                                            <button class="game-button btn" data-toggle="modal"
+                                                                data-target="#cartModal"><i class=""></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -321,23 +336,94 @@
     <!-- <site footer> -->
     <?php include 'footer.php';?>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/assets/js/animated-search-filter.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+    <script src="/assets/js/preloader.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+    $('.pointer').on('click', function(e) {
+        e.preventDefault();
+        $(this).addClass('fa-heart');
+        $(this).removeClass('fa-heart-o');
+        $(this).off('click');
+    });
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-    <script src="/assets/js/animated-search-filter.js">
-    </script>
-    <script type="text/javascript" src="/assets/js/custom.js">
-    </script>
-    <script src="/assets/js/carousel.js">
-    </script>
-    <script src="/assets/js/preloader.js">
-    </script>
-    <script src="/assets/js/jquery.easing.min.js">
-    </script>
-    <script>
 
-    </script>
+
+    <!--Wishlist Modal -->
+    <div class="modal fade" id="wishlistModal" role="dialog">
+        <div class="modal-dialog modal-sm modal-wishlist">
+            <div class="modal-content">
+                <div class="wishlist-icon wishlist-icon--success">
+                    <span class="wishlist-icon--success__line wishlist-icon--success__line--long"></span>
+                    <span class="wishlist-icon--success__line wishlist-icon--success__line--tip"></span>
+
+                    <div class="wishlist-icon--success__ring"></div>
+                    <div class="wishlist-icon--success__hide-corners"></div>
+                </div>
+
+                <div class="wishlist-title" style="">
+
+                    <span id="wishlistText"></span>
+                </div>
+
+                <div class="wishlist-text text-center" style="">is added to wishlist !</div>
+
+                <div class="wishlist-footer">
+                    <div class="wishlist-button-container">
+
+                        <button class="wishlist-button wishlist-button--confirm " data-dismiss="modal">OK</button>
+
+                        <div class="wishlist-button__loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" role="dialog">
+        <div class="modal-dialog modal-sm modal-cart">
+            <div class="modal-content">
+                <div class="cart-icon cart-icon--success">
+                    <span class="cart-icon--success__line cart-icon--success__line--long"></span>
+                    <span class="cart-icon--success__line cart-icon--success__line--tip"></span>
+
+                    <div class="cart-icon--success__ring"></div>
+                    <div class="cart-icon--success__hide-corners"></div>
+                </div>
+
+                <div class="cart-title" style="">
+
+                    <span id="cartText"></span>
+                </div>
+
+                <div class="cart-text text-center" style="">is added to cart !</div>
+
+                <div class="cart-footer">
+                    <div class="cart-button-container">
+
+                        <button class="cart-button cart-button--confirm " data-dismiss="modal">OK</button>
+
+                        <div class="cart-button__loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

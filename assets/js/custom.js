@@ -1,12 +1,149 @@
-$(document).ready()
+$(document).ready(function () {
+	$("body").mouseup(function (e) {
+		var subject = $("#myNotification");
 
-$('.dis')
-	.on('click',
-		function () {
-			$('.header-icons-noti-noti')
-				.hide()
+		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
+			subject.fadeOut();
 		}
-	)
+
+	});
+});
+
+$(document).ready(function () {
+	$('.dis').on('click', function () {
+		$('.header-icons-noti-noti')
+			.hide()
+	});
+
+	$("body").mouseup(function (e) {
+		var subject = $("#myForm");
+
+		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
+			subject.fadeOut();
+		}
+
+	});
+
+	$("body").mouseup(function (e) {
+		var subject = $("#myCart");
+
+		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
+			subject.fadeOut();
+		}
+
+	});
+
+	$("body").mouseup(function (e) {
+		var subject = $("#myReset");
+
+		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
+			subject.fadeOut();
+		}
+
+	});
+
+	$("body").mouseup(function (e) {
+		var subject = $("#myWishlist");
+
+		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
+			subject.fadeOut();
+		}
+
+	});
+
+	var quantity = 0;
+	$('.btn-num-product-up').click(function (e) {
+
+		// Stop acting like a button
+		e.preventDefault();
+		// Get the field name
+		var quantity = parseInt($('#quantity').val());
+
+		// If is not undefined
+
+		$('#quantity').val(quantity + 1);
+
+
+		// Increment
+
+	});
+
+	$('.btn-num-product-down').click(function (e) {
+		// Stop acting like a button
+		e.preventDefault();
+		// Get the field name
+		var quantity = parseInt($('#quantity').val());
+
+		// If is not undefined
+
+		// Increment
+		if (quantity > 1) {
+			$('#quantity').val(quantity - 1);
+		}
+	});
+
+	var quantity = 0;
+	$('.btn-num-product-up2').click(function (e) {
+
+		// Stop acting like a button
+		e.preventDefault();
+		// Get the field name
+		var quantity2 = parseInt($('#quantity2').val());
+
+		// If is not undefined
+
+		$('#quantity2').val(quantity2 + 1);
+
+
+		// Increment
+
+	});
+
+	$('.btn-num-product-down2').click(function (e) {
+		// Stop acting like a button
+		e.preventDefault();
+		// Get the field name
+		var quantity2 = parseInt($('#quantity2').val());
+
+		// If is not undefined
+
+		// Increment
+		if (quantity2 > 1) {
+			$('#quantity2').val(quantity2 - 1);
+		}
+	});
+
+	if ($("#execute").attr('disabled') == "disabled") {
+		$("#execute").css('background-color', '#8c8b8b');
+	}
+	$('input').keyup(function() {
+		if ($("#execute").attr('disabled') == "disabled") {
+			$("#execute").css('background-color', '#8c8b8b');
+		} else {
+			$("#execute").css('background-color', 'black');
+		}
+		if ($.trim($("#firstname").val()) && $.trim($("#lastname").val()) && $.trim($("#email")
+				.val()) && $.trim($(
+				"#number").val()) && ($('#password').val() == $('#cpassword').val())) {
+			$("#execute").removeAttr('disabled')
+			$("#execute").css('background-color', 'black');
+			console.log("clean")
+		} else {
+			$("#execute").attr('disabled', 'disabled');
+			$("#execute").css('background-color', '#8c8b8b');
+		}
+	});
+
+	$('.pass').keyup(function() {
+		if ($('#password').val() != $('#cpassword').val()) {
+			$('#no_match').css("display", "block");
+		} else {
+			$('#no_match').css("display", "none");
+		}
+	});
+});
+
+
 
 function openA(evt, formName) {
 	// Declare all variables
@@ -81,53 +218,7 @@ function toggle_visibility(id) {
 
 
 
-$(document).ready(function () {
-	$("body").mouseup(function (e) {
-		var subject = $("#myForm");
 
-		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-			subject.fadeOut();
-		}
-
-	});
-});
-
-
-
-$(document).ready(function () {
-	$("body").mouseup(function (e) {
-		var subject = $("#myCart");
-
-		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-			subject.fadeOut();
-		}
-
-	});
-});
-
-
-$(document).ready(function () {
-	$("body").mouseup(function (e) {
-		var subject = $("#myWishlist");
-
-		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-			subject.fadeOut();
-		}
-
-	});
-});
-
-
-$(document).ready(function () {
-	$("body").mouseup(function (e) {
-		var subject = $("#myReset");
-
-		if (e.target.id !== subject.attr('id') && !subject.has(e.target).length) {
-			subject.fadeOut();
-		}
-
-	});
-});
 
 function openSearch() {
 	document.getElementById("mySearch").style.display = "block";
