@@ -11,69 +11,28 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index" class="navbar-brand brand-logo" style="height:70px; width:252px;">
-                            <img style="width:100%; height:100%;" src="/assets/img/logo.png"
-                                srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post" width="100%"
-                                height="100%">
+                        <a href="index" class="navbar-brand brand-logo">
+                            <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"
+                                alt="Post" width="100%" height="100%">
                         </a>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-navbar-collapse1" style="float: left">
-                    <ul class="nav navbar-nav main-navbar-nav">
-                        <li><a href="#xwhishlist" class="fa fa-heart-o" onclick="toggle_visibility('myWishlist');">
-                                Wishlist</a></li>
-                        <div class="wishlist-popup" id="myWishlist">
-                            <form action="/action_page.php" class="wishlist-container">
-                                <ul class="header-cart-wrapitem">
-                                    <li class="header-cart-item">
-                                        <div class="header-cart-item-img">
-                                            <img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-                                        </div>
-                                        <div class="header-cart-item-txt">
-                                            <a href="#" class="header-cart-item-name">
-                                                Grand Theft Auto V
-                                            </a>
-                                            <span class="header-cart-item-info">
-                                                ₦5,600.00
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <hr>
-                                    <li class="header-cart-item">
-                                        <div class="header-cart-item-img">
-                                            <img src="/assets/img/wishlist/item-01.jpg" alt="IMG">
-                                        </div>
-                                        <div class="header-cart-item-txt">
-                                            <a href="#" class="header-cart-item-name">
-                                                The Last of Us
-                                            </a>
-                                            <span class="header-cart-item-info">
-                                                ₦5,600.00
-                                            </span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                        <li><a href="#xsearch" class="fa fa-search" onclick="toggle_visibility('mySearch');">
-                                Search</a></li>
-                        <div class="search-popup" id="mySearch">
-                            <form action="/action_page.php" class="search-container">
-                                <input type="search" placeholder="Search..." name="search">
-                                <div class="close-icon fa fa-times-thin" onclick="toggle_visibility('mySearch');">
-                                </div>
-                            </form>
-                        </div>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-                <a href="index" class="topnav-centered navbar-brand ">
+                <a href="index" class=" navbar-brand ">
                     <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
                 </a>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <!-- the search container -->
+                <div class="search-container col-md-6">
+                    <form class="search" action="/action_page.php">
+                        <input class="" type="text" placeholder="SEARCH ANY GAME..." name="search">
+                        <button type="submit" class="bold"><i class=""></i>SEARCH</button>
+                    </form>
+                </div>
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
                     <ul class="nav navbar-nav main-navbar-nav">
-                        <li><a href="#xcart" class=" fa fa-cart-plus" onclick="toggle_visibility('myCart');">
+
+                        <li><a href="#xcart" class="fa fa-cart-plus" onclick="toggle_visibility('myCart');">
                                 Cart<span class="header-icons-noti-top-aft">2</span></a></li>
 
                         <div class="form-popup" id="myCart">
@@ -113,24 +72,24 @@
                                 <div class="header-cart-buttons">
                                     <div class="header-cart-wrapbtn">
                                         <!-- Button -->
-                                        <a href="#xcart.html"
-                                            class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                        <a href="cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
                                             View Cart
                                         </a>
                                     </div>
                                     <div class="header-cart-wrapbtn">
                                         <!-- Button -->
-                                        <a href="#xcheckout"
-                                            class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                            CheckOut
+                                        <a href="checkout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                            Checkout
                                         </a>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <!-- <account Dropdown> -->
-                        <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');"> Login</a>
-                        </li>
+
+
+
+                        <li><a href="#xaccount" class=" fa fa-user-o" onclick="toggle_visibility('myForm');">
+                                Login</a></li>
                         <!-- <Form housing login and signup dropdown> -->
                         <div class=" form-popup" id="myForm">
                             <!-- <login Dropdown> -->
@@ -157,10 +116,8 @@
                                 </form>
                             </div>
                         </div>
-                        <!-- Modal -->
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog">
-                                <!-- Modal content-->
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -215,7 +172,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <password Dropdown> -->
                         <div class="form-popup" id="myReset">
                             <form action="/action_page.php" class="form-container">
                                 <h1 style="font-size: 14px; text-align: center">Reset Password</h1>
@@ -227,9 +183,9 @@
                                         onclick="toggle_visibility('myReset');toggle_visibility('myForm');">Login</a>
                                 </div>
                             </form>
+                            </form>
                         </div>
-                        <!-- /.navbar-collapse -->
-                        <!-- END MAIN NAVIGATION -->
                 </div>
+            </div>
         </nav>
 </header>
