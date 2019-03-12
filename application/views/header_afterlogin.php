@@ -172,7 +172,7 @@
                                             </label>
                                         </p>
 
-                                        <a href="#xlogout">
+                                        <a href="/exchange/logout">
                                             <p class="header-dropdown logout">
                                                 <i class="fa fa-sign-out"></i>
                                                 Logout
