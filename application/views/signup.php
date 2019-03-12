@@ -111,12 +111,9 @@
                         </p>
                     </div>
                     <button disabled="true" id="execute" type="submit" class="btn">Sign Up</button>
-                    <!-- <<<<<<< HEAD -->
-                    <!-- ======= -->
                     <div class="text-center">
                         <p>Have an account? <a href="login" class="brown">Login here</a></p>
                     </div>
-                    <!-- >>>>>>> 24eb2c8bf7d5f410d10bb3077b678fbc477dd7de -->
                 </form>
             </div>
         </section>
@@ -130,7 +127,24 @@
     <script src="/assets/js/custom.js"></script>
     <script src="/assets/js/carousel.js"></script>
     <script src="/assets/js/preloader.js"></script>
-    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script> 
+    <script type="text/javascript">
+        $('input').keyup(function () {
+            if ($('#password').val() == $('#cpassword').val())
+            {
+                $('#execute').css('color', 'red');
+                $('#execute').removeAttr('disabled');
+                $('#no_match').css('display', 'none');
+            }
+            else
+            {
+                $('#execute').css('color', 'white');
+                $('#execute').attr('disabled', 'true');
+                $('#no_match').css('display', 'block');
+            }
+        })
+        
+    </script> 
 
 </body>
 
