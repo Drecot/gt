@@ -16,7 +16,10 @@
                         </a>
                     </div>
                 </div>
-                <a href="index" class=" navbar-brand ">
+                <a href="index" class=" navbar-brand " style="
+    width: 250px;
+    margin-top: 30px;
+">
                     <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
                 </a>
 
@@ -208,8 +211,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="
-                                    item">
+                        <div class=" item">
                                     <img src="/assets/img/hero2.jpg" alt="Chicago" style="width:100%;">
                                     <div class="centered1">FIFA 19<h6>The all new Fifa 19 just an order away<br><a
                                                 class="bold"">Buy Now - ₦21,999</a></h6>
@@ -217,19 +219,16 @@
                                         </div>
 
                             </div>
-                            <div class="
-                                                item">
+                            <div class=" item">
                                                 <img src="/assets/img/hero3.jpg" alt="New york" style="width:100%;">
                                                 <div class="centered1">NEED FOR SPEED<h6>Race through the streets
                                                         with
                                                         your only speed
-                                                        limit being your speedometer<a
-                                                            class="bold"">Buy Now - ₦19,499</a>
+                                                        limit being your speedometer<a class="bold"">Buy Now - ₦19,499</a>
                                                         </h6>
                                                     </div>
                                         </div>
-                                        <div class="
-                                                            item">
+                                        <div class=" item">
                                                             <img src="/assets/img/hero4.jpg" alt="Chicago"
                                                                 style="width:100%;">
                                                             <div class="centered1">ASSASSINS CREED: ODYSSEY MEDUSA
@@ -238,8 +237,7 @@
                                                                         class="bold"">Buy Now - ₦20,999</a></h6>
                                                                 </div>
                                                     </div>
-                                                    <div class="
-                                                                        item">
+                                                    <div class=" item">
                                                                         <img src="/assets/img/hero5.jpg" alt="New york"
                                                                             style="width:100%;">
                                                                         <div class="centered1">MORTAL KOMBAT 11<h6>

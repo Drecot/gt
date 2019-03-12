@@ -17,7 +17,10 @@
                         </a>
                     </div>
                 </div>
-                <a href="index" class=" navbar-brand ">
+                <a href="index" class=" navbar-brand " style="
+    width: 250px;
+    margin-top: 30px;
+">
                     <img src="/assets/img/logo.png" srcset="/assets/img/logo2.png 2x, img/logo3.png 3x" alt="Post">
                 </a>
 
