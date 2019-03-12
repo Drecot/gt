@@ -1,4 +1,11 @@
+
+
 $(document).ready(function () {
+	$('.dis').on('click', function () {
+		$('.header-icons-noti-noti')
+			.hide()
+	});
+
 	$("body").mouseup(function (e) {
 		var subject = $("#myNotification");
 
@@ -6,13 +13,6 @@ $(document).ready(function () {
 			subject.fadeOut();
 		}
 
-	});
-});
-
-$(document).ready(function () {
-	$('.dis').on('click', function () {
-		$('.header-icons-noti-noti')
-			.hide()
 	});
 
 	$("body").mouseup(function (e) {
@@ -50,6 +50,8 @@ $(document).ready(function () {
 		}
 
 	});
+
+	
 
 	var quantity = 0;
 	$('.btn-num-product-up').click(function (e) {
@@ -116,7 +118,7 @@ $(document).ready(function () {
 	if ($("#execute").attr('disabled') == "disabled") {
 		$("#execute").css('background-color', '#8c8b8b');
 	}
-	$('input').keyup(function() {
+	$('input').keyup(function () {
 		if ($("#execute").attr('disabled') == "disabled") {
 			$("#execute").css('background-color', '#8c8b8b');
 		} else {
@@ -134,7 +136,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.pass').keyup(function() {
+	$('.pass').keyup(function () {
 		if ($('#password').val() != $('#cpassword').val()) {
 			$('#no_match').css("display", "block");
 		} else {
@@ -365,3 +367,4 @@ for (var i = 0; i < btns.length; i++) {
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
+

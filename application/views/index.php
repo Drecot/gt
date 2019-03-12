@@ -19,17 +19,10 @@
     <link href="/assets/css/animate.css" rel="stylesheet">
     <link href="/assets/css/w3.css" rel="stylesheet">
     <link href="/assets/css/hover-min.css" rel="stylesheet">
-    <script type="text/javascript">
-    function myFunction() {
-        var nameProduct = $('.game-name').find('.block2-name').html();
-        document.getElementById("wishlistText").innerHTML = nameProduct;
-        var nameProduct = $('.game-name').find('.block2-name').html();
-        document.getElementById("cartText").innerHTML = nameProduct;
-    }
-    </script>
+
 </head>
 
-<body onload="myFunction()">
+<body class="theme light" onload=" myFunction()">
     <!-- <preloader> -->
     <div id="preloader">
         <div class="spinner spinner-round"></div>
@@ -156,7 +149,7 @@
                                                             height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
                                                             data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p class="block2-name">NBA
                                                             2K19
@@ -183,7 +176,7 @@
                                                             alt="Need For Speed" width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
                                                             data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p class="block2-name">NEED
                                                             FOR
@@ -212,7 +205,7 @@
                                                             width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
                                                             data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>DAYS
                                                             GONE
@@ -239,7 +232,7 @@
                                                             alt="Transformers" width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
                                                             data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>TRANSFORMERS:
                                                             REVENGE
@@ -270,7 +263,7 @@
                                                             height="100%">
                                                     </div>
                                                     <div class="game-name ">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
                                                             data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>BEYOND
                                                             TWO
@@ -299,7 +292,7 @@
                                                             alt="Mario Tennis" width="100%" height="100%">
                                                     </div>
                                                     <div class="game-name">
-                                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"
+                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
                                                             data-toggle="modal" data-target="#wishlistModal"></i>
                                                         <p>MARIO
                                                             TENNIS
@@ -344,12 +337,30 @@
     <script src="/assets/js/preloader.js"></script>
     <script src="/assets/js/jquery.easing.min.js"></script>
     <script type="text/javascript">
-    $('.pointer').on('click', function(e) {
+    $('.wishlistpointer').on('click', function(e) {
         e.preventDefault();
         $(this).addClass('fa-heart');
         $(this).removeClass('fa-heart-o');
         $(this).off('click');
     });
+    </script>
+    <script type="text/javascript">
+    function myFunction() {
+        var nameProduct = $('.game-name').find('.block2-name').html();
+        document.getElementById("wishlistText").innerHTML = nameProduct;
+        var nameProduct = $('.game-name').find('.block2-name').html();
+        document.getElementById("cartText").innerHTML = nameProduct;
+    }
+    </script>
+    <script type="text/javascript">
+    function tFunction() {
+        $('.theme').on('click', function(e) {
+            e.preventDefault();
+            $(this).addClass('dark');
+            $(this).removeClass('light');
+            $(this).off('click');
+        });
+    }
     </script>
 
 

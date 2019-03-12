@@ -111,6 +111,11 @@ class Exchange extends CI_Controller {
 		$this->load->view('cart');
 	}
 
+	public function captcha()
+	{
+		$this->load->view('captcha');
+	}
+
 	public function checkout()
 	{
 		$this->load->view('checkout');
