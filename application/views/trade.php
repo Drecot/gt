@@ -12,7 +12,7 @@
     <title>GameTrade.ng | Trade you game</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/infinite-slider.css" rel="stylesheet">
@@ -77,62 +77,35 @@
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
-                                <div class="item active">
 
-                                    <div class=" " style="margin: auto; float: none;">
-                                        <div class="game-box1">
-                                            <div class="game-picture1">
-                                                <img src="/assets/img/xbox1/fifa17.jpg" alt="Fifa 17" width="100%"
-                                                    height="100%">
-                                            </div>
-                                            <div class="game-name1">
-                                                <p>FIFA 17</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-
-
-                                </div>
-
-                                <div class="item">
-
-                                    <div class=" " style="margin: auto; float: none;">
-                                        <div class="  game-box1">
-                                            <div class="game-picture1">
-                                                <img src="/assets/img/xbox1/cod-legacy.jpg" alt="Cod-Legacy"
-                                                    width="100%" height="100%">
-                                            </div>
-                                            <div class="game-name1">
-                                                <p>CALL OF DUTY: LEGACY EDITION</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                <?php
+                                $i = 1;
+                                foreach ($record as $result)
+                                {
+                                    if( $result->category_id == 3){
+                                        if( $i == 1){
+                                            echo '<div class="item active">';
+                                        }else{
+                                             echo '<div class="item">';
+                                        }                                                              
+                                        echo '<div class=" " style="margin: auto; float: none;">';
+                                            echo '<div class="game-box1">';
+                                                echo '<div class="game-picture1">';
+                                                    echo '<img src="data:image/jpeg;base64,'.base64_encode( $result->picture ).'" width="100%" height="100%"/>';
+                                                echo '</div>';
+                                                echo '<div class="game-name1">';
+                                                    echo '<p class="block2-name">'.$result->product_name.'</p>';
+                                                    echo '<h6 class="block2-name" style="font-size:9px">exchange . '.$result->platform.'</h6>';
+                                                echo '</div>';
+                                            echo '</div>';
+                                        echo '</div>';
+                                    echo '</div>';
+                                    $i++;
+                                    }
+                                }
+                            ?>
 
 
-
-                                </div>
-
-                                <div class="item">
-                                    <div class=" " style="margin: auto; float: none;">
-                                        <div class=" game-box1">
-                                            <div class="game-picture1">
-                                                <img src="/assets/img/xbox1/rainbowsix.jpg" alt="Rainbow Six"
-                                                    width="100%" height="100%">
-                                            </div>
-                                            <div class="game-name1">
-                                                <p>RAINBOW SIX SEIGE</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
                             </div>
 
 
@@ -150,7 +123,7 @@
                         <div class=" text-center">
 
                             <button type="submit" title="Add Another Game" class="button" data-toggle="modal"
-                                data-target="#myModal1"
+                                data-target="#addNewProduct"
                                 style=" width: 50%; background: black; opacity: 0.8; border-radius: 100px ">
                                 <span><span>Add Another Game</span></span></button>
                         </div>
@@ -183,17 +156,74 @@
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal1" role="dialog">
-                    <div class="modal-dialog modal-sm">
+                <div class="modal fade" id="addNewProduct" role="dialog">
+                    <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title text-center">Add Another Game To Your Inventory</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title text-center">Add New Product</h4>
                             </div>
-                            <div class="modal-body text-center">
-                                <p>This is a small modal.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <p style="text-align: center; color: brown">
+                                <?php if ($this->session->has_userdata('error'))
+			                     { 
+			                     	echo $this->session->userdata('error');
+			                     	$this->session->unset_userdata('error');
+			                     }
+			                     ?>
+
+                            </p>
+                            <div class="modal-body ">
+                                <form action="/exchange/process_addProduct" method="post" class="signup-form-container">
+                                    <div class="form-group ">
+                                        <label for="picture"><b>Product Picture</b></label>
+                                        <input id="nid-docs" type="file" size="30" name="picture" id="file-upload">
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="productname"><b>Product Name</b></label>
+                                        <input type="text" placeholder="e.g SONY GRAND THEFT AUTO V" name="productname"
+                                            required>
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="merchantid"><b>Merchant ID</b></label>
+                                        <input type="text" placeholder="e.g 2" name="merchantid" required>
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="categoryid"><b>Category</b></label>
+                                        <select class="diff" id="categoryid" name="categoryid" required>
+                                            <option value="">SELECT A CATEGORY</option>
+                                            <option value="3">Exchange</option>
+                                        </select>
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="platform"><b>Platform</b></label>
+                                        <select class="diff" id="platform" name="platform" required>
+                                            <option value="">SELECT A PLATFORM</option>
+                                            <option value="PS3">PS3</option>
+                                            <option value="PS4">PS4</option>
+                                            <option value="XBOX ONE">XBOX ONE</option>
+                                            <option value="XBOX 360">XBOX 360</option>
+                                            <option value="NINTENDO SWITCH">NINTENDO SWITCH</option>
+                                            <option value="NINTENDO WII">NINTENDO WII</option>
+                                        </select>
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="quantity"><b>Quantity</b></label>
+                                        <input type="text" placeholder="Enter Quantity" name="quantity" value="1"
+                                            readonly>
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <p class="">
+                                        <input type="checkbox" placeholder="Confirm Password" name="psw" required>
+                                        I have read and accepted the <a class="brown" href="#xterms">terms
+                                            and conditions</a>
+                                    </p>
+                                    <button type="submit" class="btn">Add Product</button>
+                                </form>
                             </div>
                         </div>
                     </div>

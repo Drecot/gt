@@ -18,9 +18,15 @@ class Exchange extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct() { 
+         parent::__construct(); 
+         $this->load->helper(array('form', 'url')); 
+    }
 	public function index()
 	{
-		$this->load->view('index');
+		$this->load->model('process');
+		   $data['record'] = $this->process->displayProducts();
+		$this->load->view('index', $data);
 	}
 
 	public function index1()
@@ -41,7 +47,9 @@ class Exchange extends CI_Controller {
 	}
 	public function trade()
 	{
-		$this->load->view('trade');
+		$this->load->model('process');
+		$data['record'] = $this->process->displayProducts();
+		$this->load->view('trade', $data);
 	}
 	public function trackorder()
 	{
@@ -108,7 +116,9 @@ class Exchange extends CI_Controller {
 
 	public function inventory()
 	{
-		$this->load->view('inventory');
+		$this->load->model('process');
+		$data['record'] = $this->process->displayProducts();
+		$this->load->view('inventory', $data);
 	}
 
 	public function cart()
@@ -128,7 +138,26 @@ class Exchange extends CI_Controller {
 
 	public function products()
 	{
-		$this->load->view('products');
+		$this->load->model('process');
+		$data['record'] = $this->process->displayProducts();
+		$this->load->view('products', $data);
+	}
+
+	public function comingsoon()
+	{
+		$this->load->view('comingsoon');
+	}
+
+	public function admin()
+	{
+		$this->load->view('admin');
+	}
+
+	public function subscriptions()
+	{	 
+		   $this->load->model('process');
+		   $data['record'] = $this->process->displayNewsletter();
+		   $this->load->view('subscriptions', $data);
 	}
 	
 	public function process_login()
@@ -174,5 +203,26 @@ class Exchange extends CI_Controller {
 			header("Location: index");
 		}
 
+	}
+
+	public function process_subscribe_newsletter()
+	{
+		$_POST['firstname'] = trim($_POST['firstname']);
+		$_POST['lastname'] = trim($_POST['lastname']);
+		$_POST['email'] = trim($_POST['email']);
+		$this->load->model('process');
+		$query = $this->process->subscribe_newsletter($_POST);
+		header("Location: comingsoon");
+	}
+
+	public function process_addProduct()
+	{
+		$_POST['productname'] = trim($_POST['productname']);
+		$_POST['merchantid'] = trim($_POST['merchantid']);
+		$_POST['categoryid'] = trim($_POST['categoryid']);
+		$_POST['quantity'] = trim($_POST['quantity']);
+		$this->load->model('process');
+		$query = $this->process->addProduct($_POST);
+		header("Location: inventory");
 	}
 }

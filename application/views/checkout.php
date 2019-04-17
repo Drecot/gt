@@ -10,7 +10,7 @@
     <meta name="author" content="Dreacot">
     <title>GameTrade.ng | Checkout</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/infinite-slider.css" rel="stylesheet">
@@ -123,6 +123,41 @@
 
                                 <div class="container col-md-12 bb bor10 mt-20">
                                     <h4 class="brown bold"><i class="fa fa-credit-card"></i> Payment Options</h4>
+                                </div>
+                                <div class="wrap-table-shopping-cart bor10 mt-20">
+
+                                    <div>
+                                        <div class="col-md-12 mt-20 mb-150">
+                                            <div class="col-md-6">
+                                                <label class="" for="pod"><input type="radio" id="pod" name="pod"
+                                                        value="pod">Pay on
+                                                    Delivery</label>
+                                            </div>
+
+
+                                            <div class="col-md-6">
+                                                <label class="" for="card"><input type="radio" id="card" name="pod"
+                                                        value="card">Pay Now</label>
+                                            </div>
+
+                                            <div class="description"> <br>Pay when you receive or collect your order.
+                                                Important information:
+                                                <ol>
+                                                    <li> Packages sealed by the manufacturer can be inspected but seals
+                                                        must not be broken.</li>
+                                                    <li><b>Payment must be made before opening a package.</b></li>
+                                                    <li>Once the seal is broken, the item can only be returned if it is
+                                                        damaged, defective or has missing parts.</li>
+                                                    <li>Please ensure <b>you have the exact amount for your order</b>,
+                                                        as our Delivery Agents do not handle petty cash.</li>
+                                                </ol>
+                                                <b>Please note GameTrade will never ask you to make a payment via email
+                                                    or
+                                                    SMS.</b>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <div class="container col-md-12 bb mt-20 bor10">
@@ -282,6 +317,14 @@
                                 <div class="">
                                     <button type="submit" class="button" style="width:80%;">
                                         <span><span>PROCEED TO CHECKOUT</span></span></button>
+                                </div>
+                                <div><label for="fname">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <i class="fa fa-cc-mastercard fa-2x" style="color:red;"></i>
+                                        <i class="fa fa-cc-visa fa-2x" style="color:navy;"></i>
+                                        <i class="fa fa-cc-verve" style="color:orange;"><img class="h-size2"
+                                                src="/assets/img/icons/verve.png" width="50" alt="IMG-MASTERCARD"></i>
+                                    </div>
                                 </div>
 
                             </div>

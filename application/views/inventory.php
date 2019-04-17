@@ -10,7 +10,7 @@
     <meta name="author" content="Dreacot">
     <title>GameTrade.ng | Account</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/infinite-slider.css" rel="stylesheet">
@@ -102,106 +102,60 @@
 
                     <div>
                         <div class="col-md-12 mt-20 mb-150">
-                            <div class=" col-md-2 trade action adventure days-gone recent">
-                                <div class=" game-box">
-                                    <div class="game-picture">
-                                        <img src="/assets/img/ps4/daysgone.jpg" alt="Fifa 19" width="100%"
-                                            height="100%">
-                                    </div>
-                                    <div class="game-name">
-                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-                                        <p>DAYS
-                                            GONE
-                                        </p>
-                                    </div>
-                                    <div class=" game-info"
-                                        style="width: 100%; background-color:white;color:red;cursor:pointer;">
-                                        <div class="text-center">
-                                            <p class=" notice">
-                                                DELETE
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                </div>
-                            </div>
+                            <?php
+	     $i = 1;
+		 foreach ($record as $result)
+		  {
+            if( $result->category_id == 3){
+
+                echo '<div class="col-md-2 trade">';
+
+             
+             
+                echo '<div class=" game-box">';
+                echo '<div class=" game-picture">';
+                    echo '<img src="data:image/jpeg;base64,'.base64_encode( $result->picture ).'" width="100%" height="100%"/>';
+                echo '</div>';
+             
+                echo '<div class="game-name">';
+
+                    echo '<p class="block2-name">'.$result->product_name.'</p>';
+                    echo '<h6 class="block2-name" style="font-size:9px">used . '.$result->platform.'</h6>';
+                echo '</div>';
+
+             echo '<div class=" game-info" style="width: 100%; background-color:white;color:red;cursor:pointer;">';
+                echo '<div class="text-center">';
+                    echo '<p class=" notice"> DELETE </p>';
+
+                echo '</div>';
+
+             echo '</div>';
+             echo '</div>';
+             echo '</div>';
+             $i++;
+            }
+		  }
+	  ?>
 
 
-                            <div class=" col-md-2 trade action adventure days-gone recent">
-                                <div class=" game-box">
-                                    <div class="game-picture">
-                                        <img src="/assets/img/ps4/daysgone.jpg" alt="Fifa 19" width="100%"
-                                            height="100%">
-                                    </div>
-                                    <div class="game-name">
-                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-                                        <p>DAYS
-                                            GONE
-                                        </p>
-                                    </div>
-                                    <div class=" game-info"
-                                        style="width: 100%; background-color:white;color:red;cursor:pointer;">
-                                        <div class="text-center">
-                                            <p class=" notice">
-                                                DELETE
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col-md-2 trade action adventure days-gone recent">
-                                <div class=" game-box">
-                                    <div class="game-picture">
-                                        <img src="/assets/img/ps4/daysgone.jpg" alt="Fifa 19" width="100%"
-                                            height="100%">
-                                    </div>
-                                    <div class="game-name">
-                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-                                        <p>DAYS
-                                            GONE
-                                        </p>
-                                    </div>
-                                    <div class=" game-info"
-                                        style="width: 100%; background-color:white;color:red;cursor:pointer;">
-                                        <div class="text-center">
-                                            <p class=" notice">
-                                                DELETE
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col-md-2 trade action adventure days-gone recent">
-                                <div class=" game-box">
-                                    <div class="game-picture">
-                                        <img src="/assets/img/ps4/daysgone.jpg" alt="Fifa 19" width="100%"
-                                            height="100%">
-                                    </div>
-                                    <div class="game-name">
-                                        <i class="fa fa-heart-o pointer" title="Add to wishlist"></i>
-                                        <p>DAYS
-                                            GONE
-                                        </p>
-                                    </div>
-                                    <div class=" game-info"
-                                        style="width: 100%; background-color:white;color:red;cursor:pointer;">
-                                        <div class="text-center">
-                                            <p class=" notice">
-                                                DELETE
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="col-md-2 add-game-box text-center">
+                            <button class="col-md-2 add-game-box text-center" data-toggle="modal"
+                                data-target="#addNewProduct">
                                 <div>
                                     <span class="fa fa-plus-circle fa-2x"></span><br>
                                     <span>Add Game</span>
                                 </div>
                             </button>
+
+                            <p style="text-align: center; color: brown">
+                                <?php if ($this->session->has_userdata('error'))
+			                     { 
+			                     	echo $this->session->userdata('error');
+			                     	$this->session->unset_userdata('error');
+			                     }
+			                     ?>
+
+                            </p>
                         </div>
 
                     </div>
@@ -220,6 +174,77 @@
     <script src="/assets/js/carousel.js"></script>
     <script src="/assets/js/preloader.js"></script>
     <script src="/assets/js/jquery.easing.min.js"></script>
+
+    <div class="modal fade" id="addNewProduct" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Add New Product</h4>
+                </div>
+                <p style="text-align: center; color: brown">
+                    <?php if ($this->session->has_userdata('error'))
+			                     { 
+			                     	echo $this->session->userdata('error');
+			                     	$this->session->unset_userdata('error');
+			                     }
+			                     ?>
+
+                </p>
+                <div class="modal-body ">
+                    <form action="/exchange/process_addProduct" method="post" class="signup-form-container">
+                        <div class="form-group ">
+                            <label for="picture"><b>Product Picture</b></label>
+                            <input id="nid-docs" type="file" size="30" name="picture" id="file-upload">
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="productname"><b>Product Name</b></label>
+                            <input type="text" placeholder="e.g SONY GRAND THEFT AUTO V" name="productname" required>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="merchantid"><b>Merchant ID</b></label>
+                            <input type="text" placeholder="e.g 2" name="merchantid" required>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="categoryid"><b>Category</b></label>
+                            <select class="diff" id="categoryid" name="categoryid" required>
+                                <option value="">SELECT A CATEGORY</option>
+                                <option value="3">Exchange</option>
+                            </select>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="platform"><b>Platform</b></label>
+                            <select class="diff" id="platform" name="platform" required>
+                                <option value="">SELECT A PLATFORM</option>
+                                <option value="PS3">PS3</option>
+                                <option value="PS4">PS4</option>
+                                <option value="XBOX ONE">XBOX ONE</option>
+                                <option value="XBOX 360">XBOX 360</option>
+                                <option value="NINTENDO SWITCH">NINTENDO SWITCH</option>
+                                <option value="NINTENDO WII">NINTENDO WII</option>
+                            </select>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="quantity"><b>Quantity</b></label>
+                            <input type="text" placeholder="Enter Quantity" name="quantity" value="1" readonly>
+                            <span class="help-block"></span>
+                        </div>
+                        <p class="">
+                            <input type="checkbox" placeholder="Confirm Password" name="psw" required>
+                            I have read and accepted the <a class="brown" href="#xterms">terms
+                                and conditions</a>
+                        </p>
+                        <button type="submit" class="btn">Add Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

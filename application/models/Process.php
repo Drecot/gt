@@ -49,6 +49,36 @@ class Process extends CI_Model {
         //return $query;
     }
 
-    
+    function subscribe_newsletter($log_data)
+    {
+        $this->load->helper('date');
+        date_default_timezone_set('Africa/Lagos'); # add your city to set local time zone
+        $now = date('Y-m-d H:i:s');
+        
+        $query = $this->db->query('SELECT email FROM newsletter WHERE email ='. $this->add_quotes($log_data['email']));
+        if (!empty($query->result()))
+        {
+        	$this->session->set_userdata('error', 'This email is already registered');
+        }
+        else {
+            
+            $this->db->query('INSERT INTO newsletter (first_name, last_name, email, date_subscribe, status) VALUES ('.$this->add_quotes($log_data['firstname']).', '.$this->add_quotes($log_data['lastname']).', '.$this->add_quotes($log_data['email']).', '.$this->add_quotes($now).', '.$this->add_quotes("SUBSCRIBED").')');
+            $this->session->set_userdata('error', 'Registration successful! You would be notified once we launch');
+        }
+        //return $query;
+    }
+
+    function displayNewsletter(){
+        return $this->db->get('newsletter')->result();
+       }
+
+       function addProduct($log_data){
+        $this->db->query('INSERT INTO products (product_name, merchant_id, category_id, quantity) VALUES ('.$this->add_quotes($log_data['productname']).', '.$this->add_quotes($log_data['merchantid']).', '.$this->add_quotes($log_data['categoryid']).', '.$this->add_quotes($log_data['quantity']).')');
+        $this->session->set_userdata('error', 'Product added successfully!');
+       }
+
+       function displayProducts(){
+        return $this->db->get('products')->result();
+       }
 }
 ?>

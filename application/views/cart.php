@@ -10,7 +10,7 @@
     <meta name="author" content="Dreacot">
     <title>GameTrade.ng | Cart</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/infinite-slider.css" rel="stylesheet">

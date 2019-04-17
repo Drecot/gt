@@ -10,7 +10,7 @@
     <meta name="author" content="Dreacot">
     <title>GameTrade.ng | Home</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/infinite-slider.css" rel="stylesheet">
@@ -40,8 +40,7 @@
 
     <!-- <main body of the site> -->
     <main class="site-main">
-        <section
-            style="
+        <section style="
                                                                                         background: #fbfbfb;">
             <div class="col-md-12 text-center bold" style="background-color:#333; color:white; padding:35px">
                 <h1 class="" style=>
@@ -140,181 +139,62 @@
                                 <div class="container-fluid">
                                     <div class="container-fluid">
                                         <div class="container-fluid">
+                                            <?php
+	     $i = 1;
+		 foreach ($record as $result)
+		  {
+            if( $i <= 6){
+            if($result->category_id == 3){
+                echo '<div class="col-md-2 trade">';
+            }
+            else if($result->category_id == 2){
+                echo '<div class="col-md-2 used">';
+            }
+            else{
+                echo '<div class="col-md-2 new">';
+            }
+             
+             
+                echo '<div class=" game-box">';
+                echo '<div class=" game-picture">';
+                    echo '<img src="data:image/jpeg;base64,'.base64_encode( $result->picture ).'" width="100%" height="100%"/>';
+                echo '</div>';
+             
+                echo '<div class="game-name">';
+                    echo '<i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                            data-toggle="modal" data-target="#wishlistModal"></i>';
+                    echo '<p class="block2-name">'.$result->product_name.'</p>';
+                    echo '<h6 class="block2-name" style="font-size:9px">used . '.$result->platform.'</h6>';
+                echo '</div>';
 
-
-                                            <div class="col-md-2 new sports nba2k19 recent">
-                                                <div class="game-box">
-                                                    <div class="game-picture">
-                                                        <img src="/assets/img/ps4/2K19.jpg" alt="Fifa 19" width="100%"
-                                                            height="100%">
-                                                    </div>
-                                                    <div class="game-name">
-                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                            data-toggle="modal" data-target="#wishlistModal"></i>
-                                                        <p class="block2-name">NBA
-                                                            2K19
-                                                        </p>
-                                                    </div>
-                                                    <div class=" game-info" style="width: 100%;">
-                                                        <div class="" style=" float: right">
-                                                            <p class=" notice">
-                                                                ₦17,999
-                                                            </p>
-                                                        </div>
-                                                        <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-2 new sports racing need-for-speed-payback recent">
-                                                <div class=" game-box">
-                                                    <div class="game-picture">
-                                                        <img src="/assets/img/xbox1/nfsplayback.jpg"
-                                                            alt="Need For Speed" width="100%" height="100%">
-                                                    </div>
-                                                    <div class="game-name">
-                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                            data-toggle="modal" data-target="#wishlistModal"></i>
-                                                        <p class="block2-name">NEED
-                                                            FOR
-                                                            SPEED:
-                                                            PAYBACK
-                                                        </p>
-                                                    </div>
-                                                    <div class=" game-info" style="width: 100%;">
-                                                        <div class="" style=" float: right">
-                                                            <p class=" notice">
-                                                                ₦21,499
-                                                            </p>
-                                                        </div>
-                                                        <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class=" col-md-2 trade action adventure days-gone recent">
-                                                <div class=" game-box">
-                                                    <div class="game-picture">
-                                                        <img src="/assets/img/ps4/daysgone.jpg" alt="Fifa 19"
-                                                            width="100%" height="100%">
-                                                    </div>
-                                                    <div class="game-name">
-                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                            data-toggle="modal" data-target="#wishlistModal"></i>
-                                                        <p>DAYS
-                                                            GONE
-                                                        </p>
-                                                    </div>
-                                                    <div class=" game-info" style="width: 100%;">
-                                                        <div class="" style=" float: right">
-                                                            <p class=" notice">
-                                                                EX
-                                                            </p>
-                                                        </div>
-                                                        <div class="add" style=" float: left">
-                                                            <a href="trade#ex" target="blank"><button
-                                                                    class="game-button btn"><i></i></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class=" col-md-2 used action transformers old">
-                                                <div class=" game-box">
-                                                    <div class="game-picture">
-                                                        <img src="/assets/img/xbox360/transformers.jpg"
-                                                            alt="Transformers" width="100%" height="100%">
-                                                    </div>
-                                                    <div class="game-name">
-                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                            data-toggle="modal" data-target="#wishlistModal"></i>
-                                                        <p>TRANSFORMERS:
-                                                            REVENGE
-                                                            OF
-                                                            THE
-                                                            FALLEN
-                                                        </p>
-                                                    </div>
-                                                    <div class=" game-info" style="width: 100%;">
-                                                        <div class="" style=" float: right">
-                                                            <p class=" notice">
-                                                                ₦7,499
-                                                            </p>
-                                                        </div>
-                                                        <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="col-md-2 used adventure interactive-motion beyond-two-souls old">
-                                                <div class=" game-box">
-                                                    <div class="game-picture">
-                                                        <img src="/assets/img/ps3/beyond.jpg" alt="Fifa 19" width="100%"
-                                                            height="100%">
-                                                    </div>
-                                                    <div class="game-name ">
-                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                            data-toggle="modal" data-target="#wishlistModal"></i>
-                                                        <p>BEYOND
-                                                            TWO
-                                                            SOULS
-                                                        </p>
-
-                                                    </div>
-                                                    <div class=" game-info" style="width: 100%;">
-                                                        <div class="" style=" float: right">
-                                                            <p class=" notice">
-                                                                ₦4,499
-                                                            </p>
-                                                        </div>
-                                                        <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-2 new sport mariotennis recent">
-                                                <div class=" game-box">
-                                                    <div class="game-picture">
-                                                        <img src="/assets/img/nintendo/mariotennis.jpg"
-                                                            alt="Mario Tennis" width="100%" height="100%">
-                                                    </div>
-                                                    <div class="game-name">
-                                                        <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                            data-toggle="modal" data-target="#wishlistModal"></i>
-                                                        <p>MARIO
-                                                            TENNIS
-                                                        </p>
-
-                                                    </div>
-                                                    <div class=" game-info" style="width: 100%;">
-                                                        <div class="" style=" float: right">
-                                                            <p class=" notice">
-                                                                ₦18,499
-                                                            </p>
-
-                                                        </div>
-                                                        <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
+             echo '<div class=" game-info" style="width: 100%;">';
+                echo '<div class="" style=" float: right">';
+                if($result->category_id == 3){
+                    echo '<p class=" notice"> EX </p>';
+                }
+                else{
+                    echo '<p class=" notice">₦' .number_format($result->price, 0, '.', ',');'</p>';
+                }
+                    
+                echo '</div>';
+                
+                echo '<div class="add" style=" float: left">';
+                if($result->category_id == 3){
+                    echo '<a href="trade#ex" target="blank"><button
+                    class="game-button btn"><i></i></button></a>';
+                }
+                else{
+                  echo '<button class="game-button btn" data-toggle="modal"data-target="#cartModal"><i class=""></i></button>';  
+                }
+                    
+                echo '</div>';
+             echo '</div>';
+             echo '</div>';
+             echo '</div>';
+             $i++;
+            }
+		  }
+	  ?>
                                         </div>
                                     </div>
                                 </div>
@@ -324,6 +204,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- <site footer> -->
