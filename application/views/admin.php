@@ -45,19 +45,39 @@
         </a>
 
         <a href="subscriptions">
-            <i class="fa fa-bus"></i> Subscriptions
+            <i class="fa fa-bus"></i> Email
+        </a>
+
+        <a href="subscriptions">
+            <i class="fa fa-bus"></i> Calender
         </a>
 
         <a href="transactions">
-            <i class="fa fa-line-chart"></i> Transactions
+            <i class="fa fa-line-chart"></i> Product List
         </a>
 
         <a href="receipts">
             <i class="fa fa-download"></i> Receipts
         </a>
 
+        <a href="transactions">
+            <i class="fa fa-line-chart"></i> Orders
+        </a>
+
+        <a href="receipts">
+            <i class="fa fa-download"></i> Customers
+        </a>
+
+        <a href="receipts">
+            <i class="fa fa-download"></i> Merchants
+        </a>
+
         <a href="tickets">
-            <i class="fa fa-ticket"></i> Tickets <span class="label-count">2</span>
+            <i class="fa fa-ticket"></i> Analytics
+        </a>
+
+        <a href="tickets">
+            <i class="fa fa-ticket"></i> Chat <span class="label-count">2</span>
         </a>
 
         <a href="support">

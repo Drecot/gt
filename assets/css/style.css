@@ -5060,7 +5060,7 @@ form.example::after {
 }
 
 .slider {
-	position: absolute;
+	/* position: absolute; */
 	cursor: pointer;
 	top: 0;
 	left: 0;
@@ -6730,23 +6730,24 @@ tr:nth-child(even) {
 }
 
 .platform {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 15px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -user-select: none;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 15px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-user-select: none;
 }
+
 .platform input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
 }
 
 .platform input:checked~.checkmark {
-    background-color: brown;
+	background-color: brown;
 }
