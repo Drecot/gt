@@ -2579,7 +2579,7 @@ ul.breadcrumb {
 	}
 }
 .grey-map {
-	background-image: url(/assets/img/map.jpg);
+	background-image: url(assets/img/map.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4770,7 +4770,7 @@ form.example {
 	position: relative;
 	text-align: center;
 	.child {
-		background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/img/action.png);
+		background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(assets/img/action.png);
 		background-position: top top;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4810,7 +4810,7 @@ form.example {
 	display: block;
 	height: calc(50% - 0px);
 	.child {
-		background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/img/fighting.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(assets/img/fighting.jpg);
 		background-position: top top;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4850,7 +4850,7 @@ form.example {
 	display: block;
 	height: calc(50% - 0px);
 	.child {
-		background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/img/arcade.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(assets/img/arcade.jpg);
 		background-position: top top;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4910,7 +4910,7 @@ form.example {
 	margin: 0 auto;
 }
 .main-signin {
-	background-image: url("/assets/img/3.jpg");
+	background-image: url("assets/img/3.jpg");
 }
 .loginDiv {
 	display: none;

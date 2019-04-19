@@ -2485,7 +2485,7 @@ ul.breadcrumb li a:hover {
 }
 
 .grey-map {
-	background-image: url(/assets/img/map.jpg);
+	background-image: url(assets/img/map.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5117,7 +5117,7 @@ input:checked+.slider:before {
 
 .left-cat .child {
 	background: linear-gradient(rgba(0, 0, 0, 0.45),
-		rgba(0, 0, 0, 0.45)), url(/assets/img/action.png);
+		rgba(0, 0, 0, 0.45)), url(assets/img/action.png);
 	background-position: top top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5144,7 +5144,7 @@ input:checked+.slider:before {
 
 .right-top-cat .child {
 	background: linear-gradient(rgba(0, 0, 0, 0.45),
-		rgba(0, 0, 0, 0.45)), url(/assets/img/fighting.jpg);
+		rgba(0, 0, 0, 0.45)), url(assets/img/fighting.jpg);
 	background-position: top top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5171,7 +5171,7 @@ input:checked+.slider:before {
 
 .right-bottom-cat .child {
 	background: linear-gradient(rgba(0, 0, 0, 0.45),
-		rgba(0, 0, 0, 0.45)), url(/assets/img/arcade.jpg);
+		rgba(0, 0, 0, 0.45)), url(assets/img/arcade.jpg);
 	background-position: top top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5277,7 +5277,7 @@ input:checked+.slider:before {
 }
 
 .main-signin {
-	background-image: url("/assets/img/3.jpg");
+	background-image: url("assets/img/3.jpg");
 }
 
 .loginDiv {
