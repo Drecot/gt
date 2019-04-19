@@ -113,6 +113,28 @@
                                     </div>
                                     <!-- <filter category> -->
                                     <div style=" padding-top: 20px;">
+                                        <h3>Category</h3>
+                                        <label class="genre">All
+                                            <input type="radio" checked="checked" name="category"
+                                                onclick="filterSelection('all')">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="genre">Games
+                                            <input type="radio" name="category" onclick="filterSelection('games')">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="genre">Consoles
+                                            <input type="radio" name="category" onclick="filterSelection('consoles')">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="genre">Accessories
+                                            <input type="radio" name="category"
+                                                onclick="filterSelection('accessories')">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <!-- <filter category> -->
+                                    <div style=" padding-top: 20px;">
                                         <h3>Genre</h3>
                                         <label class="genre">All
                                             <input type="radio" checked="checked" name="radio"
@@ -188,6 +210,19 @@
                                                 onclick="filterSelection('nintendowii')">
                                             <span class="checkmark"></span>
                                         </label>
+                                        <label class="platform">NINTENDO 3DS
+                                            <input type="radio" name="platform"
+                                                onclick="filterSelection('nintendo3ds')">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="platform">PLAYSTATION VITA
+                                            <input type="radio" name="platform" onclick="filterSelection('psvita')">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="platform">PLAYSTATION PORTABLE
+                                            <input type="radio" name="platform" onclick="filterSelection('psp')">
+                                            <span class="checkmark"></span>
+                                        </label>
                                     </div>
                                 </form>
                             </div>
@@ -248,7 +283,8 @@
                                                 <p class=" notice">₦5,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i></i></button>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -270,7 +306,8 @@
                                                 <p class=" notice">₦17,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i></i></button>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -292,7 +329,8 @@
                                                 <p class=" notice">₦7,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i></i></button>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -314,7 +352,8 @@
                                                 <p class=" notice">₦3,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i></i></button>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
                                             </div>
                                         </div>
                                     </div>
