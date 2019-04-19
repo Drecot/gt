@@ -78,34 +78,38 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
 
-                                <?php
-                                $i = 1;
-                                foreach ($record as $result)
-                                {
-                                    if( $result->category_id == 3){
-                                        if( $i == 1){
-                                            echo '<div class="item active">';
-                                        }else{
-                                             echo '<div class="item">';
-                                        }                                                              
-                                        echo '<div class=" " style="margin: auto; float: none;">';
-                                            echo '<div class="game-box1">';
-                                                echo '<div class="game-picture1">';
-                                                    echo '<img src="data:image/jpeg;base64,'.base64_encode( $result->picture ).'" width="100%" height="100%"/>';
-                                                echo '</div>';
-                                                echo '<div class="game-name1">';
-                                                    echo '<p class="block2-name">'.$result->product_name.'</p>';
-                                                    echo '<h6 class="block2-name" style="font-size:9px">exchange . '.$result->platform.'</h6>';
-                                                echo '</div>';
-                                            echo '</div>';
-                                        echo '</div>';
-                                    echo '</div>';
-                                    $i++;
-                                    }
-                                }
-                            ?>
+                                <div class="item active">
+                                    <div class=" " style="margin: auto; float: none;">
+                                        <div class="game-box1">
+                                            <div class="game-picture1">
+                                                <img src="assets/img/xbox1/watchdogs.jpg" alt="Watch Dogs" width="100%"
+                                                    height="100%">
+                                            </div>
+                                            <div class="game-name1">
+                                                <p class="block2-name">WATCH DOGS</p>
+                                                <h6 class="block2-name" style="font-size:9px">exchange .
+                                                    PS4</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="item">
+                                    <div class=" " style="margin: auto; float: none;">
+                                        <div class="game-box1">
+                                            <div class="game-picture1">
+                                                <img src="assets/img/ps4/MWR.jpg" alt="Fifa 19" width="100%"
+                                                    height="100%">
+                                            </div>
+                                            <div class="game-name1">
+                                                <p class="block2-name">WATCH DOGS</p>
+                                                <h6 class="block2-name" style="font-size:9px">exchange .
+                                                    PS4</h6>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
                             </div>
 
 
@@ -163,15 +167,6 @@
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title text-center">Add New Product</h4>
                             </div>
-                            <p style="text-align: center; color: brown">
-                                <?php if ($this->session->has_userdata('error'))
-			                     { 
-			                     	echo $this->session->userdata('error');
-			                     	$this->session->unset_userdata('error');
-			                     }
-			                     ?>
-
-                            </p>
                             <div class="modal-body ">
                                 <form action="/exchange/process_addProduct" method="post" class="signup-form-container">
                                     <div class="form-group ">

@@ -19,6 +19,7 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/w3.css" rel="stylesheet">
     <link href="assets/css/hover-min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -205,64 +206,191 @@
                         <div>
                             <br>
                             <div class="row " id="users">
-                                <?php
-                                $i = 1;
-                                foreach ($record as $result)
-                                {
-                                    if( $i <= 16){
-                                    if($result->category_id == 3){
-                                        echo '<div class="col-md-3 filterDiv trade">';
-                                    }
-                                    else if($result->category_id == 2){
-                                        echo '<div class="col-md-3 filterDiv used">';
-                                    }
-                                    else{
-                                        echo '<div class="col-md-3 filterDiv new">';
-                                    }
-                                    
-                                    
-                                        echo '<div class=" game-box">';
-                                        echo '<div class=" game-picture">';
-                                            echo '<img src="data:image/jpeg;base64,'.base64_encode( $result->picture ).'" width="100%" height="100%"/>';
-                                        echo '</div>';
-                                    
-                                        echo '<div class="game-name">';
-                                            echo '<i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
-                                                                                    data-toggle="modal" data-target="#wishlistModal"></i>';
-                                            echo '<p class="block2-name">'.$result->product_name.'</p>';
-                                            echo '<h6 class="block2-name" style="font-size:9px">used . '.$result->platform.'</h6>';
-                                        echo '</div>';
-
-                                    echo '<div class=" game-info" style="width: 100%;">';
-                                        echo '<div class="" style=" float: right">';
-                                        if($result->category_id == 3){
-                                            echo '<p class=" notice"> EX </p>';
-                                        }
-                                        else{
-                                            echo '<p class=" notice">₦' .number_format($result->price, 0, '.', ',');'</p>';
-                                        }
-                                            
-                                        echo '</div>';
-                                        
-                                        echo '<div class="add" style=" float: left">';
-                                        if($result->category_id == 3){
-                                            echo '<a href="trade#ex" target="blank"><button
-                                            class="game-button btn"><i></i></button></a>';
-                                        }
-                                        else{
-                                        echo '<button class="game-button btn" data-toggle="modal"data-target="#cartModal"><i class=""></i></button>';  
-                                        }
-                        
-                                            
-                                        echo '</div>';
-
-                                    echo '</div>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                    $i++;
-                                    }
-                                }
-                            ?>
+                                <div class="col-md-3 filterDiv new sport mariotennis recent">
+                                    <div class=" game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/nintendo/mariotennis.jpg" alt="Mario Tennis"
+                                                width="100%" height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">MARIO TENNIS</p>
+                                            <h6 class="block2-name" style="font-size:9px">new . NINTENDO SWITCH
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">₦18,499</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 filterDiv used action killzone3 old">
+                                    <div class="  game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/ps3/killzone3.jpg" alt="Fifa 19" width="100%"
+                                                height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">KILLZONE 3</p>
+                                            <h6 class="block2-name" style="font-size:9px">used . PS3
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">₦5,499</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <button class="game-button btn"><i></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 filterDiv new sports nba2k19 recent">
+                                    <div class="game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/ps4/2K19.jpg" alt="Fifa 19" width="100%" height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">NBA 2K19</p>
+                                            <h6 class="block2-name" style="font-size:9px">new . PS4
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">₦17,999</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <button class="game-button btn"><i></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 filterDiv used action ghost-recon old">
+                                    <div class="  game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/ps4/ghst.jpg" alt="Fifa 19" width="100%" height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">GHOST RECON: WILDLANDS</p>
+                                            <h6 class="block2-name" style="font-size:9px">used . PS4
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">₦7,499</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <button class="game-button btn"><i></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 filterDiv used action call-of-duty-infinite-warfare recent">
+                                    <div class="game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/ps4/COD.jpg" alt="Fifa 19" width="100%" height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">CALL OF DUTY: INFINITE WARFARE</p>
+                                            <h6 class="block2-name" style="font-size:9px">used . PS4
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">₦3,999</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <button class="game-button btn"><i></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 filterDiv new sports racing need-for-speed-payback recent">
+                                    <div class=" game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/xbox1/nfsplayback.jpg" alt="Need For Speed"
+                                                width="100%" height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">NEED FOR SPEED: PAYBACK</p>
+                                            <h6 class="block2-name" style="font-size:9px">new . XBOX ONE
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">₦21,499</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-3 filterDiv trade action adventure days-gone recent">
+                                    <div class=" game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/ps4/daysgone.jpg" alt="Fifa 19" width="100%"
+                                                height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">DAYS GONE</p>
+                                            <h6 class="block2-name" style="font-size:9px">exchange . PS4
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">EX</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <a href="trade.php#ex" target="blank"><button
+                                                        class="game-button btn"><i></i></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-3 filterDiv trade action hitman recent">
+                                    <div class=" game-box">
+                                        <div class="game-picture">
+                                            <img src="assets/img/xbox360/hitman.jpg" alt="Hitman" width="100%"
+                                                height="100%">
+                                        </div>
+                                        <div class="game-name">
+                                            <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist"
+                                                data-toggle="modal" data-target="#wishlistModal"></i>
+                                            <p class="block2-name">HITMAN: BLOOD MONEY</p>
+                                            <h6 class="block2-name" style="font-size:9px">exchange . XBOX 360
+                                            </h6>
+                                        </div>
+                                        <div class=" game-info" style="width: 100%;">
+                                            <div class="" style=" float: right">
+                                                <p class=" notice">EX</p>
+                                            </div>
+                                            <div class="add" style=" float: left">
+                                                <a href="trade.php#ex" target="blank"><button
+                                                        class="game-button btn"><i></i></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

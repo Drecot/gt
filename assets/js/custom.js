@@ -192,18 +192,6 @@ function toggle_visibility(id) {
 };
 
 
-
-
-
-
-function openSearch() {
-	document.getElementById("mySearch").style.display = "block";
-};
-
-function closeSearch() {
-	document.getElementById("mySearch").style.display = "none";
-};
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;

@@ -63,8 +63,7 @@
                             <div class="collapse navbar-collapse" id="console-navbar-collapse">
                                 <div class="space">
                                     <ul class="nav navbar-nav">
-                                        <li><button class="tablinks" onclick="openCity(event, 'PS4')"
-                                                id="defaultOpen">PS4</button></li>
+                                        <li><button class="tablinks" onclick="openCity(event, 'PS4')">PS4</button></li>
                                         <li><button class="tablinks" onclick="openCity(event, 'PS3')">PS3</button></li>
                                         <li><button class="tablinks" onclick="openCity(event, 'XBOX ONE')">XBOX
                                                 ONE</button>
@@ -187,7 +186,7 @@
                             <button class="btn-style " onclick="filterSelection('trade')"> Exchange</button>
                         </div>
                         <!-- <ps4 products> -->
-                        <div id="PS4" class=" tabcontent">
+                        <div>
                             <h3>PS4</h3>
                             <div class="row " id="users">
                                 <div class="col-md-3 filterDiv new action adventure resident-evil-2 recent">
@@ -204,9 +203,9 @@
                                                 <p class=" notice">₦25,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -224,17 +223,16 @@
                                                 <p class=" notice">₦22,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 filterDiv new sports nba2k19 recent">
                                     <div class="game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/ps4/2K19.jpg" alt="Fifa 19" width="100%"
-                                                height="100%">
+                                            <img src="assets/img/ps4/2K19.jpg" alt="Fifa 19" width="100%" height="100%">
                                         </div>
                                         <div class="game-name">
                                             <p>NBA 2K19</p>
@@ -252,8 +250,7 @@
                                 <div class="col-md-3 filterDiv used action ghost-recon old">
                                     <div class="  game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/ps4/ghst.jpg" alt="Fifa 19" width="100%"
-                                                height="100%">
+                                            <img src="assets/img/ps4/ghst.jpg" alt="Fifa 19" width="100%" height="100%">
                                         </div>
                                         <div class="game-name">
                                             <p>GHOST RECON: WILDLANDS</p>
@@ -271,8 +268,7 @@
                                 <div class="col-md-3 filterDiv used action adventure gtav old">
                                     <div class="  game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/ps4/GTAV.jpg" alt="Fifa 19" width="100%"
-                                                height="100%">
+                                            <img src="assets/img/ps4/GTAV.jpg" alt="Fifa 19" width="100%" height="100%">
                                         </div>
                                         <div class="game-name">
                                             <p>GTA V</p>
@@ -305,8 +301,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class=" col-md-3 filterDiv trade action call-of-duty-modern-warfare-remastered old">
+                                <div class="col-md-3 filterDiv trade action call-of-duty-modern-warfare-remastered old">
                                     <div class=" game-box">
                                         <div class="game-picture">
                                             <img src="assets/img/ps4/MWR.jpg" alt="Fifa 19" width="100%" height="100%">
@@ -365,17 +360,16 @@
                                                 <p class=" notice">₦4,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 filterDiv used action army-of-two recent">
                                     <div class=" game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/ps3/army.jpg" alt="Fifa 19" width="100%"
-                                                height="100%">
+                                            <img src="assets/img/ps3/army.jpg" alt="Fifa 19" width="100%" height="100%">
                                         </div>
                                         <div class="game-name">
                                             <p>ARMY OF TWO: THE DEVILS CARTEL</p>
@@ -385,17 +379,16 @@
                                                 <p class=" notice">₦3,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 filterDiv used action adventure gta-v recent">
                                     <div class="game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/ps3/gtav.jpg" alt="Fifa 19" width="100%"
-                                                height="100%">
+                                            <img src="assets/img/ps3/gtav.jpg" alt="Fifa 19" width="100%" height="100%">
                                         </div>
                                         <div class="game-name">
                                             <p>GTA V</p>
@@ -489,8 +482,8 @@
                                 <div class=" col-md-3 filterDiv used action transformers3 old">
                                     <div class=" game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/ps3/transformers.jpg" alt="Transformers 3"
-                                                width="100%" height="100%">
+                                            <img src="assets/img/ps3/transformers.jpg" alt="Transformers 3" width="100%"
+                                                height="100%">
                                         </div>
                                         <div class="game-name">
                                             <p>TRANSFORMERS 3</p>
@@ -525,9 +518,9 @@
                                                 <p class=" notice">₦21,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -545,9 +538,9 @@
                                                 <p class=" notice">₦16,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -685,9 +678,9 @@
                                                 <p class=" notice">₦17,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -705,9 +698,9 @@
                                                 <p class=" notice">₦12,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -845,9 +838,9 @@
                                                 <p class=" notice">₦18,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -865,9 +858,9 @@
                                                 <p class=" notice">₦12,999</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                            <button class="game-button btn" data-toggle="modal"
-                                                                data-target="#cartModal"><i class=""></i></button>
-                                                        </div>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -909,21 +902,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 filterDiv used action titanfall old">
-                                    <div class="  game-box">
+                                <div class="col-md-3 filterDiv new sport mariotennis recent">
+                                    <div class=" game-box">
                                         <div class="game-picture">
-                                            <img src="assets/img/nintendo/mariotennis.jpg" alt="Titan Fall"
+                                            <img src="assets/img/nintendo/mariotennis.jpg" alt="Mario Tennis"
                                                 width="100%" height="100%">
                                         </div>
                                         <div class="game-name">
-                                            <p>TITAN FALL</p>
+                                            <p>MARIO TENNIS</p>
                                         </div>
                                         <div class=" game-info" style="width: 100%;">
                                             <div class="" style=" float: right">
-                                                <p class=" notice">₦5,999</p>
+                                                <p class=" notice">₦18,499</p>
                                             </div>
                                             <div class="add" style=" float: left">
-                                                <button class="game-button btn"><i></i></button>
+                                                <button class="game-button btn" data-toggle="modal"
+                                                    data-target="#cartModal"><i class=""></i></button>
                                             </div>
                                         </div>
                                     </div>
