@@ -184,6 +184,10 @@
                                                 onclick="filterSelection('all')">
                                             <span class="checkmark"></span>
                                         </label>
+                                        <label class="platform">PS2
+                                            <input type="radio" name="platform" onclick="filterSelection('ps2')">
+                                            <span class="checkmark"></span>
+                                        </label>
                                         <label class="platform">PS3
                                             <input type="radio" name="platform" onclick="filterSelection('ps3')">
                                             <span class="checkmark"></span>
@@ -219,7 +223,7 @@
                                             <input type="radio" name="platform" onclick="filterSelection('psvita')">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="platform">PLAYSTATION PORTABLE
+                                        <label class="platform">PLAYSTATION PORTABLE (PSP)
                                             <input type="radio" name="platform" onclick="filterSelection('psp')">
                                             <span class="checkmark"></span>
                                         </label>
