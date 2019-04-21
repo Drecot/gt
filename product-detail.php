@@ -186,6 +186,161 @@
                 </div>
             </div>
         </section>
+
+        <section>
+
+            <div class="col-md-12 container-fluid mt-30 pb-30">
+
+                <h1 class="black text-center pb-30 bold">
+                    NEWLY
+                    ADDED
+                </h1>
+                <div class="container-fluid">
+
+                    <div class="col-md-2 new ">
+                        <div class=" game-box">
+                            <div class="game-picture">
+                                <img src="assets/img/xbox1/nfsplayback.jpg" alt="Need For Speed" width="100%"
+                                    height="100%">
+                            </div>
+                            <div class="game-name">
+                                <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist" data-toggle="modal"
+                                    data-target="#wishlistModal"></i>
+                                <p class="block2-name">NEED FOR SPEED: PAYBACK</p>
+                                <h6 class="block2-name" style="font-size:9px">USED . XBOX ONE
+                                </h6>
+                            </div>
+                            <div class=" game-info" style="width: 100%;">
+                                <div class="" style=" float: right">
+                                    <p class=" notice">₦21,499</p>
+                                </div>
+                                <div class="add" style=" float: left">
+                                    <button class="game-button btn" data-toggle="modal" data-target="#cartModal"><i
+                                            class=""></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 new">
+                        <div class=" game-box">
+                            <div class="game-picture">
+                                <img src="assets/img/xbox1/nba2k18.jpg" alt="Nba 2k18" width="100%" height="100%">
+                            </div>
+                            <div class="game-name">
+                                <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist" data-toggle="modal"
+                                    data-target="#wishlistModal"></i>
+                                <p class="block2-name">NBA 2K18</p>
+                                <h6 class="block2-name" style="font-size:9px">USED . XBOX ONE
+                                </h6>
+                            </div>
+                            <div class=" game-info" style="width: 100%;">
+                                <div class="" style=" float: right">
+                                    <p class=" notice">₦16,499</p>
+                                </div>
+                                <div class="add" style=" float: left">
+                                    <button class="game-button btn" data-toggle="modal" data-target="#cartModal"><i
+                                            class=""></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 used">
+                        <div class="game-box">
+                            <div class="game-picture">
+                                <img src="assets/img/xbox1/fifa17.jpg" alt="Fifa 17" width="100%" height="100%">
+                            </div>
+                            <div class="game-name">
+                                <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist" data-toggle="modal"
+                                    data-target="#wishlistModal"></i>
+                                <p class="block2-name">FIFA 17</p>
+                                <h6 class="block2-name" style="font-size:9px">USED . XBOX ONE
+                                </h6>
+                            </div>
+                            <div class=" game-info" style="width: 100%;">
+                                <div class="" style=" float: right">
+                                    <p class=" notice">₦7,999</p>
+                                </div>
+                                <div class="add" style=" float: left">
+                                    <button class="game-button btn" data-toggle="modal" data-target="#cartModal"><i
+                                            class=""></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 used">
+                        <div class="  game-box">
+                            <div class="game-picture">
+                                <img src="assets/img/xbox1/cod-legacy.jpg" alt="Cod-Legacy" width="100%" height="100%">
+                            </div>
+                            <div class="game-name">
+                                <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist" data-toggle="modal"
+                                    data-target="#wishlistModal"></i>
+                                <p class="block2-name">CALL OF DUTY: LEGACY EDITION</p>
+                                <h6 class="block2-name" style="font-size:9px">USED . XBOX ONE
+                                </h6>
+                            </div>
+                            <div class=" game-info" style="width: 100%;">
+                                <div class="" style=" float: right">
+                                    <p class=" notice">₦9,499</p>
+                                </div>
+                                <div class="add" style=" float: left">
+                                    <button class="game-button btn" data-toggle="modal" data-target="#cartModal"><i
+                                            class=""></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 trade">
+                        <div class="  game-box">
+                            <div class="game-picture">
+                                <img src="assets/img/xbox1/watchdogs.jpg" alt="Watch Dogs" width="100%" height="100%">
+                            </div>
+                            <div class="game-name">
+                                <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist" data-toggle="modal"
+                                    data-target="#wishlistModal"></i>
+                                <p class="block2-name">WATCH DOGS</p>
+                                <h6 class="block2-name" style="font-size:9px">USED . XBOX ONE
+                                </h6>
+                            </div>
+                            <div class=" game-info" style="width: 100%;">
+                                <div class="" style=" float: right">
+                                    <p class=" notice">EX</p>
+                                </div>
+                                <div class="add" style=" float: left">
+                                    <a href="trade.php#ex" target="blank"><button
+                                            class="game-button btn"><i></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 used">
+                        <div class="game-box">
+                            <div class="game-picture">
+                                <img src="assets/img/xbox1/theevilwithin.jpg" alt="The Evil Within" width="100%"
+                                    height="100%">
+                            </div>
+                            <div class="game-name">
+                                <i class="fa fa-heart-o wishlistpointer" title="Add to wishlist" data-toggle="modal"
+                                    data-target="#wishlistModal"></i>
+                                <p class="block2-name">THE EVIL WITHIN</p>
+                                <h6 class="block2-name" style="font-size:9px">USED . XBOX ONE
+                                </h6>
+                            </div>
+                            <div class=" game-info" style="width: 100%;">
+                                <div class="" style=" float: right">
+                                    <p class=" notice">₦6,999</p>
+                                </div>
+                                <div class="add" style=" float: left">
+                                    <button class="game-button btn" data-toggle="modal" data-target="#cartModal"><i
+                                            class=""></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- <site footer> -->
@@ -209,7 +364,7 @@
     <script type="text/javascript">
     $('.wishlistpointer').on('click', function(e) {
         e.preventDefault();
-        $(this).addClass('fa-heart');
+        $(this).addClass('fa-heart gblack');
         $(this).removeClass('fa-heart-o');
         $(this).off('click');
     });
