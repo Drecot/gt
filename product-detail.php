@@ -192,8 +192,7 @@
             <div class="col-md-12 container-fluid mt-30 pb-30">
 
                 <h1 class="black text-center pb-30 bold">
-                    NEWLY
-                    ADDED
+                    ITEMS YOU MAY LIKE
                 </h1>
                 <div class="container-fluid">
 

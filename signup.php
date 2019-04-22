@@ -60,12 +60,7 @@
                 <form action="/exchange/process_register" method="post" class="signup-form-container">
                     <h1 style="font-size: 14px; text-align: center">Sign Up</h1>
                     <p style="text-align: center; color: brown">
-                        <?php if ($this->session->has_userdata('error'))
-			                     { 
-			                     	echo $this->session->userdata('error');
-			                     	$this->session->unset_userdata('error');
-			                     }
-			                     ?>
+                        for errors
 
                     </p>
                     <div class="form-group ">
@@ -127,24 +122,20 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/preloader.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script> 
+    <script src="assets/js/jquery.easing.min.js"></script>
     <script type="text/javascript">
-        $('input').keyup(function () {
-            if ($('#password').val() == $('#cpassword').val())
-            {
-                $('#execute').css('color', 'red');
-                $('#execute').removeAttr('disabled');
-                $('#no_match').css('display', 'none');
-            }
-            else
-            {
-                $('#execute').css('color', 'white');
-                $('#execute').attr('disabled', 'true');
-                $('#no_match').css('display', 'block');
-            }
-        })
-        
-    </script> 
+    $('input').keyup(function() {
+        if ($('#password').val() == $('#cpassword').val()) {
+            $('#execute').css('color', 'red');
+            $('#execute').removeAttr('disabled');
+            $('#no_match').css('display', 'none');
+        } else {
+            $('#execute').css('color', 'white');
+            $('#execute').attr('disabled', 'true');
+            $('#no_match').css('display', 'block');
+        }
+    })
+    </script>
 
 </body>
 

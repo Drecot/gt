@@ -40,12 +40,7 @@
                         </div>
                         <h1 style="font-size: 14px; text-align: center">Create Account</h1>
                         <p style="text-align: center; color: brown">
-                            <?php if ($this->session->has_userdata('error'))
-			                     { 
-			                     	echo $this->session->userdata('error');
-			                     	$this->session->unset_userdata('error');
-			                     }
-			                     ?>
+                            for errors
 
                         </p>
                         <div class="tab">

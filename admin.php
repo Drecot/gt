@@ -40,9 +40,14 @@
     </div>
 
     <div class="row menu">
-        <a class="active" href="admin">
-            <i class="fa fa-dashboard"></i> Dahboard
-        </a>
+        <button class="dropdown-btn active"><i class="fa fa-dashboard"></i> Dahboard
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container" style="display: block;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
 
         <a href="subscriptions">
             <i class="fa fa-bus"></i> Email
@@ -309,7 +314,22 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
+for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+}
+</script>
 </body>
 
 </html>
