@@ -3747,11 +3747,9 @@ button.game-button.btn:after {
 
 }
 
-.add {}
-
-button i {
+/* button i {
 	color: white
-}
+} */
 
 @keyframes zoom-in {
 	0% {
@@ -7141,12 +7139,15 @@ tr:nth-child(even) {
 	color: #8c8c8c; 
 	background-color: transparent;
 	text-align: left
+	
 }
 
 .sidenav .menu button.active {
     border-left: 2px solid brown;
     color: white;
-    background-color: brown;
+	background-color: brown;
+	padding-left: 25px;
+	width: 100%;
 }
 
 .sidenav button:hover {
@@ -7166,7 +7167,167 @@ tr:nth-child(even) {
 	padding-right: 8px;
   }
 
-  .active {
-	background-color: green;
-	color: white;
-  }
+  .notification-popup .form-container ul.menu li a {
+    padding: 7px 11px;
+    text-decoration: none;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.notification-popup .form-container ul.menu li {
+	border-bottom: 1px solid #eee;
+}
+
+.notification-popup .form-container ul.menu .icon-circle {
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.notification-popup .form-container ul.menu .menu-info {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+	left: 5px;
+}
+
+.notification-popup .form-container ul.menu .menu-info h4 {
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+}
+
+.notification-popup .form-container ul.menu .menu-info p {
+    margin: 0;
+    font-size: 11px;
+    color: #aaa;
+}
+
+.notification-popup .form-container ul.menu .menu-info p .material-icons {
+    font-size: 13px;
+    color: #aaa;
+    position: relative;
+    top: 2px;
+}
+
+.notification-popup .form-container ul.menu .icon-circle i {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.bg-light-green {
+    background-color: #8BC34A !important;
+    color: #fff;
+}
+.bg-cyan {
+    background-color: #00BCD4 !important;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: #F44336 !important;
+    color: #fff;
+}
+
+.bg-orange {
+    background-color: #FF9800 !important;
+    color: #fff;
+}
+
+.waves-block {
+    display: block;
+}
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form-popup ul.menu li a {
+    padding: 7px 11px;
+    text-decoration: none;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-popup{
+	background-color: white;
+}
+
+.form-popup ul.menu li {
+	border-bottom: 1px solid #eee;
+}
+
+.form-popup ul.menu .icon-circle {
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.form-popup ul.menu .menu-info {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+	left: 5px;
+}
+
+.form-popup ul.menu .menu-info h4 {
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+}
+
+.form-popup ul.menu .menu-info p {
+    margin: 0;
+    font-size: 11px;
+    color: #aaa;
+}
+.form-popup ul.menu .menu-info p .material-icons {
+    font-size: 13px;
+    color: #aaa;
+    position: relative;
+    top: 2px;
+}
+
+.form-popup ul.menu .icon-circle i {
+    font-size: 18px;
+    line-height: 36px;
+}

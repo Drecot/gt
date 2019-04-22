@@ -40,7 +40,7 @@
     </div>
 
     <div class="row menu">
-        <button class="dropdown-btn active"><i class="fa fa-dashboard"></i> Dahboard
+        <button class="dropdown-btn active"><i class="fa fa-dashboard"></i> Dashboard
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container" style="display: block;">
@@ -102,15 +102,236 @@
 
 
 <div class="container-fluid main">
-    <?php if (!isset($_SESSION['user'])){ ?>
+    <header class="site-header">
+        <!-- <main class="site-main"> -->
+        <div>
+            <nav class="navbar navbar-default" id="title">
+                <div class="container-fluid">
 
-    <?php include 'header_beforelogin.php';?>
 
-    <?php } else { ?>
 
-    <?php include 'header_afterlogin.php';?>
+                    <a href="#x" class=" navbar-brand " style="width: 50px; margin-top: 30px;">
+                        <div class="menu-switcher-pro">
+                            <button type="button" id="sidebarCollapse"
+                                class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                    </a>
 
-    <?php } ?>
+                    <!-- the search container -->
+                    <div class="search-container col-md-8">
+                        <form class="search" action="/action_page.php">
+                            <input class="" type="text" placeholder="SEARCH ANY GAME..." name="search">
+                            <button type="submit" class="bold"><i class=""></i>SEARCH</button>
+                        </form>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
+                        <ul class="nav navbar-nav main-navbar-nav">
+
+                            <li><a href="#xcart" onclick="toggle_visibility('myCart');"><i class="fa fa-envelope fa-2x"
+                                        aria-hidden=" true"></i>
+                                    <span class="header-icons-noti-top-aft">2</span></a></li>
+
+                            <div class="form-popup" id="myCart">
+                                <ul class="menu" style="overflow: hidden; width: auto;">
+                                    <li>
+                                        <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                            <div class="icon-circle bg-light-green">
+                                                <i class="fa fa-users"></i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h3>John Doe</h3>
+                                                <h4>This project is due today</h4>
+                                                <p>
+                                                    <i class="fa fa-clock-o"></i> 14 mins ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <li><a href="#xcart" onclick="toggle_visibility('myNotification');"><i
+                                        class="dis fa fa-bell fa-2x" aria-hidden=" true"></i><span
+                                        class=" header-icons-noti-noti">1</span></a>
+                            </li>
+                            <!-- /.navbar-collapse -->
+
+                            <div class="notification-popup" id="myNotification">
+                                <div class="form-container">
+                                    <ul class="menu" style="overflow: hidden; width: auto; height: 254px;">
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-light-green">
+                                                    <i class="fa fa-users"></i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4>12 new members joined</h4>
+                                                    <p>
+                                                        <i class="fa fa-clock-o"></i> 14 mins ago
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-cyan">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4>4 sales made</h4>
+                                                    <p>
+                                                        <i class="fa fa-clock-o"></i> 22 mins ago
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-red">
+                                                    <i class="fa fa-trash"></i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4><b>Nancy Doe</b> deleted account</h4>
+                                                    <p>
+                                                        <i class="fa fa-clock-o"></i> 3 hours ago
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-orange">
+                                                    <i class="fa fa-pencil"></i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4><b>Nancy</b> changed name</h4>
+                                                    <p>
+                                                        <i class="fa fa-clock-o"></i> 2 hours ago
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-blue-grey">
+                                                    <i class="material-icons">comment</i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4><b>John</b> commented your post</h4>
+                                                    <p>
+                                                        <i class="material-icons">access_time</i> 4 hours ago
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-light-green">
+                                                    <i class="material-icons">cached</i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4><b>John</b> updated status</h4>
+                                                    <p>
+                                                        <i class="fa fa-clock-o">access_time</i> 3 hours ago
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class=" waves-effect waves-block">
+                                                <div class="icon-circle bg-purple">
+                                                    <i class="material-icons">settings</i>
+                                                </div>
+                                                <div class="menu-info">
+                                                    <h4>Settings updated</h4>
+                                                    <p>
+                                                        <i class="fa fa-clock-o">access_time</i> Yesterday
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <li><a href="#xaccount" onclick="toggle_visibility('myForm');"><i class=" fa fa-user fa-2x"
+                                        aria-hidden=" true""></i>
+                                    Hi,
+                                    <b>
+                                        <?php if (isset($_SESSION['user'])){ echo $_SESSION['firstname']; } else {echo "Login"; }?></b>
+                                    <i class=" fa fa-caret-down fa-2x"></i></a>
+                            </li>
+                            <div class=" form-popup" id="myForm">
+                                <div id="defaultOpen1" class="">
+                                    <div class="form-container border">
+                                        <div>
+                                            <a href="account">
+                                                <p class="header-dropdown">
+                                                    <i class="fa fa-user"></i>
+                                                    My
+                                                    Profile
+                                                </p>
+                                            </a>
+                                            <a href="orders">
+                                                <p class="header-dropdown">
+                                                    <i class="fa fa-shopping-bag"></i>
+                                                    My
+                                                    Orders
+                                                </p>
+                                            </a>
+                                            <a href="wishlist">
+                                                <p class="header-dropdown">
+                                                    <i class="fa fa-heart"></i>
+                                                    My
+                                                    Wishlist
+                                                </p>
+                                            </a>
+                                            <a href="#xwallet">
+                                                <p class="header-dropdown">
+                                                    <i class="fa fa-credit-card"></i>
+                                                    My
+                                                    Wallet
+                                                </p>
+                                            </a>
+                                            <a href="#x">
+                                                <p class="header-dropdown">
+                                                    <i class="fa fa-map-marker"></i>
+                                                    Track
+                                                    My
+                                                    Order
+                                                </p>
+                                            </a>
+                                            <p class=header-dropdown>
+                                                <i class="fa fa-moon-o"></i>
+                                                Night
+                                                Mode
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </p>
+
+                                            <a href="/exchange/logout">
+                                                <p class="header-dropdown logout">
+                                                    <i class="fa fa-sign-out"></i>
+                                                    Logout
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </nav>
+    </header>
 
     <div class="container-fluid row" style="padding-bottom: 5px; padding-top: 10px;">
         <div class="column">
@@ -314,6 +535,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/animated-search-filter.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/preloader.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
 <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
