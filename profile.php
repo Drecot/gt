@@ -47,7 +47,8 @@
                         <h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
                         <a href="account" class="active f12px">Account Information</a><br>
                         <a href="deliveryaddress" class="f12px">Delivery Address</a><br>
-                        <a href="inventory" class="f12px">Inventory</a>
+                        <a href="inventory" class="f12px">Inventory</a> <br>
+                        <a href="#xsupport.php" class="f12px">Support Tickets</a>
                     </div>
 
                     <hr>

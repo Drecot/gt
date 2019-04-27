@@ -46,14 +46,12 @@
     <!------------------------------>
 
     <main class="site-main">
-
-        <section class="hero_area1">
-            <div class="middle text-center" style=" padding: 10px;">
+        <section class="hero_area2">
+            <div class="middle2 text-center" style=" padding: 10px;">
                 <div class="">
                     <h1 style="    margin-bottom: 1.5rem;"> Track Order</h1>
 
                     <h2> Track the progress of your order up until delivery to your doorstep</h2>
-
                 </div>
 
                 <div>
@@ -65,6 +63,7 @@
 
             </div>
         </section>
+
 
         <section class="grey-map">
 
@@ -78,6 +77,11 @@
                         <div class="">
                             <input class="track" type="text" name="email" id="" title="Enter Tracking Number"
                                 placeholder="Enter Tracking Number">
+                        </div>
+
+                        <div class="">
+                            <input class="track" type="text" name="email" id="" title="Enter Email"
+                                placeholder="Enter Email">
                         </div>
                         <div class="">
                             <button type="submit" title="Track Order" class="button"

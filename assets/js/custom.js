@@ -141,6 +141,8 @@ $(document).ready(function () {
 			$('#no_match').css("display", "none");
 		}
 	});
+
+	
 });
 
 
@@ -329,3 +331,4 @@ for (var i = 0; i < btns.length; i++) {
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
+

@@ -10,13 +10,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index" class="navbar-brand brand-logo">
+                        <a href="index.php" class="navbar-brand brand-logo">
                             <img src="assets/img/logo.png" srcset="assets/img/logo2.png 2x, img/logo3.png 3x"
                                 alt="Post" width="100%" height="100%">
                         </a>
                     </div>
                 </div>
-                <a href="index" class=" navbar-brand " style="
+                <a href="index.php" class=" navbar-brand " style="
     width: 250px;
     margin-top: 30px;
 ">
@@ -84,14 +84,14 @@
                                 <div class="header-cart-buttons">
                                     <div class="header-cart-wrapbtn">
                                         <!-- Button -->
-                                        <a href="cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                        <a href="cart.php" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
                                             View
                                             Cart
                                         </a>
                                     </div>
                                     <div class="header-cart-wrapbtn">
                                         <!-- Button -->
-                                        <a href="checkout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                        <a href="checkout.php" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
                                             Checkout
                                         </a>
                                     </div>

@@ -47,7 +47,7 @@
                 </div>
                 <div>
                     <ul class="breadcrumb">
-                        <li><a href="index">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li>Log In</li>
 
                     </ul>
@@ -60,12 +60,7 @@
                 <form class="signup-form-container" action="/exchange/process_login" method="post">
                     <h1 style="font-size: 14px; text-align: center">Log In</h1>
                     <p style="text-align: center; color: brown">
-                        <?php if ($this->session->has_userdata('error'))
-			                     { 
-			                     	echo $this->session->userdata('error');
-			                     	$this->session->unset_userdata('error');
-			                     }
-			                     ?>
+                        error message
 
                     </p>
                     <div class="form-group">

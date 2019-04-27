@@ -45,7 +45,7 @@
                 </div>
                 <div>
                     <ul class="breadcrumb">
-                        <li><a href="index">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li>Account</li>
                         <li>Wishlist</li>
                     </ul>
@@ -61,7 +61,7 @@
                     <div>
                         <h3><i class="fa fa-user fa-2x"></i> My Profile</h3>
                         <a href="account" class="f12px">Account Information</a><br>
-                        <a href="deliveryaddress" class="f12px">Delivery Address</a><br><a href="inventory" class="f12px">Inventory</a>
+                        <a href="deliveryaddress" class="f12px">Delivery Address</a><br><a href="inventory" class="f12px">Inventory</a> <br>                                                    <a href="#xsupport.php" class="f12px">Support Tickets</a>    <a href="#xsupport.php" class="f12px">Support Tickets</a>
                     </div>
 
                     <hr>

@@ -10,7 +10,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Dreacot">
 
-    <title>GameTrade.ng | Contact Us</title>
+    <title>GameTrade.ng | Track your order</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -29,7 +29,8 @@
 
     <!-- <preloader> -->
     <div id="preloader">
-        <div class="spinner spinner-round"></div>
+        <div class="spinner spinner-round">
+        </div>
     </div>
 
     <!-- site header-->
@@ -42,115 +43,92 @@
     <?php include 'header_afterlogin.php';?>
 
     <?php } ?>
+    <!------------------------------>
 
     <main class="site-main">
-
-        <section class="hero_area1">
-            <div class="middle text-center" style=" padding: 10px;">
+        <section class="hero_area2">
+            <div class="middle2 text-center" style=" padding: 10px;">
                 <div class="">
-                    <h1 style="    margin-bottom: 1.5rem;"> Track Order</h1>
+                    <h1 style="    margin-bottom: 1.5rem;"> Contact Us</h1>
 
-                    <h2> Track the progress of your order up until delivery to your doorstep</h2>
-
+                    <h2> How can we help?</h2>
                 </div>
 
                 <div>
                     <ul class="breadcrumb">
                         <li><a href="index.php">Home</a></li>
-                        <li>Track Order</li>
+                        <li><a href="index.php">Help</a></li>
+                        <li>Contact Us</li>
                     </ul>
                 </div>
 
             </div>
         </section>
 
-        <section class="grey-map">
+        <section style=" background: white; padding-bottom: 100px; padding-top: 50px;">
 
-            <div class="track-outer text-center" id="track" style="display:block;">
+            <div class="container  " style=" margin-bottom: 50px; ">
 
-                <div class="track-inner">
+                <div class="col-sm-6 ">
 
-                    <h1>TRACK ORDER</h1>
-
-                    <div class="track-2">
-                        <div class="">
-                            <input class="track" type="text" name="email" id="" title="Enter Tracking Number"
-                                placeholder="Enter Tracking Number">
-                        </div>
-                        <div class="">
-                            <button type="submit" title="Track Order" class="button"
-                                onclick="toggle_visibility('track');toggle_visibility('tracking');">
-                                <span><span>Track Order</span></span></button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="track-page-outer text-center" id="tracking" style="display:none;">
-
-                <div class="track-page-inner">
-
-                    <h1>ORDER TRACKING: #AKJ6F</h1>
-
-                    <div>
-                        <ol class="progtrckr" data-progtrckr-steps="5">
-                            <li class="progtrckr-done">Order Received</li>
-                            <!--
- -->
-                            <li class="progtrckr-done">Order Processing</li>
-                            <!--
- -->
-                            <li class="progtrckr-done">Quality Check</li>
-                            <!--
- -->
-                            <li class="progtrckr-todo">Shipped</li>
-                            <!--
- -->
-                            <li class="progtrckr-todo">Delivered</li>
-                        </ol>
-
-                    </div>
-
-                    <div class="col-sm-12 down1">
-                        <div class="col-sm-4 thick">
-                            Shipped Via:<br> MAX.NG
-
-
-                        </div>
-
-                        <div class="col-sm-4 thick">
-                            Status:<br> Checking Quality
-
-
-                        </div>
-
-                        <div class="col-sm-4 thick">
-
-                            Expected Date:<br> 21-SEP-2018
-
-
-
-                        </div>
-
-
-                    </div>
-
-                    <div class="">
-                        <button type="submit" title="Track Order" class="button1"
-                            onclick="toggle_visibility('track');toggle_visibility('tracking');">
-                            <span><span>Track Another Order</span></span></button>
-                    </div>
-
-
+                    <div class="grey-map"></div>
                 </div>
 
 
+                <div class="col-sm-6 " style="  text-align: left;">
+                    <h1 class="signature-red bold"><span class="glyphicon glyphicon-send"></span> Contact Us</h1>
 
+                    <form class="signup-form-container" role="form" method="post" action="contact.php">
+                        <div class="form-group">
+                            <label for="fullname"><b>Full Name</b></label>
+                            <input type="text" placeholder="Enter Full Name" name="fullname" required>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><b>Subject</b> </label> <br>
+                            <select class="diff" id="businesstype" name="subject" value="" oninput="this.className = ''"
+                                required="">
+                                <option value="" disabled="disabled" selected="selected">--None--</option>
+                                <option value="I want to confirm my order">I want to confirm my order</option>
+                                <option value="I want to cancel my order">I want to cancel my order</option>
+                                <option value="I have a Payment Issue" id="paymentcontact">I have a Payment Issue
+                                </option>
+                                <option value="I want to track my order">I want to track my order</option>
+                                <option value="I want to return my order" id="">I want to return my order</option>
+                                <option value="I want to track my return / refund request" id="">I want to track my
+                                    return / refund request</option>
+                                <option value="I have some other request" id="othercontact">I have some other request
+                                </option>
+                            </select>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><b>Message</b></label>
+                            <textarea rows="4" name="message" placeholder="How can we help?" required></textarea>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
 
+                            <input id=" submit" name="submit" type="submit" value="Send" class="btn">
+
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <div class=" col-sm-10 col-sm-offset-1" align="center" style=" padding-bottom: 10px">
+                        <?php echo $result; ?>
+                    </div>
+                </div>
+                </form>
+            </div>
 
             </div>
+
 
         </section>
 

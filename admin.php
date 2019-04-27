@@ -49,20 +49,8 @@
             <a href="#">Link 3</a>
         </div>
 
-        <a href="subscriptions">
-            <i class="fa fa-bus"></i> Email
-        </a>
-
-        <a href="subscriptions">
-            <i class="fa fa-bus"></i> Calender
-        </a>
-
         <a href="transactions">
             <i class="fa fa-line-chart"></i> Product List
-        </a>
-
-        <a href="receipts">
-            <i class="fa fa-download"></i> Receipts
         </a>
 
         <a href="transactions">

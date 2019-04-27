@@ -12,7 +12,7 @@
             </div>
             <div class="hvr-grow col-sm-4  whbx">
                 <span class="fa fa-money"> </span>
-                <h4> CASH ON DELIVERY</h4>
+                <h4> SELL ON GAMETRADE</h4>
             </div>
         </div>
     </div>
@@ -35,18 +35,18 @@
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 fbox">
                 <h4>COMPANY</h4>
-                <p><a href="about"> About Us</a></p>
+                <p><a href="aboutus.php"> About Us</a></p>
                 <p><a href="#x">How it Works</a></p>
                 <p><a href="#x">Our Services</a></p>
-                <p><a href="#x"> Contact Us</a></p>
+                <p><a href="contact.php"> Contact Us</a></p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 fbox">
                 <h4>HELP</h4>
-                <p><a href="faq"> FAQs</a></p>
-                <p><a href="trackorder"> Track Order</a></p>
+                <p><a href="faq.php"> FAQs</a></p>
+                <p><a href="track-order.php"> Track Order</a></p>
                 <p><a href="#xreturn"> Returns</a></p>
-                <p><a href="#xdelivery"> Tickets</a></p>
-                <p><a href="exchange/signupmerchant" target="_blank" class="merchant"> Become a Merchant <i
+                <p><a href="#xdelivery"> Support Tickets</a></p>
+                <p><a href="signup-merchant.php" target="_blank" class="merchant"> Become a Merchant <i
                             class="fa fa-external-link"></i></a></p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 fbox">

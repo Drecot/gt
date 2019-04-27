@@ -47,7 +47,7 @@
                 </div>
                 <div>
                     <ul class="breadcrumb">
-                        <li><a href="index">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li>Products</li>
                     </ul>
                 </div>
